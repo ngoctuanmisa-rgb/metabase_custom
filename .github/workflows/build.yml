@@ -289,8 +289,8 @@ jobs:
       run: |
         echo "❌ BUILD THẤT BẠI!"
         echo "🔍 Kiểm tra logs để tìm lỗi"
-)"
-        echo "File .js: $(jar tf "$JAR_FILE" | grep -c '\.js
+        
+     echo "File .js: $(jar tf "$JAR_FILE" | grep -c '\.js
         
     - name: Upload Metabase JAR
       uses: actions/upload-artifact@v4
@@ -328,7 +328,6 @@ jobs:
       run: |
         echo "❌ BUILD THẤT BẠI!"
         echo "🔍 Kiểm tra logs để tìm lỗi"
-)"
         
         # Lưu đường dẫn JAR
         echo "JAR_PATH=$JAR_FILE" >> $GITHUB_ENV
