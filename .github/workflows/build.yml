@@ -1,0 +1,152 @@
+name: Build Metabase custom
+on: 
+  workflow_dispatch:  # Chạy thủ công
+  push:
+    branches: 
+      - main
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+
+env:
+  NODE_OPTIONS: "--max-old-space-size=4096"
+  JAVA_TOOL_OPTIONS: "-Xmx4g"
+  MB_EDITION: "oss"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Set up Node.js 22
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: 'yarn'
+        
+    - name: Set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '21'
+        cache: 'maven'
+        
+    - name: Install Clojure
+      uses: DeLaGuardo/setup-clojure@12.1
+      with:
+        cli: 'latest'
+        
+    - name: Cache Clojure Dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.m2/repository
+          ~/.gitlibs
+        key: clojure-${{ hashFiles('deps.edn') }}
+        restore-keys: clojure-
+        
+    - name: Install Frontend Dependencies
+      run: |
+        echo "📦 Cài đặt thư viện frontend..."
+        yarn install --frozen-lockfile
+        
+    - name: Fix Crypto Issue (Package.json Patch)
+      run: |
+        echo "🔧 Kiểm tra và fix lỗi crypto..."
+        
+        # Backup package.json gốc
+        cp package.json package.json.backup
+        
+        # Kiểm tra xem đã có cấu hình browser chưa
+        if grep -q '"browser"' package.json; then
+          echo "⚠️  package.json đã có cấu hình browser, bỏ qua patch"
+        else
+          echo "✅ Thêm cấu hình browser để fix crypto"
+          # Tìm dòng "dependencies" đầu tiên và thêm browser config trước đó
+          sed -i '/"dependencies":/i\  "browser": {\n    "crypto": false\n  },' package.json
+        fi
+        
+        # Hiển thị diff để kiểm tra
+        echo "📋 Thay đổi trong package.json:"
+        diff package.json.backup package.json || true
+        
+        # Kiểm tra syntax JSON có hợp lệ không
+        echo "🔍 Kiểm tra JSON syntax..."
+        node -e "JSON.parse(require('fs').readFileSync('package.json', 'utf8'))" && echo "✅ JSON hợp lệ" || echo "❌ JSON không hợp lệ"
+        
+    - name: Build Frontend
+      run: |
+        echo "🎨 Build giao diện frontend..."
+        yarn build
+        
+        echo "✅ Frontend build hoàn tất"
+        ls -lh resources/frontend_client/
+        
+    - name: Make Build Script Executable
+      run: chmod +x bin/build.sh
+      
+    - name: Build Backend (Uberjar)
+      run: |
+        echo "☕ Build backend Metabase..."
+        ./bin/build.sh
+        
+        echo "✅ Backend build hoàn tất"
+        ls -lh target/uberjar/
+        
+    - name: Verify JAR File
+      run: |
+        echo "📊 Thông tin file JAR:"
+        ls -lh target/uberjar/metabase.jar
+        
+        echo "📦 Kích thước file:"
+        du -h target/uberjar/metabase.jar
+        
+        echo "🔍 Kiểm tra JAR có hợp lệ:"
+        jar tf target/uberjar/metabase.jar | head -20
+        
+    - name: Upload Metabase JAR
+      uses: actions/upload-artifact@v4
+      with:
+        name: metabase-vietnamese-v${{ github.run_number }}
+        path: target/uberjar/metabase.jar
+        retention-days: 7
+        compression-level: 0  # JAR đã nén rồi, không cần nén lại
+        
+    - name: Create Release (If Tagged)
+      if: startsWith(github.ref, 'refs/tags/v')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: target/uberjar/metabase.jar
+        name: Metabase Vietnamese ${{ github.ref_name }}
+        body: |
+          🎉 Metabase Vietnamese Edition
+          
+          ## Thay đổi
+          - Đã sửa lỗi hiển thị tiếng Việt
+          - Build từ branch: main
+          
+          ## Cách sử dụng
+          ```bash
+          java -jar metabase.jar
+          ```
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Notify Build Success
+      if: success()
+      run: |
+        echo "✅ BUILD THÀNH CÔNG!"
+        echo "📥 Tải file JAR tại: Actions → Artifacts"
+        echo "🚀 File: metabase-vietnamese-v${{ github.run_number }}"
+        
+    - name: Notify Build Failed
+      if: failure()
+      run: |
+        echo "❌ BUILD THẤT BẠI!"
+        echo "🔍 Kiểm tra logs để tìm lỗi"
