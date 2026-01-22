@@ -1,12 +1,9 @@
-name: Build Metabase
+name: Build custome
 on: 
-  workflow_dispatch:  # Chạy thủ công
+  workflow_dispatch:
   push:
     branches: 
       - main
-    paths-ignore:
-      - '**.md'
-      - 'docs/**'
 
 env:
   NODE_OPTIONS: "--max-old-space-size=4096"
@@ -49,7 +46,6 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '21'
-        cache: 'maven'
         
     - name: Install Clojure
       uses: DeLaGuardo/setup-clojure@12.1
@@ -70,7 +66,6 @@ jobs:
       run: |
         echo "📦 Cài đặt thư viện frontend..."
         
-        # Kiểm tra xem có thư mục frontend không
         if [ -d "frontend" ]; then
           cd frontend
           yarn install --frozen-lockfile
@@ -83,6 +78,11 @@ jobs:
       run: |
         echo "🔧 Kiểm tra và fix lỗi crypto..."
         
+        # Di chuyển vào thư mục có package.json
+        if [ -d "frontend" ]; then
+          cd frontend
+        fi
+        
         # Backup package.json gốc
         cp package.json package.json.backup
         
@@ -91,7 +91,6 @@ jobs:
           echo "⚠️  package.json đã có cấu hình browser, bỏ qua patch"
         else
           echo "✅ Thêm cấu hình browser để fix crypto"
-          # Tìm dòng "dependencies" đầu tiên và thêm browser config trước đó
           sed -i '/"dependencies":/i\  "browser": {\n    "crypto": false\n  },' package.json
         fi
         
@@ -106,26 +105,33 @@ jobs:
     - name: Build Frontend
       run: |
         echo "🎨 Build giao diện frontend..."
+        
+        if [ -d "frontend" ]; then
+          cd frontend
+        fi
+        
         yarn build
         
         echo "✅ Frontend build hoàn tất"
-        ls -lh resources/frontend_client/
         
     - name: Make Build Script Executable
-      run: chmod +x bin/build.sh
+      run: |
+        if [ -f "bin/build.sh" ]; then
+          chmod +x bin/build.sh
+        fi
+        if [ -f "build.sh" ]; then
+          chmod +x build.sh
+        fi
       
     - name: Build Backend (Uberjar)
       run: |
         echo "☕ Build backend Metabase..."
         
-        # Kiểm tra xem có script build.sh không
         if [ -f "bin/build.sh" ]; then
           echo "✅ Sử dụng bin/build.sh"
-          chmod +x bin/build.sh
           ./bin/build.sh
         elif [ -f "build.sh" ]; then
           echo "✅ Sử dụng build.sh ở root"
-          chmod +x build.sh
           ./build.sh
         elif [ -f "build.clj" ]; then
           echo "✅ Build bằng Clojure build.clj"
@@ -142,7 +148,6 @@ jobs:
         
         echo "✅ Backend build hoàn tất"
         
-        # Tìm file JAR
         echo "🔍 Tìm file JAR đã build..."
         find . -name "*.jar" -type f
         
@@ -178,7 +183,7 @@ jobs:
         name: metabase-vietnamese-v${{ github.run_number }}
         path: ${{ env.JAR_PATH }}
         retention-days: 7
-        compression-level: 0  # JAR đã nén rồi, không cần nén lại
+        compression-level: 0
         
     - name: Create Release (If Tagged)
       if: startsWith(github.ref, 'refs/tags/v')
@@ -188,10 +193,6 @@ jobs:
         name: Metabase Vietnamese ${{ github.ref_name }}
         body: |
           🎉 Metabase Vietnamese Edition
-          
-          ## Thay đổi
-          - Đã sửa lỗi hiển thị tiếng Việt
-          - Build từ branch: main
           
           ## Cách sử dụng
           ```bash
