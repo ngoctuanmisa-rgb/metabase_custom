@@ -10,6 +10,7 @@ env:
   NODE_OPTIONS: "--max-old-space-size=4096"
   JAVA_TOOL_OPTIONS: "-Xmx4g"
   MB_EDITION: "oss"
+  CYPRESS_INSTALL_BINARY: "0"
 
 jobs:
   build:
@@ -69,10 +70,14 @@ jobs:
           
           if [ -d "frontend" ]; then
             cd frontend
-            yarn install --frozen-lockfile
+            
+            # Bỏ qua Cypress và các dev dependencies không cần thiết
+            echo "✅ Install dependencies (bỏ qua Cypress)..."
+            CYPRESS_INSTALL_BINARY=0 yarn install --frozen-lockfile --ignore-optional
+            
             cd ..
           else
-            yarn install --frozen-lockfile
+            CYPRESS_INSTALL_BINARY=0 yarn install --frozen-lockfile --ignore-optional
           fi
           
       - name: Fix Crypto Issue
