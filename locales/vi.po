@@ -24,7 +24,7 @@ msgstr ""
 #: enterprise/frontend/src/embedding/data-picker/SimpleDataPicker/SimpleDataPickerView.tsx:41
 #: frontend/src/metabase/query_builder/components/DataSelector/DataSelector.jsx:1013
 msgid "To pick some data, you'll need to add some first"
-msgstr "Để chọn một số dữ liệu, bạn cần thêm một số dữ liệu trước"
+msgstr "Để chọn dữ liệu, bạn cần thêm một số dữ liệu vào trước"
 
 #: enterprise/frontend/src/metabase-enterprise/snippets/components/CollectionOptionsButton.jsx:56
 #: enterprise/frontend/src/metabase-enterprise/snippets/components/SnippetCollectionMenu/SnippetCollectionMenu.tsx:75
@@ -106,7 +106,7 @@ msgstr "Bảng siêu dữ liệu"
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp/PeopleListingApp.tsx:93
 #: frontend/src/metabase/admin/routes.jsx:123
 msgid "People"
-msgstr "Mọi người"
+msgstr "Người dùng"
 
 #: frontend/src/metabase/admin/people/components/PeopleList.tsx:192
 #: frontend/src/metabase/admin/people/components/PeopleNav.tsx:31
@@ -200,7 +200,7 @@ msgstr "Không có đăng nhập"
 
 #: frontend/src/metabase/dashboard/containers/ArchiveDashboardModal.jsx:46
 msgid "This will trash the dashboard and the questions that are saved in it. Are you sure you want to do this?"
-msgstr "Thao tác này sẽ xóa bảng điều khiển và các câu hỏi được lưu trong đó. Bạn có chắc chắn muốn thực hiện thao tác này không?"
+msgstr "Thao tác này sẽ xóa trang báo cáo và các câu hỏi được lưu trong đó. Bạn có chắc chắn muốn thực hiện thao tác này không?"
 
 #: frontend/src/metabase/admin/people/containers/UserPasswordResetModal.tsx:88
 #: frontend/src/metabase/common/components/ConfirmModal/ConfirmModal.tsx:29
@@ -214,7 +214,7 @@ msgstr "Di chuyển trang này vào thùng rác?"
 
 #: frontend/src/metabase/dashboard/containers/ArchiveDashboardModal.jsx:54
 msgid "Move this dashboard to trash?"
-msgstr "Di chuyển bảng điều khiển này vào thùng rác?"
+msgstr "Di chuyển trang báo cáo này vào thùng rác?"
 
 #: enterprise/frontend/src/metabase-enterprise/google_drive/GdriveAddDataPanel.tsx:266
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/LandingPageWidget/LandingPageWidget.tsx:41
@@ -234,11 +234,11 @@ msgstr "Đã xảy ra lỗi"
 #: frontend/src/metabase/entities/dashboards.js:36
 #: frontend/src/metabase/entities/dashboards.js:97
 msgid "dashboard"
-msgstr "bảng điều khiển"
+msgstr "trang báo cáo"
 
 #: frontend/src/metabase/entities/dashboards.js:38
 msgid "dashboards"
-msgstr "bảng điều khiển"
+msgstr "trang báo cáo"
 
 #: frontend/src/metabase/entities/collections/collections.ts:123
 #: frontend/src/metabase/entities/dashboards.js:97
@@ -257,7 +257,7 @@ msgstr "đã khôi phục"
 
 #: frontend/src/metabase/entities/pulses.js:73
 msgid "subscription"
-msgstr "theo dõi"
+msgstr "đăng ký"
 
 #: frontend/src/metabase/entities/pulses.js:73
 msgid "deleted"
@@ -290,7 +290,7 @@ msgstr "mô hình"
 #: enterprise/frontend/src/metabase-enterprise/collections/components/CollectionInstanceAnalyticsIcon.tsx:24
 #: frontend/src/metabase/entities/questions.js:229
 msgid "metric"
-msgstr "mét"
+msgstr "chỉ số"
 
 #: enterprise/frontend/src/metabase-enterprise/collections/components/CollectionInstanceAnalyticsIcon.tsx:18
 #: frontend/src/metabase/common/components/ErrorPages/use-error-info.ts:124
@@ -337,7 +337,7 @@ msgstr "Mở menu khoan sâu"
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/hooks.ts:16
 #: frontend/src/metabase/lib/click-behavior.js:11
 msgid "Do nothing"
-msgstr "Không làm gì cả"
+msgstr "Không làm gì"
 
 #: frontend/src/metabase/lib/click-behavior.js:19
 #, javascript-format
@@ -351,7 +351,7 @@ msgstr "Đi đến..."
 
 #: frontend/src/metabase/lib/click-behavior.js:34
 msgid "Go to dashboard"
-msgstr "Đi đến bảng điều khiển"
+msgstr "Đi đến trang báo cáo"
 
 #: frontend/src/metabase/lib/click-behavior.js:36
 msgid "Go to question"
@@ -363,7 +363,7 @@ msgstr "Đi tới url"
 
 #: frontend/src/metabase/lib/click-behavior.js:40
 msgid "Filter this dashboard"
-msgstr "Lọc trang tổng quan này"
+msgstr "Lọc trang báo cáo này"
 
 #: frontend/src/metabase/lib/constants.js:8 metabase/pivot/core.cljc:455
 msgid "(empty)"
@@ -371,7 +371,7 @@ msgstr "(trống)"
 
 #: frontend/src/metabase/notifications/PulsesListSidebar.jsx:42
 msgid "Set up a new schedule"
-msgstr "Thiết lập lịch trình mới"
+msgstr "Thiết lập lịch mới"
 
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationModal/ImpersonationModalView.tsx:111
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationModal/ImpersonationModalView.tsx:153
@@ -980,7 +980,7 @@ msgstr "Không có gì ở đây"
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/lib/loading-message.ts:8
 #: frontend/src/metabase/plugins/oss/core.ts:39
 msgid "Doing science..."
-msgstr "Đang thực hiện khoa học..."
+msgstr "Đang xử lý..."
 
 #: enterprise/frontend/src/embedding-sdk-ee/metabot/MetabotChatInput.tsx:23
 msgid "Ask AI a question..."
@@ -1010,7 +1010,7 @@ msgstr "AI không hoàn hảo. Hãy kiểm tra lại kết quả."
 
 #: enterprise/frontend/src/embedding-sdk-ee/metabot/QuestionDetails.tsx:19
 msgid "Filtered by "
-msgstr "Lọc bởi "
+msgstr "Lọc theo "
 
 #: enterprise/frontend/src/embedding-sdk-ee/metabot/QuestionDetails.tsx:27
 msgid "Summarized by "
@@ -1140,7 +1140,7 @@ msgstr "Khoảng thời gian"
 
 #: enterprise/frontend/src/metabase-enterprise/caching/constants.ts:65
 msgid "Dashboard and question caching"
-msgstr "Bảng điều khiển và bộ nhớ đệm câu hỏi"
+msgstr "Trang báo cáo và bộ nhớ đệm câu hỏi"
 
 #: enterprise/frontend/src/metabase-enterprise/clean_up/index.tsx:69
 msgid "Recommended"
@@ -2016,7 +2016,7 @@ msgstr "Tìm kiếm biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/metabot/constants.ts:72
 msgid "Getting transform details"
-msgstr "Nhận thông tin chi tiết về chuyển đổi"
+msgstr "Nhận thông tin chi tiết về phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/metabot/constants.ts:75
 msgid "Retrieving table metadata"
@@ -2038,7 +2038,7 @@ msgstr "Trí tuệ nhân tạo"
 
 #: enterprise/frontend/src/metabase-enterprise/moderation/hooks/useMenuItems.tsx:44
 msgid "Verify this dashboard"
-msgstr "Xác minh bảng điều khiển này"
+msgstr "Xác minh trang báo cáo này"
 
 #: enterprise/frontend/src/metabase-enterprise/moderation/hooks/useMenuItems.tsx:96
 #: enterprise/frontend/src/metabase-enterprise/moderation/service.ts:100
@@ -2103,7 +2103,7 @@ msgstr "Thay đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/sandboxes/components/AttributeMappingEditor/AttributeOptionsEmptyState.tsx:32
 msgid "You can add attributes automatically by setting up an SSO that uses SAML, or you can enter them manually by going to the People section and clicking on the … menu on the far right."
-msgstr "Bạn có thể thêm thuộc tính tự động bằng cách thiết lập SSO sử dụng SAML hoặc bạn có thể nhập chúng theo cách thủ công bằng cách chuyển đến phần Mọi người và nhấp vào menu… ở ngoài cùng bên phải."
+msgstr "Bạn có thể thêm thuộc tính tự động bằng cách thiết lập SSO sử dụng SAML hoặc bạn có thể nhập chúng theo cách thủ công bằng cách chuyển đến phần Người dùng và nhấp vào menu… ở ngoài cùng bên phải."
 
 #: enterprise/frontend/src/metabase-enterprise/sandboxes/components/LoginAttributesWidget/LoginAttributeMappingEditor.tsx:275
 #: enterprise/frontend/src/metabase-enterprise/sandboxes/utils.tsx:22
@@ -2142,12 +2142,12 @@ msgstr[0] "Đã chọn {0} hàng"
 
 #: enterprise/frontend/src/metabase-enterprise/tenants/containers/EditTenantModal/EditTenantModal.tsx:46
 msgid "Tenant update successful"
-msgstr "Cập nhật người thuê thành công"
+msgstr "Cập nhật khách hàng thành công"
 
 #: enterprise/frontend/src/metabase-enterprise/tenants/components/TenantsListing/TenantsListing.tsx:150
 #: enterprise/frontend/src/metabase-enterprise/tenants/containers/EditTenantModal/EditTenantModal.tsx:51
 msgid "Edit tenant"
-msgstr "Chỉnh sửa người thuê nhà"
+msgstr "Chỉnh sửa khách hàng"
 
 #: enterprise/frontend/src/metabase-enterprise/tenants/EditUserStrategySettingsButton.tsx:13
 msgid "Edit user strategy"
@@ -2158,7 +2158,7 @@ msgstr "Chỉnh sửa chiến lược người dùng"
 #: frontend/src/metabase/admin/people/components/PeopleNav.tsx:46
 #: frontend/src/metabase/admin/people/containers/GroupsListingApp.tsx:75
 msgid "Tenant groups"
-msgstr "Nhóm người thuê nhà"
+msgstr "Nhóm khách hàng"
 
 #: enterprise/frontend/src/metabase-enterprise/remote_sync/components/RemoteSyncAdminSettings/RemoteSyncSettingsForm.tsx:421
 #: enterprise/frontend/src/metabase-enterprise/tenants/components/TenantCollectionPermissionsPage/selectors.tsx:96
@@ -2188,7 +2188,7 @@ msgstr "Không thể lưu trực tiếp các mục vào bộ sưu tập gốc c�
 #: enterprise/frontend/src/metabase-enterprise/tenants/components/TenantCollectionList/TenantCollectionList.tsx:19
 #: enterprise/frontend/src/metabase-enterprise/tenants/index.tsx:278
 msgid "Tenant collections"
-msgstr "Bộ sưu tập của người thuê nhà"
+msgstr "Bộ sưu tập của khách hàng"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/constants.ts:17
 msgid "Checkpoint"
@@ -2204,7 +2204,7 @@ msgstr "Chọn một công việc hoặc tạo một công việc mới"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/JobEmptyPage/JobEmptyPage.tsx:13
 msgid "Jobs let you run groups of transforms on a schedule."
-msgstr "Công việc cho phép bạn chạy nhóm chuyển đổi theo lịch trình."
+msgstr "Công việc cho phép bạn chạy nhóm phép biến đổi theo lịch trình."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/utils.ts:38
 msgid "In progress"
@@ -2246,7 +2246,7 @@ msgstr "Lịch trình"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/utils.ts:200
 msgid "In transforms, you can use snippets and question or model references, but not variables."
-msgstr "Trong chuyển đổi, bạn có thể sử dụng đoạn mã và tham chiếu câu hỏi hoặc mô hình, nhưng không phải biến."
+msgstr "Trong phép biến đổi, bạn có thể sử dụng đoạn mã và tham chiếu câu hỏi hoặc mô hình, nhưng không phải biến."
 
 #: enterprise/frontend/src/metabase-enterprise/data-studio/app/pages/DataStudioLayout/DataStudioLayout.tsx:151
 #: enterprise/frontend/src/metabase-enterprise/data-studio/app/pages/TransformsSectionLayout/TransformsSectionLayout.tsx:17
@@ -2592,7 +2592,7 @@ msgstr "Cài đặt"
 #: frontend/src/metabase/admin/components/RelatedSettingsSection/constants.ts:84
 #: frontend/src/metabase/admin/components/RelatedSettingsSection/constants.ts:118
 msgid "Permissions"
-msgstr "Các quyền"
+msgstr "Quyền hạn"
 
 #: frontend/src/metabase/admin/components/RelatedSettingsSection/RelatedSettingsSection.tsx:25
 msgid "Related settings"
@@ -2618,7 +2618,7 @@ msgstr "Huỷ kích hoạt"
 
 #: frontend/src/metabase/admin/people/forms/UserForm.tsx:94
 msgid "Select a tenant"
-msgstr "Chọn người thuê nhà"
+msgstr "Chọn người khách hàng"
 
 #: frontend/src/metabase/admin/performance/constants/complex.ts:15
 msgid "Enter a positive number."
@@ -2634,7 +2634,7 @@ msgstr "Sử dụng mặc định: mỗi câu hỏi sẽ sử dụng chính sác
 
 #: frontend/src/metabase/admin/performance/constants/complex.ts:80
 msgid "Use default: use the database or dashboard policy"
-msgstr "Sử dụng mặc định: sử dụng chính sách cơ sở dữ liệu hoặc bảng điều khiển"
+msgstr "Sử dụng mặc định: sử dụng chính sách cơ sở dữ liệu hoặc trang báo cáo"
 
 #: enterprise/frontend/src/metabase-enterprise/caching/components/SidebarCacheSection.tsx:35
 #: frontend/src/metabase/admin/performance/constants/complex.ts:82
@@ -2795,7 +2795,7 @@ msgstr "Hãy thử Metabase Pro"
 #: frontend/src/metabase/admin/upsells/UpsellCacheConfig.tsx:32
 #, javascript-format
 msgid "Get granular caching controls for each database, dashboard, and query with {0}"
-msgstr "Nhận các điều khiển bộ nhớ đệm chi tiết cho từng cơ sở dữ liệu, bảng điều khiển và truy vấn với {0}"
+msgstr "Nhận các điều khiển bộ nhớ đệm chi tiết cho từng cơ sở dữ liệu, trang báo cáo và truy vấn với {0}"
 
 #: frontend/src/metabase/admin/upsells/UpsellCacheConfig.tsx:33
 msgid "Metabase Pro."
@@ -2912,7 +2912,7 @@ msgstr "Tìm và khắc phục sự cố nhanh chóng, với tổng quan về t�
 
 #: frontend/src/metabase/admin/upsells/UpsellSSO.tsx:31
 msgid "Tired of manually managing people and groups?"
-msgstr "Bạn có thấy chán ngán khi phải quản lý mọi người và nhóm theo cách thủ công không?"
+msgstr "Bạn có thấy chán ngán khi phải quản lý người dùng và nhóm theo cách thủ công không?"
 
 #: frontend/src/metabase/admin/upsells/UpsellSSO.tsx:40
 msgid "Metabase Pro and Enterprise plans include:"
@@ -2936,7 +2936,7 @@ msgstr "Nhận quyền nâng cao"
 
 #: frontend/src/metabase/admin/upsells/UpsellPermissions.tsx:31
 msgid "Granular control down to the row- and column-level security. Manage advanced permissions per user group, or even at the database level."
-msgstr "Kiểm soát chi tiết xuống đến bảo mật cấp hàng và cấp cột. Quản lý các quyền nâng cao cho từng nhóm người dùng hoặc thậm chí ở cấp cơ sở dữ liệu."
+msgstr "Kiểm soát chi tiết xuống đến bảo mật cấp hàng và cấp cột. Quản lý quyền hạn nâng cao cho từng nhóm người dùng hoặc thậm chí ở cấp cơ sở dữ liệu."
 
 #: frontend/src/metabase/admin/upsells/UpsellSdkLink.tsx:36
 #: frontend/src/metabase/admin/upsells/UpsellSdkLink.tsx:47
@@ -3194,7 +3194,7 @@ msgstr "Đọc tài liệu"
 #: frontend/src/metabase/browse/models/ModelExplanationBanner.tsx:65
 #: frontend/src/metabase/status/components/StatusLarge/StatusLarge.tsx:67
 msgid "Dismiss"
-msgstr "Miễn nhiệm"
+msgstr "Bỏ qua"
 
 #: frontend/src/metabase/browse/models/EmptyStates/ModelsVideo.tsx:14
 msgid "Use Models in Metabase | Getting started with Metabase"
@@ -3338,7 +3338,7 @@ msgstr "Chỉnh sửa quyền"
 
 #: frontend/src/metabase/collections/components/CollectionMenu/CollectionMenu.tsx:111
 msgid "Move questions into their dashboards"
-msgstr "Di chuyển câu hỏi vào bảng điều khiển của họ"
+msgstr "Di chuyển câu hỏi vào trang báo cáo của họ"
 
 #: frontend/src/metabase/collections/components/CollectionMenu/CollectionMenu.tsx:144
 msgid "Move, trash, and more..."
@@ -3430,11 +3430,11 @@ msgstr "Chọn một bộ sưu tập"
 
 #: frontend/src/metabase/collections/containers/FormCollectionAndDashboardPicker/FormCollectionAndDashboardPicker.tsx:117
 msgid "Select a collection or dashboard"
-msgstr "Chọn một bộ sưu tập hoặc bảng điều khiển"
+msgstr "Chọn một bộ sưu tập hoặc trang báo cáo"
 
 #: frontend/src/metabase/collections/containers/FormCollectionAndDashboardPicker/FormCollectionAndDashboardPicker.tsx:175
 msgid "Select this dashboard"
-msgstr "Chọn bảng điều khiển này"
+msgstr "Chọn trang báo cáo này"
 
 #: frontend/src/metabase/collections/containers/FormCollectionAndDashboardPicker/FormCollectionAndDashboardPicker.tsx:176
 #: frontend/src/metabase/nav/containers/MainNavbar/MainNavbarContainer/AddDataModal/Panels/CSVUpload.tsx:300
@@ -3762,12 +3762,12 @@ msgstr "Di chuyển {0} mục"
 
 #: frontend/src/metabase/common/components/MoveQuestionsIntoDashboardsModal/ConfirmMoveDashboardQuestionCandidatesModal.tsx:61
 msgid "Move these questions into their dashboards?"
-msgstr "Di chuyển những câu hỏi này vào bảng điều khiển của họ?"
+msgstr "Di chuyển những câu hỏi này vào trang báo cáo của họ?"
 
 #: frontend/src/metabase/common/components/MoveQuestionsIntoDashboardsModal/ConfirmMoveDashboardQuestionCandidatesModal.tsx:62
 msgid "Move this question into its dashboard?"
 msgid_plural "Move these {0} questions into their dashboards?"
-msgstr[0] "Di chuyển những câu hỏi {0} này vào bảng điều khiển của họ?"
+msgstr[0] "Di chuyển những câu hỏi {0} này vào trang báo cáo của họ?"
 
 #: enterprise/frontend/src/metabase-enterprise/dependencies/components/DependencyGraph/utils.ts:348
 #: frontend/src/embedding-sdk-bundle/components/private/PublicComponentWrapper/SdkError.tsx:134
@@ -3780,11 +3780,11 @@ msgstr "Câu hỏi"
 
 #: frontend/src/metabase/common/components/MoveQuestionsIntoDashboardsModal/ConfirmMoveDashboardQuestionCandidatesModal.tsx:90
 msgid "Dashboard it'll be moved to"
-msgstr "Bảng điều khiển nó sẽ được chuyển đến"
+msgstr "Trang báo cáo nó sẽ được chuyển đến"
 
 #: frontend/src/metabase/common/components/MoveQuestionsIntoDashboardsModal/ConfirmMoveDashboardQuestionCandidatesModal.tsx:116
 msgid "There aren't any questions to move into dashboards. Looks like everything is in its place."
-msgstr "Không có câu hỏi nào cần chuyển vào bảng điều khiển. Có vẻ như mọi thứ đều đúng vị trí."
+msgstr "Không có câu hỏi nào cần chuyển vào trang báo cáo. Có vẻ như mọi thứ đều đúng vị trí."
 
 #: frontend/src/metabase/common/components/MoveQuestionsIntoDashboardsModal/ConfirmMoveDashboardQuestionCandidatesModal.tsx:155
 msgid "Move these questions"
@@ -3952,7 +3952,7 @@ msgstr "Hành động"
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/constants.ts:23
 #: metabase/revisions/models/revision/diff.clj:143
 msgid "Dashboard"
-msgstr "Bảng điều khiển"
+msgstr "Trang báo cáo"
 
 #: frontend/src/metabase/common/components/EntityPicker/components/ResultItem/ResultItem.tsx:78
 #: frontend/src/metabase/common/utils/model-names.ts:21
@@ -4027,7 +4027,7 @@ msgstr "Thẻ đã xóa"
 
 #: frontend/src/metabase/dashboard/actions/data-fetching.ts:155
 msgid "Your dashboard is ready"
-msgstr "Bảng điều khiển của bạn đã sẵn sàng"
+msgstr "Trang báo cáo của bạn đã sẵn sàng"
 
 #: frontend/src/metabase/dashboard/actions/data-fetching.ts:520
 #, javascript-format
@@ -4044,7 +4044,7 @@ msgstr "Hiển thị bộ lọc"
 
 #: frontend/src/metabase/dashboard/actions/parameters.tsx:1066
 msgid "You can make this dashboard snappier by turning off auto-applying filters."
-msgstr "Bạn có thể làm cho bảng điều khiển này nhanh hơn bằng cách tắt các bộ lọc tự động áp dụng."
+msgstr "Bạn có thể làm cho trang báo cáo này nhanh hơn bằng cách tắt các bộ lọc tự động áp dụng."
 
 #: frontend/src/metabase/dashboard/actions/parameters.tsx:1068
 msgid "Turn off"
@@ -4122,11 +4122,11 @@ msgstr "Bạn đã cập nhật các thông số nhúng và sẽ cần cập nh�
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader/DashboardHeader.tsx:137
 msgid "You're editing this dashboard."
-msgstr "Bạn đang chỉnh sửa bảng điều khiển này."
+msgstr "Bạn đang chỉnh sửa trang báo cáo này."
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader/DashboardHeader.tsx:139
 msgid " Remember that this dashboard is set as homepage."
-msgstr " Hãy nhớ rằng bảng điều khiển này được đặt làm trang chủ."
+msgstr " Hãy nhớ rằng trang báo cáo này được đặt làm trang chủ."
 
 #: frontend/src/metabase/dashboard/components/DashboardInfoSidebar/DashboardDetails.tsx:95
 #: frontend/src/metabase/metadata/components/FieldSection/BehaviorSection/BehaviorSection.tsx:133
@@ -4178,11 +4178,11 @@ msgstr "Câu hỏi đã thay thế"
 
 #: frontend/src/metabase/dashboard/components/DashboardMoveModal.tsx:41
 msgid "Move dashboard to…"
-msgstr "Di chuyển bảng điều khiển đến…"
+msgstr "Di chuyển trang báo cáo đến…"
 
 #: frontend/src/metabase/dashboard/components/DashboardSettingsSidebar/DashboardSettingsSidebar.tsx:54
 msgid "Dashboard settings"
-msgstr "Cài đặt bảng điều khiển"
+msgstr "Cài đặt trang báo cáo"
 
 #: frontend/src/metabase/admin/settings/components/SettingsNav/SettingsNav.tsx:32
 #: frontend/src/metabase/admin/settings/components/SettingsPages/GeneralSettingsPage.tsx:27
@@ -4222,11 +4222,11 @@ msgstr "Xóa tab này?"
 
 #: frontend/src/metabase/dashboard/components/DashboardTabs/DashboardTabs.tsx:93
 msgid "If you'd like to keep any of them, you can move them to a different tab, dashboard, or collection."
-msgstr "Nếu bạn muốn giữ lại bất kỳ mục nào, bạn có thể di chuyển chúng sang tab, bảng điều khiển hoặc bộ sưu tập khác."
+msgstr "Nếu bạn muốn giữ lại bất kỳ mục nào, bạn có thể di chuyển chúng sang tab, trang báo cáo hoặc bộ sưu tập khác."
 
 #: frontend/src/metabase/dashboard/components/DashboardTabs/DashboardTabs.tsx:96
 msgid "This will also delete any questions saved in it. If you'd like to keep any of these, move them to a different tab, dashboard, or collection."
-msgstr "Thao tác này cũng sẽ xóa mọi câu hỏi đã lưu trong đó. Nếu bạn muốn giữ lại bất kỳ câu hỏi nào, hãy di chuyển chúng sang một tab, bảng điều khiển hoặc bộ sưu tập khác."
+msgstr "Thao tác này cũng sẽ xóa mọi câu hỏi đã lưu trong đó. Nếu bạn muốn giữ lại bất kỳ câu hỏi nào, hãy di chuyển chúng sang một tab, trang báo cáo hoặc bộ sưu tập khác."
 
 #: frontend/src/metabase/dashboard/components/DashboardTabs/DashboardTabs.tsx:113
 msgid "Delete tab"
@@ -4256,11 +4256,11 @@ msgstr "Thêm tiêu đề"
 #: frontend/src/metabase/dashboard/components/QuestionPicker/QuestionList.tsx:158
 #: frontend/src/metabase/dashboard/components/QuestionPicker/QuestionList.tsx:162
 msgid "Visualize another way"
-msgstr "Hình dung theo cách khác"
+msgstr "Hiển thị theo cách khác"
 
 #: frontend/src/metabase/dashboard/containers/AutomaticDashboardApp/AutomaticDashboardApp.tsx:75
 msgid "Your dashboard was saved"
-msgstr "Bảng điều khiển của bạn đã được lưu"
+msgstr "Trang báo cáo của bạn đã được lưu"
 
 #: frontend/src/metabase/dashboard/containers/AutomaticDashboardApp/AutomaticDashboardApp.tsx:80
 #: frontend/src/metabase/dashboard/containers/AutomaticDashboardApp/AutomaticDashboardApp.tsx:141
@@ -4281,7 +4281,7 @@ msgstr "Hiển thị thêm về điều nàys"
 #: frontend/src/metabase/documents/components/DocumentCopyForm/DocumentCopyForm.tsx:59
 #: frontend/src/metabase/questions/components/CopyCardForm/CopyCardForm.tsx:117
 msgid "What is the name of your dashboard?"
-msgstr "Tên của bảng điều khiển của bạn là gì?"
+msgstr "Tên của trang báo cáo của bạn là gì?"
 
 #: frontend/src/metabase/dashboard/containers/CopyDashboardForm.tsx:134
 #: frontend/src/metabase/dashboard/containers/CreateDashboardForm.tsx:126
@@ -4290,11 +4290,11 @@ msgstr "Cái này nên đi vào bộ sưu tập nào?"
 
 #: frontend/src/metabase/dashboard/containers/CopyDashboardForm.tsx:144
 msgid "Only duplicate the dashboard"
-msgstr "Chỉ sao chép bảng điều khiển"
+msgstr "Chỉ sao chép trang báo cáo"
 
 #: frontend/src/metabase/dashboard/containers/CopyDashboardForm.tsx:147
 msgid "If you check this, the cards in the duplicated dashboard will reference the original questions."
-msgstr "Nếu bạn chọn mục này, các thẻ trong bảng điều khiển sao chép sẽ tham chiếu đến các câu hỏi gốc."
+msgstr "Nếu bạn chọn mục này, các thẻ trong trang báo cáo sao chép sẽ tham chiếu đến các câu hỏi gốc."
 
 #: frontend/src/metabase/common/components/Pickers/CollectionPicker/components/CollectionPickerModal.tsx:238
 #: frontend/src/metabase/common/components/Pickers/DashboardPicker/components/DashboardPickerModal.tsx:159
@@ -4302,7 +4302,7 @@ msgstr "Nếu bạn chọn mục này, các thẻ trong bảng điều khiển s
 #: frontend/src/metabase/embedding/embedding-iframe-sdk/components/MetabaseBrowser.tsx:196
 #: frontend/src/metabase/palette/hooks/useCommandPaletteBasicActions.tsx:131
 msgid "New dashboard"
-msgstr "Bảng điều khiển mới"
+msgstr "Trang báo cáo mới"
 
 #: frontend/src/metabase/data-grid/components/ExpandButton/ExpandButton.tsx:20
 msgid "Expand column"
@@ -4329,7 +4329,7 @@ msgstr "Sử dụng nhà cung cấp xác thực"
 
 #: frontend/src/metabase/databases/components/DatabaseCacheScheduleField/DatabaseCacheScheduleField.tsx:103
 msgid "When a user adds a new filter to a dashboard or a SQL question, Metabase will scan the field(s) mapped to that filter in order to show the list of selectable values."
-msgstr "Khi người dùng thêm một bộ lọc mới vào bảng điều khiển hoặc câu hỏi SQL, Metabase sẽ quét trường được ánh xạ tới bộ lọc đó để hiển thị danh sách giá trị có thể chọn."
+msgstr "Khi người dùng thêm một bộ lọc mới vào trang báo cáo hoặc câu hỏi SQL, Metabase sẽ quét trường được ánh xạ tới bộ lọc đó để hiển thị danh sách giá trị có thể chọn."
 
 #: frontend/src/metabase/databases/components/DatabaseClientIdDescription/DatabaseClientIdDescription.tsx:27
 #, javascript-format
@@ -4636,7 +4636,7 @@ msgstr "Không tải được câu hỏi"
 
 #: frontend/src/metabase/documents/components/EmbedQuestionSettingsSidebar.tsx:129
 msgid "Visualize as"
-msgstr "Hình dung như"
+msgstr "Hiển thị như"
 
 #: frontend/src/embedding-sdk-bundle/components/private/SdkQuestion/components/ChartTypeSelectorList/ChartTypeDropdown.tsx:101
 #: frontend/src/metabase/documents/components/EmbedQuestionSettingsSidebar.tsx:159
@@ -4659,7 +4659,7 @@ msgstr "Khám phá mới"
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/constants.ts:24
 msgid "Embed an entire dashboard with multiple charts and filters"
-msgstr "Nhúng toàn bộ bảng điều khiển với nhiều biểu đồ và bộ lọc"
+msgstr "Nhúng toàn bộ trang báo cáo với nhiều biểu đồ và bộ lọc"
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/constants.ts:30
 #: frontend/src/metabase/rich_text_editing/tiptap/extensions/Command/utils.ts:24
@@ -4716,11 +4716,11 @@ msgstr "Ngoại hình"
 #: metabase/revisions/models/revision/diff.clj:64
 #: metabase/revisions/models/revision/diff.clj:72
 msgid "Our analytics"
-msgstr "Các phân tích của chúng ta"
+msgstr "Bộ sưu tập chung"
 
 #: frontend/src/metabase/entities/collections/constants.ts:18
 msgid "My personal collection"
-msgstr "Bộ sưu tập cá nhân của tôi"
+msgstr "Bộ sưu tập cá nhân"
 
 #: frontend/src/metabase/entities/collections/constants.ts:30
 msgid "All personal collections"
@@ -4804,7 +4804,7 @@ msgstr "{0} mẹo"
 
 #: frontend/src/metabase/home/components/HomePage/HomePage.tsx:45
 msgid "Your admin has set this dashboard as your homepage"
-msgstr "Quản trị viên của bạn đã đặt bảng điều khiển này làm trang chủ của bạn"
+msgstr "Quản trị viên của bạn đã đặt trang báo cáo này làm trang chủ của bạn"
 
 #: frontend/src/metabase/account/notifications/components/HelpModal/HelpModal.jsx:29
 #: frontend/src/metabase/admin/permissions/components/LegacyPermissionsModal/LegacyPermissionsModal.tsx:68
@@ -4846,7 +4846,7 @@ msgstr "Thêm cơ sở dữ liệu"
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:276
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:303
 msgid "Invite people"
-msgstr "Mời mọi người"
+msgstr "Mời người dùng"
 
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:281
 msgid "Admin panel with the \"Invite someone\" button"
@@ -4875,7 +4875,7 @@ msgstr "Tạo bảng thông tin tự động"
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:340
 #, javascript-format
 msgid "Hover over a table and click the yellow lightning bolt {0}. {1} will create a bunch of charts based on that data and arrange them on a dashboard."
-msgstr "Di chuột qua bảng và nhấp vào tia sét màu vàng {0}. {1} sẽ tạo một loạt biểu đồ dựa trên dữ liệu đó và sắp xếp chúng trên bảng điều khiển."
+msgstr "Di chuột qua bảng và nhấp vào tia sét màu vàng {0}. {1} sẽ tạo một loạt biểu đồ dựa trên dữ liệu đó và sắp xếp chúng trên trang báo cáo."
 
 #: frontend/src/metabase/admin/databases/components/ExistingDatabaseHeader/HeaderLinkGroup.tsx:36
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:358
@@ -4889,7 +4889,7 @@ msgstr "Tạo biểu đồ tương tác với trình xây dựng truy vấn"
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:385
 #, javascript-format
 msgid "Filter and summarize data, add custom columns, join data from other tables, and more - {0}. And when you build a chart with the query builder, people will be able to {1} to explore the data further."
-msgstr "Lọc và tóm tắt dữ liệu, thêm các cột tùy chỉnh, nối dữ liệu từ các bảng khác, v.v. - {0}. Và khi bạn xây dựng biểu đồ bằng trình tạo truy vấn, mọi người sẽ có thể {1} để khám phá dữ liệu sâu hơn."
+msgstr "Lọc và tóm tắt dữ liệu, thêm các cột tùy chỉnh, nối dữ liệu từ các bảng khác, v.v. - {0}. Và khi bạn xây dựng biểu đồ bằng trình tạo truy vấn, người dùng sẽ có thể {1} để khám phá dữ liệu sâu hơn."
 
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:386
 msgid "all without SQL"
@@ -4946,7 +4946,7 @@ msgstr "Sắp xếp các câu hỏi thành {0} và thêm thẻ văn bản, liên
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:470
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:473
 msgid "dashboard with tabs"
-msgstr "bảng điều khiển có các tab"
+msgstr "trang báo cáo có các tab"
 
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:476
 #, javascript-format
@@ -4971,7 +4971,7 @@ msgstr "Nhận thông báo và cập nhật qua email"
 
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:505
 msgid "Subscribe to a dashboard by email or Slack"
-msgstr "Đăng ký bảng điều khiển qua email hoặc Slack"
+msgstr "Đăng ký trang báo cáo qua email hoặc Slack"
 
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:516
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:580
@@ -4998,7 +4998,7 @@ msgstr "Chùng xuống"
 #: frontend/src/metabase/home/components/Onboarding/Onboarding.tsx:532
 #, javascript-format
 msgid "To set up a subscription to a dashboard, click on the {0} {1} icon on the top bar, then click on {2} {3}."
-msgstr "Để thiết lập đăng ký vào bảng điều khiển, hãy nhấp vào biểu tượng {0} {1} trên thanh trên cùng, sau đó nhấp vào {2} {3}."
+msgstr "Để thiết lập đăng ký vào trang báo cáo, hãy nhấp vào biểu tượng {0} {1} trên thanh trên cùng, sau đó nhấp vào {2} {3}."
 
 #: frontend/src/metabase/embedding/components/SharingMenu/SharingMenu.tsx:22
 #: frontend/src/metabase/embedding/components/SharingMenu/SharingMenu.tsx:23
@@ -5384,7 +5384,7 @@ msgstr "Sản phẩm"
 #: frontend/src/metabase/lib/core.ts:317
 #: frontend/src/metabase/metadata/components/EntityTypeInput.tsx:31
 msgid "Subscription"
-msgstr "Theo dõi"
+msgstr "Đăng ký"
 
 #: frontend/src/metabase/metadata/components/EntityTypeInput.tsx:32
 msgid "Event"
@@ -5628,7 +5628,7 @@ msgstr "Quét các giá trị trường"
 #: enterprise/frontend/src/metabase-enterprise/data-studio/data-model/components/SyncOptionsModal.tsx:69
 #: frontend/src/metabase/metadata/components/SyncOptionsModal/SyncOptionsModal.tsx:49
 msgid "Metabase can scan the values in this table to enable checkbox filters in dashboards and questions."
-msgstr "Metabase có thể quét các giá trị trong bảng này để bật các bộ lọc hộp kiểm trong bảng điều khiển và câu hỏi."
+msgstr "Metabase có thể quét các giá trị trong bảng này để bật các bộ lọc hộp kiểm trong trang báo cáo và câu hỏi."
 
 #: enterprise/frontend/src/metabase-enterprise/data-studio/data-model/components/SyncTableSchemaButton/SyncTableSchemaButton.tsx:38
 #: frontend/src/metabase/metadata/components/SyncTableSchemaButton/SyncTableSchemaButton.tsx:18
@@ -5840,11 +5840,11 @@ msgstr "Tải xuống thông tin chẩn đoán"
 #: frontend/src/metabase/nav/components/ProfileLink/ProfileLink.tsx:147
 #, javascript-format
 msgid "About {0}"
-msgstr "Khoảng {0}"
+msgstr "Giới thiệu {0}"
 
 #: frontend/src/metabase/nav/components/ProfileLink/ProfileLink.tsx:155
 msgid "Sign out"
-msgstr "Thoát ra"
+msgstr "Đăng xuất"
 
 #: frontend/src/metabase/nav/components/ProfileLink/ProfileLink.tsx:263
 #, javascript-format
@@ -5891,7 +5891,7 @@ msgstr "Quản lý đăng ký của bạn."
 
 #: frontend/src/metabase/notifications/AddEditSidebar/AddEditSlackSidebar.tsx:81
 msgid "Send this dashboard to Slack"
-msgstr "Gửi trang tổng quan này tới Slack"
+msgstr "Gửi trang báo cáo này tới Slack"
 
 #: frontend/src/metabase/comments/components/CommentEditor/CommentEditor.tsx:204
 #: frontend/src/metabase/common/components/Schedule/Schedule.stories.tsx:69
@@ -5927,7 +5927,7 @@ msgstr "Đừng gửi nếu không có kết quả"
 #: frontend/src/metabase/notifications/AddEditSidebar/AddEditEmailSidebar.tsx:205
 #: frontend/src/metabase/notifications/AddEditSidebar/AddEditSlackSidebar.tsx:162
 msgid "Charts in subscriptions may look slightly different from charts in dashboards."
-msgstr "Biểu đồ trong đăng ký có thể trông hơi khác so với biểu đồ trong bảng điều khiển."
+msgstr "Biểu đồ trong đăng ký có thể trông hơi khác so với biểu đồ trong trang báo cáo."
 
 #: frontend/src/metabase/notifications/AddEditSidebar/constants.ts:7
 msgid "Emails"
@@ -5945,7 +5945,7 @@ msgstr "Webhook"
 #: frontend/src/metabase/notifications/AddEditSidebar/DeleteSubscriptionAction.tsx:21
 #, javascript-format
 msgid "This dashboard will no longer be emailed to {0} {1}"
-msgstr "Bảng điều khiển này sẽ không còn được gửi qua email đến {0} {1}"
+msgstr "Trang báo cáo này sẽ không còn được gửi qua email đến {0} {1}"
 
 #: frontend/src/metabase/notifications/AddEditSidebar/DeleteSubscriptionAction.tsx:23
 msgid "{0} address"
@@ -5955,11 +5955,11 @@ msgstr[0] "Địa chỉ {0}"
 #: frontend/src/metabase/notifications/AddEditSidebar/DeleteSubscriptionAction.tsx:32
 #, javascript-format
 msgid "Slack channel {0} will no longer get this dashboard {1}"
-msgstr "Kênh Slack {0} sẽ không còn nhận được bảng điều khiển này {1}"
+msgstr "Kênh Slack {0} sẽ không còn nhận được trang báo cáo này {1}"
 
 #: frontend/src/metabase/notifications/AddEditSidebar/DeleteSubscriptionAction.tsx:41
 msgid "Channel {0} will no longer receive this dashboard {1}"
-msgstr "Kênh {0} sẽ không còn nhận được bảng điều khiển này nữa {1}"
+msgstr "Kênh {0} sẽ không còn nhận được trang báo cáo này nữa {1}"
 
 #: frontend/src/metabase/account/notifications/components/ArchiveModal/ArchiveModal.jsx:95
 #: frontend/src/metabase/notifications/AddEditSidebar/DeleteSubscriptionAction.tsx:84
@@ -6134,7 +6134,7 @@ msgstr "Di chuyển các mục sưu tập vào thùng rác"
 
 #: frontend/src/metabase/palette/shortcuts/dashboard.ts:8
 msgid "Bookmark dashboard"
-msgstr "Bảng điều khiển đánh dấu"
+msgstr "Trang báo cáo được đánh dấu"
 
 #: frontend/src/metabase/palette/shortcuts/dashboard.ts:13
 #: frontend/src/metabase/palette/shortcuts/dashboard.ts:73
@@ -6175,29 +6175,29 @@ msgstr "Thêm câu hỏi gốc"
 
 #: frontend/src/metabase/palette/shortcuts/dashboard.ts:58
 msgid "Cancel edit dashboard"
-msgstr "Hủy chỉnh sửa bảng điều khiển"
+msgstr "Hủy chỉnh sửa trang báo cáo"
 
 #: frontend/src/metabase/palette/shortcuts/dashboard.ts:68
 msgid "Send dashboard to trash"
-msgstr "Gửi bảng điều khiển vào thùng rác"
+msgstr "Gửi trang báo cáo vào thùng rác"
 
 #: frontend/src/metabase/palette/shortcuts/dashboard.ts:78
 msgid "Toggle dashboard info"
-msgstr "Chuyển đổi thông tin bảng điều khiển"
+msgstr "Chuyển đổi thông tin trang báo cáo"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader/buttons/EditDashboardButton.tsx:29
 #: frontend/src/metabase/dashboard/components/DashboardHeader/buttons/EditDashboardButton.tsx:32
 #: frontend/src/metabase/palette/shortcuts/dashboard.ts:88
 msgid "Edit dashboard"
-msgstr "Chỉnh sửa bảng điều khiển"
+msgstr "Chỉnh sửa trang báo cáo"
 
 #: frontend/src/metabase/palette/shortcuts/dashboard.ts:98
 msgid "Save dashboard"
-msgstr "Lưu bảng điều khiển"
+msgstr "Lưu trang báo cáo"
 
 #: frontend/src/metabase/palette/shortcuts/dashboard.ts:108
 msgid "Change dashboard tab"
-msgstr "Thay đổi tab bảng điều khiển"
+msgstr "Thay đổi tab trang báo cáo"
 
 #: frontend/src/metabase/palette/shortcuts/question.ts:6
 msgid "Switch to editor"
@@ -6314,7 +6314,7 @@ msgstr "Tạo truy vấn gốc"
 #: frontend/src/metabase/embedding/embedding-hub/hooks/use-get-embedding-hub-steps.ts:69
 #: frontend/src/metabase/palette/shortcuts/global.ts:20
 msgid "Create a dashboard"
-msgstr "Tạo bảng điều khiển"
+msgstr "Tạo trang báo cáo"
 
 #: frontend/src/metabase/palette/shortcuts/global.ts:27
 msgid "Create a document"
@@ -6421,7 +6421,7 @@ msgstr "Giới hạn các lựa chọn của bộ lọc này"
 
 #: frontend/src/metabase/parameters/components/ParameterLinkedFilters/ParameterLinkedFilters.tsx:124
 msgid "If you have another dashboard filter, you can limit the choices that are listed for this filter based on the selection of the other one."
-msgstr "Nếu bạn có bộ lọc trang tổng quan khác, bạn có thể giới hạn các lựa chọn được liệt kê cho bộ lọc này dựa trên lựa chọn của bộ lọc kia."
+msgstr "Nếu bạn có bộ lọc trang báo cáo khác, bạn có thể giới hạn các lựa chọn được liệt kê cho bộ lọc này dựa trên lựa chọn của bộ lọc kia."
 
 #: frontend/src/metabase/parameters/components/ParameterLinkedFilters/ParameterLinkedFilters.tsx:127
 #, javascript-format
@@ -6430,15 +6430,15 @@ msgstr "Vì vậy, trước tiên, {0}."
 
 #: frontend/src/metabase/parameters/components/ParameterLinkedFilters/ParameterLinkedFilters.tsx:136
 msgid "add another dashboard filter"
-msgstr "thêm một bộ lọc bảng điều khiển"
+msgstr "thêm một bộ lọc trang báo cáo"
 
 #: frontend/src/metabase/parameters/components/ParameterLinkedFilters/ParameterLinkedFilters.tsx:147
 msgid "This filter can't be limited by another dashboard filter because its widget type is an input box."
-msgstr "Bộ lọc này không thể bị giới hạn bởi bộ lọc bảng điều khiển khác vì loại tiện ích của nó là hộp nhập liệu."
+msgstr "Bộ lọc này không thể bị giới hạn bởi bộ lọc trang báo cáo khác vì loại tiện ích của nó là hộp nhập liệu."
 
 #: frontend/src/metabase/parameters/components/ParameterLinkedFilters/ParameterLinkedFilters.tsx:160
 msgid "If the filter has values that are from another question or model, or a custom list, then this filter can't be limited by another dashboard filter."
-msgstr "Nếu bộ lọc có các giá trị đến từ câu hỏi hoặc mô hình khác hoặc danh sách tùy chỉnh thì bộ lọc này không thể bị giới hạn bởi bộ lọc bảng điều khiển khác."
+msgstr "Nếu bộ lọc có các giá trị đến từ câu hỏi hoặc mô hình khác hoặc danh sách tùy chỉnh thì bộ lọc này không thể bị giới hạn bởi bộ lọc trang báo cáo khác."
 
 #: frontend/src/metabase/parameters/components/ParameterLinkedFilters/ParameterLinkedFilters.tsx:164
 #, javascript-format
@@ -6453,7 +6453,7 @@ msgstr "Bộ lọc trường"
 #: frontend/src/metabase/parameters/components/ParameterLinkedFilters/ParameterLinkedFilters.tsx:209
 #, javascript-format
 msgid "If you toggle on one of these dashboard filters, selecting a value for that filter will limit the available choices for {0} filter."
-msgstr "Nếu bạn bật một trong các bộ lọc trang tổng quan này, việc chọn một giá trị cho bộ lọc đó sẽ giới hạn các lựa chọn có sẵn cho bộ lọc {0}."
+msgstr "Nếu bạn bật một trong các bộ lọc trang báo cáo này, việc chọn một giá trị cho bộ lọc đó sẽ giới hạn các lựa chọn có sẵn cho bộ lọc {0}."
 
 #: frontend/src/metabase/parameters/components/ParameterLinkedFilters/ParameterLinkedFilters.tsx:210
 #: frontend/src/metabase/querying/drills/utils/quick-filter-drill.tsx:151
@@ -6516,7 +6516,7 @@ msgstr "Luôn luôn yêu cầu một giá trị"
 
 #: frontend/src/metabase/parameters/components/RequiredParamToggle/RequiredParamToggle.tsx:47
 msgid "When enabled, people can change the value or reset it, but can't clear it entirely."
-msgstr "Khi được bật, mọi người có thể thay đổi giá trị hoặc đặt lại giá trị, nhưng không thể xóa hoàn toàn."
+msgstr "Khi được bật, người dùng có thể thay đổi giá trị hoặc đặt lại giá trị, nhưng không thể xóa hoàn toàn."
 
 #: frontend/src/metabase/parameters/components/ValuesSourceSettings/ValuesSourceSettings.tsx:50
 msgid "Dropdown list"
@@ -6624,7 +6624,7 @@ msgstr "Tồn tại trong các bộ sưu tập để giữ chúng tách biệt k
 
 #: frontend/src/metabase/query_builder/components/QueryModals/QueryModals.tsx:324
 msgid "Add this to a dashboard"
-msgstr "Thêm điều này vào bảng điều khiển"
+msgstr "Thêm điều này vào trang báo cáo"
 
 #: frontend/src/metabase/query_builder/components/QuestionDownloadWidget/QuestionDownloadWidget.tsx:107
 msgid "The maximum download size is 1 million rows."
@@ -7100,6 +7100,7 @@ msgstr "Chuyển đổi số hoặc ngày thành văn bản. Hữu ích khi áp 
 #: frontend/src/metabase/querying/expressions/config.ts:594
 #: frontend/src/metabase/querying/expressions/config.ts:607
 #: frontend/src/metabase/querying/expressions/config.ts:620
+#: frontend/src/metabase/querying/expressions/config.ts:954
 #: frontend/src/metabase/querying/expressions/config.ts:954
 msgid "value"
 msgstr "giá trị"
@@ -8056,7 +8057,7 @@ msgstr "Trả về true nếu `$value1` không bằng `$value2` (và `$value3`, 
 
 #: frontend/src/metabase/querying/expressions/errors.ts:69
 msgid "Invalid expression"
-msgstr "Biểu hiện không hợp lệ"
+msgstr "Biểu thức không hợp lệ"
 
 #: frontend/src/metabase/dashboard/components/ClickMappings.jsx:102
 #: frontend/src/metabase/dashboard/components/ClickMappings.jsx:281
@@ -8146,7 +8147,7 @@ msgstr "Văn bản mã thông báo trống"
 
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:154
 msgid "Empty dimension name"
-msgstr "Tên kích thước rỗng"
+msgstr "Tên chỉ số trống"
 
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:167
 #, javascript-format
@@ -8155,7 +8156,7 @@ msgstr "{0}. Sử dụng {1}() thay thế."
 
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:178
 msgid "Group must have one child"
-msgstr "Nhóm phải có một đứa con"
+msgstr "Nhóm phải có nhóm con"
 
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:185
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:322
@@ -8181,7 +8182,7 @@ msgstr "Hàm không xác định {0}"
 
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:294
 msgid "Expected string literal for mode"
-msgstr "Chuỗi ký tự mong đợi cho chế độ"
+msgstr "Chuỗi ký tự không hợp lệ cho chế độ được chọn"
 
 #: frontend/src/metabase/actions/containers/ActionCreator/FormCreator/OptionEditor.tsx:47
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:325
@@ -8194,26 +8195,26 @@ msgstr "Mệnh đề biểu thức mong đợi"
 
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:355
 msgid "Expected value clause"
-msgstr "Mệnh đề giá trị mong đợi"
+msgstr "Mệnh đề giá trị không hợp lệ"
 
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:374
 msgid "Expected number or string"
-msgstr "Số hoặc chuỗi mong đợi"
+msgstr "Số hoặc chuỗi không hợp lệ"
 
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:413
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:434
 #: frontend/src/metabase/querying/expressions/pratt/parser.ts:99
 #: frontend/src/metabase/querying/expressions/pratt/parser.ts:120
 msgid "Expected expression"
-msgstr "Biểu thức mong đợi"
+msgstr "Biểu thức không hợp lệ"
 
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:414
 msgid "Unexpected expression"
-msgstr "Biểu thức không mong đợi"
+msgstr "Biểu thức không hợp lệ"
 
 #: frontend/src/metabase/querying/expressions/pratt/compiler.ts:435
 msgid "Unxpected expression"
-msgstr "Biểu hiện bất ngờ"
+msgstr "Biểu thức không hợp lệ"
 
 #: frontend/src/metabase/querying/filters/utils/dates.ts:300
 #: metabase/parameters/shared.cljc:142
@@ -8236,11 +8237,11 @@ msgstr "Vâng, nó vẫn sẽ xuất hiện ở đó"
 
 #: frontend/src/metabase/questions/components/MoveCardModal/MoveCardModal.tsx:193
 msgid "No, remove it from that dashboard"
-msgstr "Không, xóa nó khỏi bảng điều khiển đó"
+msgstr "Không, xóa nó khỏi trang báo cáo đó"
 
 #: frontend/src/metabase/questions/components/MoveCardModal/MoveCardModal.tsx:228
 msgid "You can move it to a collection if you want to use it in both dashboards."
-msgstr "Bạn có thể di chuyển nó vào bộ sưu tập nếu bạn muốn sử dụng nó trong cả hai bảng điều khiển."
+msgstr "Bạn có thể di chuyển nó vào bộ sưu tập nếu bạn muốn sử dụng nó trong cả hai trang báo cáo."
 
 #: frontend/src/metabase/reference/components/Formula.tsx:44
 #, javascript-format
@@ -9120,7 +9121,7 @@ msgstr "Biểu đồ phụ thuộc"
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/JobListPage/JobListPage.tsx:91
 #: frontend/src/metabase/admin/tools/components/ToolsApp.tsx:38
 msgid "Jobs"
-msgstr "Việc làm"
+msgstr "Tác vụ"
 
 #: enterprise/frontend/src/metabase-enterprise/data-studio/app/pages/DataStudioLayout/DataStudioLayout.tsx:175
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/RunListPage/RunListPage.tsx:34
@@ -9446,7 +9447,7 @@ msgstr "Các câu hỏi"
 #: frontend/src/metabase/palette/constants.ts:10
 #: frontend/src/metabase/rich_text_editing/tiptap/extensions/shared/LinkedEntityPickerModal/LinkedEntityPickerModal.tsx:168
 msgid "Dashboards"
-msgstr "Các trang tổng quan"
+msgstr "Các trang báo cáo"
 
 #: enterprise/frontend/src/metabase-enterprise/dependencies/components/DependencyGraph/GraphEntryInput/EntryPickerModal/EntryPickerModal.tsx:226
 #: enterprise/frontend/src/metabase-enterprise/dependencies/components/DependencyGraph/GraphEntryInput/EntrySearchInput/EntrySearchInput.tsx:101
@@ -9513,7 +9514,7 @@ msgstr[0] "{0} đoạn trích"
 #, javascript-format
 msgid "{0} dashboard"
 msgid_plural "{0} dashboards"
-msgstr[0] "{0} bảng điều khiển"
+msgstr[0] "{0} trang báo cáo"
 
 #: enterprise/frontend/src/metabase-enterprise/dependencies/components/DependencyGraph/GraphNode/utils.ts:73
 msgid "{0} document"
@@ -9620,7 +9621,7 @@ msgstr "Không mua được Metabot AI"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/TransformMoreMenu.tsx:105
 msgid "Transform deleted"
-msgstr "Đã xóa chuyển đổi"
+msgstr "Đã xóa phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/TransformMoreMenu.tsx:111
 msgid "Transform moved"
@@ -9691,11 +9692,11 @@ msgstr "Múi giờ là {0}"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformRunPage/RunSection/RunSection.tsx:33
 msgid "Run this transform"
-msgstr "Chạy chuyển đổi này"
+msgstr "Chạy phép biến đổi này"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformRunPage/RunSection/RunSection.tsx:34
 msgid "This transform will be run whenever the jobs it belongs are scheduled."
-msgstr "Chuyển đổi này sẽ được chạy bất cứ khi nào các công việc liên quan được lên lịch."
+msgstr "Chuyển đổi này sẽ được chạy bất cứ khi nào các tác vụ liên quan được lên lịch."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformRunPage/RunSection/RunSection.tsx:46
 msgid "Run it on a schedule with tags"
@@ -9703,7 +9704,7 @@ msgstr "Chạy nó theo lịch trình có gắn thẻ"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformRunPage/RunSection/RunSection.tsx:47
 msgid "Jobs will run all transforms with their tags."
-msgstr "Các công việc sẽ chạy tất cả các chuyển đổi có gắn thẻ của chúng."
+msgstr "Các tác vụ sẽ chạy tất cả các phép biến đổi có gắn thẻ tương ứng."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformRunPage/RunSection/RunSection.tsx:69
 msgid "This run succeeded before it had a chance to cancel."
@@ -9719,12 +9720,12 @@ msgstr "Xem tất cả các lần chạy"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformRunPage/RunSection/RunSection.tsx:109
 msgid "Failed to run transform"
-msgstr "Không chạy được chuyển đổi"
+msgstr "Không chạy được phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/RunCancelButton/RunCancelButton.tsx:38
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformRunPage/RunSection/RunSection.tsx:116
 msgid "Failed to cancel transform"
-msgstr "Không thể hủy chuyển đổi"
+msgstr "Không thể hủy phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/RunCancelButton/RunCancelButton.tsx:72
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformRunPage/RunSection/RunSection.tsx:130
@@ -9733,23 +9734,23 @@ msgstr "Hủy chuyến chạy này?"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformRunPage/RunSection/RunSection.tsx:178
 msgid "Failed to update transform tags"
-msgstr "Không cập nhật được thẻ chuyển đổi"
+msgstr "Không cập nhật được thẻ phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformRunPage/RunSection/RunSection.tsx:188
 msgid "Transform tags updated"
-msgstr "Thẻ chuyển đổi được cập nhật"
+msgstr "Thẻ phép biến đổi được cập nhật"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformSettingsPage/TransformSettingsSection/UpdateIncrementalSettings.tsx:25
 msgid "Incremental transformation settings updated"
-msgstr "Cài đặt chuyển đổi tăng dần đã được cập nhật"
+msgstr "Phép biến đổi đã được cập nhật"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformSettingsPage/TransformSettingsSection/UpdateIncrementalSettings.tsx:28
 msgid "Failed to update incremental transformation settings"
-msgstr "Không thể cập nhật cài đặt chuyển đổi tăng dần."
+msgstr "Không thể cập nhật cài đặt phép biến đổi tăng dần."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformSettingsPage/TransformSettingsSection/TransformSettingsSection.tsx:40
 msgid "Transform target"
-msgstr "Chuyển đổi mục tiêu"
+msgstr "Phép biến đổi mục tiêu"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformSettingsPage/TransformSettingsSection/TransformSettingsSection.tsx:41
 msgid "Change what this transform generates and where."
@@ -9757,7 +9758,7 @@ msgstr "Thay đổi nội dung và vị trí tạo ra phép biến đổi này."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformSettingsPage/TransformSettingsSection/TransformSettingsSection.tsx:119
 msgid "This schema will be created when the transform runs"
-msgstr "Sơ đồ này sẽ được tạo khi quá trình chuyển đổi chạy"
+msgstr "Sơ đồ này sẽ được tạo khi phép biến đổi thực hiện"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformSettingsPage/TransformSettingsSection/TransformSettingsSection.tsx:184
 msgid "Transform target updated"
@@ -9881,7 +9882,7 @@ msgstr "Thêm một bản tóm tắt khác"
 #: frontend/src/metabase/querying/metrics/components/MetricEditor/MetricEditorFooter/MetricEmptyState/MetricEmptyState.tsx:30
 #: frontend/src/metabase/querying/notebook/components/Notebook/VisualizationButton.tsx:47
 msgid "Visualize"
-msgstr "Hình dung"
+msgstr "Hiển thị"
 
 #: frontend/src/metabase/actions/containers/ActionCreator/ActionContext/ImplicitActionContextProvider/ImplicitActionContextProvider.tsx:32
 #: frontend/src/metabase/models/components/ModelActions/ModelActionDetails/ModelActionListItem.tsx:55
@@ -9890,7 +9891,7 @@ msgstr "Sơ đồ theo dõi tự động"
 
 #: frontend/src/metabase/actions/containers/ActionCreator/FormCreator/Description/Description.tsx:18
 msgid "Configure your parameters' types and properties here. The values for these parameters can come from user input, or from a dashboard filter."
-msgstr "Cấu hình các loại và thuộc tính của tham số tại đây. Các giá trị cho các tham số này có thể đến từ đầu vào của người dùng hoặc từ bộ lọc bảng điều khiển."
+msgstr "Cấu hình các loại và thuộc tính của tham số tại đây. Các giá trị cho các tham số này có thể đến từ đầu vào của người dùng hoặc từ bộ lọc trang báo cáo."
 
 #: frontend/src/embedding-sdk-bundle/components/private/SdkQuestion/components/Filter/Filter.tsx:28
 #: frontend/src/embedding-sdk-bundle/components/private/SdkQuestion/components/Filter/FilterBadgeList.tsx:22
@@ -9904,7 +9905,7 @@ msgstr "Tạo biểu mẫu tùy chỉnh và logic kinh doanh."
 
 #: frontend/src/metabase/actions/containers/ActionCreator/FormCreator/EmptyFormPlaceholder/EmptyFormPlaceholder.tsx:27
 msgid "Actions let you write parameterized SQL that writes back to your database. Actions can be attached to buttons on dashboards to create custom workflows. You can even publicly share the parameterized forms they generate to collect data."
-msgstr "Các thao tác cho phép bạn viết SQL có tham số để ghi lại vào cơ sở dữ liệu của bạn. Các thao tác có thể được gắn vào các nút trên bảng điều khiển để tạo các quy trình công việc tùy chỉnh. Bạn thậm chí có thể chia sẻ công khai các biểu mẫu có tham số mà chúng tạo ra để thu thập dữ liệu."
+msgstr "Các thao tác cho phép bạn viết SQL có tham số để ghi lại vào cơ sở dữ liệu của bạn. Các thao tác có thể được gắn vào các nút trên trang báo cáo để tạo các quy trình công việc tùy chỉnh. Bạn thậm chí có thể chia sẻ công khai các biểu mẫu có tham số mà chúng tạo ra để thu thập dữ liệu."
 
 #: frontend/src/metabase/actions/containers/ActionCreator/FormCreator/EmptyFormPlaceholder/EmptyFormPlaceholder.tsx:30
 msgid "Here are a few ideas for what you can do with actions"
@@ -9916,7 +9917,7 @@ msgstr "Tạo một biểu mẫu phản hồi khách hàng và nhúng nó vào t
 
 #: frontend/src/metabase/actions/containers/ActionCreator/FormCreator/EmptyFormPlaceholder/EmptyFormPlaceholder.tsx:33
 msgid "Mark the customer you’re viewing in a dashboard as a VIP."
-msgstr "Đánh dấu khách hàng bạn đang xem trên bảng điều khiển là VIP."
+msgstr "Đánh dấu khách hàng bạn đang xem trên trang báo cáo là VIP."
 
 #: frontend/src/metabase/actions/containers/ActionCreator/FormCreator/EmptyFormPlaceholder/EmptyFormPlaceholder.tsx:34
 msgid "Let team members remove redundant data."
@@ -10163,7 +10164,7 @@ msgstr "Nó sẽ không hoạt động nữa, và cũng không thể khôi phụ
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing/PublicResources.tsx:34
 msgid "No dashboards have been publicly shared yet."
-msgstr "Chưa có trang tổng quan nào được chia sẻ công khai."
+msgstr "Chưa có trang báo cáo nào được chia sẻ công khai."
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing/PublicResources.tsx:54
 msgid "No questions have been publicly shared yet."
@@ -10255,7 +10256,7 @@ msgstr "Duyệt"
 
 #: frontend/src/metabase/common/components/Pickers/DashboardPicker/components/DashboardPickerModal.tsx:70
 msgid "Save in this dashboard"
-msgstr "Lưu trong bảng điều khiển này"
+msgstr "Lưu trong trang báo cáo này"
 
 #: frontend/src/metabase/common/components/Pickers/DashboardPicker/components/DashboardPickerModal.tsx:71
 msgid "Save in this collection"
@@ -10264,15 +10265,15 @@ msgstr "Lưu trong bộ sưu tập này"
 #: frontend/src/metabase/common/components/DashboardSelector/DashboardSelector.tsx:69
 #: frontend/src/metabase/common/components/Pickers/DashboardPicker/components/DashboardPickerModal.tsx:79
 msgid "Choose a dashboard"
-msgstr "Chọn bảng điều khiển"
+msgstr "Chọn trang báo cáo"
 
 #: frontend/src/metabase/common/components/Pickers/DashboardPicker/components/NewDashboardDialog.tsx:51
 msgid "Create a new dashboard"
-msgstr "Tạo bảng điều khiển mới"
+msgstr "Tạo trang báo cáo mới"
 
 #: frontend/src/metabase/common/components/Pickers/DashboardPicker/components/NewDashboardDialog.tsx:73
 msgid "My new dashboard"
-msgstr "Bảng điều khiển mới của tôi"
+msgstr "Trang báo cáo mới của tôi"
 
 #: enterprise/frontend/src/metabase-enterprise/dependencies/components/DependencyGraph/GraphEntryInput/EntrySearchInput/utils.ts:95
 #: frontend/src/metabase/common/components/Pickers/MiniPicker/components/MiniPickerFooter.tsx:21
@@ -10494,7 +10495,7 @@ msgstr "Thay thế tất cả dữ liệu trong mô hình này"
 #: frontend/src/metabase/query_builder/components/view/ViewFooter/LeftViewFooterButtonGroup.tsx:63
 #: frontend/src/metabase/query_builder/components/view/ViewHeader/components/QuestionNotebookButton/QuestionNotebookButton.tsx:51
 msgid "Visualization"
-msgstr "Hình ảnh hóa"
+msgstr "Biểu đồ"
 
 #: frontend/src/metabase/query_builder/components/view/ViewHeader/components/QuestionNotebookButton/QuestionNotebookButton.tsx:51
 msgid "Editor"
@@ -10774,7 +10775,7 @@ msgstr "Từ điển đã tải xuống"
 
 #: enterprise/frontend/src/metabase-enterprise/content_translation/components/ContentTranslationConfiguration/ContentTranslationConfiguration.tsx:119
 msgid "Upload a translation dictionary to translate strings both in Metabase content (like dashboard titles) and in the data itself (like column names and values). The dictionary must be a CSV with these columns: **Locale Code**, **String**, **Translation**."
-msgstr "Tải lên một từ điển dịch để dịch các chuỗi trong cả nội dung Metabase (như tiêu đề bảng điều khiển) và trong chính dữ liệu (như tên cột và giá trị). Từ điển phải là tệp CSV với các cột sau: **Mã ngôn ngữ**, **Chuỗi**, **Bản dịch**."
+msgstr "Tải lên một từ điển dịch để dịch các chuỗi trong cả nội dung Metabase (như tiêu đề trang báo cáo) và trong chính dữ liệu (như tên cột và giá trị). Từ điển phải là tệp CSV với các cột sau: **Mã ngôn ngữ**, **Chuỗi**, **Bản dịch**."
 
 #: enterprise/frontend/src/metabase-enterprise/content_translation/components/ContentTranslationConfiguration/ContentTranslationConfiguration.tsx:130
 msgid "Translate embedded dashboards and questions"
@@ -10896,7 +10897,7 @@ msgstr "Các mục bên dưới sẽ bị hỏng vì những thay đổi sau:"
 
 #: enterprise/frontend/src/metabase-enterprise/dependencies/components/CheckDependenciesForm/CheckDependenciesForm.tsx:68
 msgid "Save anyway"
-msgstr "Lưu dù sao"
+msgstr "Lưu"
 
 #: enterprise/frontend/src/metabase-enterprise/google_drive/GdriveAddDataPanel.tsx:41
 msgid "Sync a spreadsheet or an entire Google Drive folder with your instance."
@@ -11245,7 +11246,7 @@ msgstr "Quyền ứng dụng"
 #: frontend/src/metabase/admin/permissions/components/CollectionPermissionsHelp/CollectionPermissionsHelp.tsx:14
 #: frontend/src/metabase/admin/permissions/components/DataPermissionsHelp/DataPermissionsHelp.tsx:40
 msgid "People can be members of multiple groups, and Metabase grants them the most permissive level of access across all of a person's groups."
-msgstr "Mọi người có thể là thành viên của nhiều nhóm và Metabase cấp cho họ mức độ truy cập thoải mái nhất trong tất cả các nhóm của một người."
+msgstr "Người dùng có thể là thành viên của nhiều nhóm và Metabase cấp cho họ mức độ truy cập thoải mái nhất trong tất cả các nhóm của một người."
 
 #: frontend/src/metabase/admin/permissions/components/ApplicationPermissionsHelp/ApplicationPermissionsHelp.tsx:17
 msgid "Application settings are useful for granting groups access to some, but not all, of Metabase’s administrative features."
@@ -11272,7 +11273,7 @@ msgstr "Giám sát:"
 #: frontend/src/metabase/admin/permissions/components/ApplicationPermissionsHelp/ApplicationPermissionsHelp.tsx:29
 #, javascript-format
 msgid "{0} the group can create dashboard subscriptions and alerts."
-msgstr "{0} nhóm có thể tạo đăng ký bảng điều khiển và cảnh báo."
+msgstr "{0} nhóm có thể tạo đăng ký trang báo cáo và cảnh báo."
 
 #: frontend/src/metabase/admin/permissions/components/ApplicationPermissionsHelp/ApplicationPermissionsHelp.tsx:30
 msgid "Subscriptions and alerts:"
@@ -12105,12 +12106,12 @@ msgstr "Không tìm thấy"
 
 #: frontend/src/metabase/notifications/NewPulseSidebar.tsx:30
 msgid "Set up a dashboard subscription"
-msgstr "Thiết lập đăng ký bảng điều khiển"
+msgstr "Thiết lập đăng ký trang báo cáo"
 
 #: frontend/src/metabase/notifications/NewPulseSidebar.tsx:31
 #, javascript-format
 msgid "Schedule dashboard results to be sent to you and your team. People don't need a {0} account to subscribe."
-msgstr "Lên lịch kết quả bảng điều khiển để gửi cho bạn và nhóm của bạn. Mọi người không cần tài khoản {0} để đăng ký."
+msgstr "Lên lịch để gửi kết quả trang báo cáo cho bạn và nhóm của bạn. Người dùng không cần tài khoản {0} để đăng ký."
 
 #: frontend/src/metabase/notifications/NewPulseSidebar.tsx:36
 msgid "Email it"
@@ -12314,7 +12315,7 @@ msgstr "Trang bạn yêu cầu không thể được tìm thấy."
 
 #: frontend/src/metabase/query_builder/components/AddToDashSelectDashModal/AddToDashSelectDashModal.tsx:22
 msgid "Add this model to a dashboard"
-msgstr "Thêm mô hình này vào bảng điều khiển"
+msgstr "Thêm mô hình này vào trang báo cáo"
 
 #: frontend/src/metabase/query_builder/components/AddToDashSelectDashModal/AddToDashSelectDashModal.tsx:26
 msgid "Add this metric to a dashboard"
@@ -12322,7 +12323,7 @@ msgstr "Thêm số liệu này vào bảng thông tin"
 
 #: frontend/src/metabase/query_builder/components/AddToDashSelectDashModal/AddToDashSelectDashModal.tsx:30
 msgid "Add this question to a dashboard"
-msgstr "Thêm câu hỏi này vào bảng điều khiển"
+msgstr "Thêm câu hỏi này vào trang báo cáo"
 
 #: frontend/src/metabase/querying/drills/utils/automatic-insights-drill.tsx:22
 msgid "X-ray"
@@ -12351,7 +12352,7 @@ msgstr "Thêm tất cả"
 
 #: frontend/src/metabase/questions/components/ArchiveCardModal/ArchiveCardModal.tsx:73
 msgid "This question will be removed from its dashboard and any alerts using it."
-msgstr "Câu hỏi này sẽ bị xóa khỏi bảng điều khiển và mọi cảnh báo sử dụng câu hỏi này."
+msgstr "Câu hỏi này sẽ bị xóa khỏi trang báo cáo và mọi cảnh báo sử dụng câu hỏi này."
 
 #: frontend/src/metabase/questions/components/ArchiveCardModal/ArchiveCardModal.tsx:74
 msgid "This question will be removed from any dashboards or alerts using it."
@@ -12420,7 +12421,7 @@ msgstr "Trực quan hóa phải xác định biến tĩnh 'định danh'"
 
 #: frontend/src/metabase/visualizations/index.ts:64
 msgid "Visualization with that identifier is already registered: "
-msgstr "Hình dung với định danh đó đã được đăng ký:"
+msgstr "Hiển thị với định danh đó đã được đăng ký:"
 
 #: frontend/src/metabase/visualizations/index.ts:103
 #, javascript-format
@@ -12438,7 +12439,7 @@ msgstr "biểu đồ khu vực"
 #: frontend/src/metabase-lib/v1/Dimension.ts:25
 #, javascript-format
 msgid "Invalid template tag \"{0}\""
-msgstr "Thẻ mẫu không hợp lệ \"{0}\""
+msgstr "Mẫu không hợp lệ \"{0}\""
 
 #: frontend/src/metabase-lib/v1/Dimension.ts:30
 msgid "The variable \"{0}\" needs to be mapped to a field."
@@ -12559,7 +12560,7 @@ msgstr "Không nhìn thấy gì ở đây?"
 #: frontend/src/metabase/account/notifications/components/HelpModal/HelpModal.jsx:35
 #, javascript-format
 msgid "It’s possible you may also receive emails from {0} if you’re a member of an email distribution list, like “team@mycompany.com” and that list is used as the recipient for an alert or dashboard subscription instead of your individual email."
-msgstr "Bạn cũng có thể nhận được email từ {0} nếu bạn là thành viên của danh sách phân phối email, như “team@mycompany.com” và danh sách đó được sử dụng làm người nhận để đăng ký cảnh báo hoặc bảng điều khiển thay vì email cá nhân của bạn."
+msgstr "Bạn cũng có thể nhận được email từ {0} nếu bạn là thành viên của danh sách phân phối email, như “team@mycompany.com” và danh sách đó được sử dụng làm người nhận để đăng ký cảnh báo hoặc trang báo cáo thay vì email cá nhân của bạn."
 
 #: frontend/src/metabase/account/notifications/components/HelpModal/HelpModal.jsx:39
 msgid "Hopefully they’ll be able to help you out!"
@@ -12602,7 +12603,7 @@ msgstr "Được"
 
 #: frontend/src/metabase/admin/permissions/components/CollectionPermissionsModal/CollectionPermissionsModal.jsx:34
 msgid "Permissions for this folder"
-msgstr "Quyền cho thư mục này"
+msgstr "Quyền hạn cho thư mục này"
 
 #: frontend/src/metabase/admin/permissions/components/CollectionPermissionsModal/CollectionPermissionsModal.jsx:35
 msgid "Permissions for this collection"
@@ -12610,7 +12611,7 @@ msgstr "Quyền hạn cho bộ sưu tập này"
 
 #: frontend/src/metabase/admin/permissions/components/CollectionPermissionsModal/CollectionPermissionsModal.jsx:140
 msgid "See all collection permissions"
-msgstr "Xem tất cả các quyền thu thập"
+msgstr "Xem tất cả quyền hạn thu thập"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsConfirm.jsx:51
 msgid " will be "
@@ -12651,7 +12652,7 @@ msgstr "Bạn đã tạo thay đổi về quyền."
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsPageLayout/PermissionsEditBar.jsx:43
 msgid "Save permissions?"
-msgstr "Lưu các quyền?"
+msgstr "Lưu quyền hạn?"
 
 #: frontend/src/metabase/admin/permissions/pages/DatabasePermissionsPage/DatabasesPermissionsPage.jsx:155
 msgid "Select a database to see group permissions"
@@ -13291,7 +13292,7 @@ msgstr "Đồng bộ lại lược đồ"
 
 #: enterprise/frontend/src/metabase-enterprise/data-studio/data-model/components/SyncOptionsModal.tsx:51
 msgid "If you’ve made changes to thes tables in the underlying databases that aren’t showing up in Metabase yet, re-syncing the schemas can fix that."
-msgstr "Nếu bạn đã thực hiện thay đổi đối với các bảng này trong cơ sở dữ liệu cơ bản mà chưa hiển thị trong Metabase, việc đồng bộ lại lược đồ có thể khắc phục được điều đó."
+msgstr "Nếu bạn đã thực hiện thay đổi đối với các bảng này trong cơ sở dữ liệu gốc mà chưa hiển thị trong Metabase, việc đồng bộ lại cấu trúc có thể khắc phục được điều đó."
 
 #: enterprise/frontend/src/metabase-enterprise/data-studio/data-model/components/SyncOptionsModal.tsx:71
 msgid "Metabase can scan the values in these tables to enable checkbox filters in dashboards and questions."
@@ -13303,7 +13304,7 @@ msgstr "Quét lại bảng"
 
 #: enterprise/frontend/src/metabase-enterprise/data-studio/data-model/components/SyncTableSchemaButton/SyncTableSchemaButton.tsx:50
 msgid "Sync table schemas"
-msgstr "Đồng bộ hóa lược đồ bảng"
+msgstr "Đồng bộ cấu trúc bảng"
 
 #: enterprise/frontend/src/metabase-enterprise/data-studio/metrics/pages/MetricOverviewPage/MetricOverview/DescriptionSection/DescriptionSection.tsx:55
 msgid "Question description updated"
@@ -14007,7 +14008,7 @@ msgstr "Cột"
 
 #: enterprise/frontend/src/metabase-enterprise/sandboxes/components/AttributeMappingEditor/DataAttributeMappingEditor.tsx:80
 msgid "We can automatically get your users’ attributes if you’ve set up SSO, or you can add them manually from the \"…\" menu in the People section of the Admin Panel."
-msgstr "Chúng tôi có thể tự động lấy thuộc tính người dùng của bạn nếu bạn đã thiết lập SSO hoặc bạn có thể thêm chúng theo cách thủ công từ menu \"…\" trong phần Mọi người của Bảng điều khiển quản trị."
+msgstr "Chúng tôi có thể tự động lấy thuộc tính người dùng của bạn nếu bạn đã thiết lập SSO hoặc bạn có thể thêm chúng theo cách thủ công từ menu \"…\" trong phần Người dùng của Trang báo cáo quản trị."
 
 #: enterprise/frontend/src/metabase-enterprise/sandboxes/components/AttributeMappingEditor/DataAttributeMappingEditor.tsx:112
 msgid "equals"
@@ -14188,7 +14189,7 @@ msgstr "Thẻ để chạy"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/JobEditor/TagSection/TagSection.tsx:19
 msgid "This job will run all transforms tagged with any of the tags you pick here."
-msgstr "Công việc này sẽ chạy tất cả các chuyển đổi được gắn thẻ bằng bất kỳ thẻ nào bạn chọn ở đây."
+msgstr "Công việc này sẽ chạy tất cả các phép biến đổi được gắn thẻ bằng bất kỳ thẻ nào bạn chọn ở đây."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TagMultiSelect/TagMultiSelect.tsx:51
 msgid "Failed to create a tag"
@@ -14241,27 +14242,27 @@ msgstr "Thẻ của tôi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformEditor/utils.ts:14
 msgid "SQL for this transform"
-msgstr "SQL cho chuyển đổi này"
+msgstr "SQL cho phép biến đổi này"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformEditor/utils.ts:15
 msgid "Convert this transform to SQL"
-msgstr "Chuyển đổi chuyển đổi này sang SQL"
+msgstr "Chuyển đổi phép biến đổi này sang SQL"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformNameInput.tsx:24
 msgid "Failed to update transform name"
-msgstr "Không cập nhật được tên chuyển đổi"
+msgstr "Không cập nhật được tên phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformNameInput.tsx:26
 msgid "Transform name updated"
-msgstr "Tên chuyển đổi đã được cập nhật"
+msgstr "Tên phép biến đổi đã được cập nhật"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/DeleteTransformModal/TransformDeleteModal.tsx:103
 msgid "Delete the transform only"
-msgstr "Chỉ xóa biến đổi"
+msgstr "Chỉ xóa phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/DeleteTransformModal/TransformDeleteModal.tsx:106
 msgid "Delete the transform and the table"
-msgstr "Xóa biến đổi và bảng"
+msgstr "Xóa phép biến đổi và bảng"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/DeleteTransformModal/TransformDeleteModal.tsx:130
 msgid "Delete only the transform, or the table it generates, too?"
@@ -14269,7 +14270,7 @@ msgstr "Chỉ xóa phép biến đổi hay xóa luôn cả bảng mà nó tạo 
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/DeleteTransformModal/TransformDeleteModal.tsx:131
 msgid "Delete this transform?"
-msgstr "Xóa chuyển đổi này?"
+msgstr "Xóa phép biến đổi này?"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/DeleteTransformModal/TransformDeleteModal.tsx:137
 #, javascript-format
@@ -14278,19 +14279,19 @@ msgstr "Nếu muốn, bạn cũng có thể xóa bảng được tạo ra bởi 
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/DeleteTransformModal/TransformDeleteModal.tsx:138
 msgid "Deleting this transform won’t delete any tables."
-msgstr "Xóa chuyển đổi này sẽ không xóa bất kỳ bảng nào."
+msgstr "Xóa phép biến đổi này sẽ không xóa bất kỳ bảng nào."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/DeleteTransformModal/TransformDeleteModal.tsx:146
 msgid "Delete transform"
-msgstr "Xóa chuyển đổi"
+msgstr "Xóa phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/DeleteTransformModal/TransformDeleteModal.tsx:149
 msgid "Delete transform and table"
-msgstr "Xóa biến đổi và bảng"
+msgstr "Xóa phép biến đổi và bảng"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformMoreMenu/DeleteTransformModal/TransformDeleteModal.tsx:150
 msgid "Delete transform only"
-msgstr "Chỉ xóa chuyển đổi"
+msgstr "Chỉ xóa phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformHeader/TransformTabs.tsx:27
 #: frontend/src/metabase/models/components/ModelActions/ModelActionDetails/ModelActionListItem.tsx:133
@@ -14346,23 +14347,23 @@ msgstr "Bảng kết quả"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformListPage/TransformListPage.tsx:255
 msgid "No transforms yet"
-msgstr "Chưa có biến đổi nào"
+msgstr "Chưa có phép biến đổi nào"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformListPage/TransformListPage.tsx:257
 msgid "No transforms found"
-msgstr "Không tìm thấy biến đổi"
+msgstr "Không tìm thấy phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformQueryPage/TransformQueryPage.tsx:63
 msgid "Transform not found."
-msgstr "Không tìm thấy chuyển đổi."
+msgstr "Không tìm thấy phép biến đổi."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformQueryPage/TransformQueryPage.tsx:117
 msgid "Failed to update transform query"
-msgstr "Không cập nhật được truy vấn chuyển đổi"
+msgstr "Không cập nhật được truy vấn của phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformQueryPage/TransformQueryPage.tsx:119
 msgid "Transform query updated"
-msgstr "Đã cập nhật truy vấn chuyển đổi"
+msgstr "Đã cập nhật truy vấn của phép biến đổi"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms-python/components/PythonEditor/utils.ts:14
 msgid "Two-dimensional, size-mutable, potentially heterogeneous tabular data"
@@ -14594,7 +14595,7 @@ msgstr "Cung cấp tính toán cửa sổ lăn"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms-python/components/PythonEditor/utils.ts:328
 msgid "Provide expanding transformations"
-msgstr "Cung cấp các chuyển đổi mở rộng"
+msgstr "Cung cấp các phép biến đổi mở rộng"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms-python/components/PythonEditor/utils.ts:336
 msgid "Return the sum of the values for the requested axis"
@@ -14727,7 +14728,7 @@ msgstr "Hiển thị DataFrame dưới dạng bảng HTML"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms-python/components/PythonEditor/utils.ts:509
 msgid "Render a DataFrame to a console-friendly tabular output"
-msgstr "Kết xuất DataFrame thành đầu ra dạng bảng thân thiện với bảng điều khiển"
+msgstr "Kết xuất DataFrame thành đầu ra dạng bảng thân thiện với trang báo cáo"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms-python/components/PythonEditor/utils.ts:514
 msgid "Convert the DataFrame to a NumPy array"
@@ -14994,11 +14995,11 @@ msgstr "Không thấy cái nào ở đây?"
 
 #: frontend/src/metabase/account/notifications/components/NotificationList/NotificationList.tsx:91
 msgid "If you subscribe or are added to dashboard subscriptions or alerts you’ll be able to manage those here."
-msgstr "Nếu bạn đăng ký hoặc được thêm vào các đăng ký bảng điều khiển hay cảnh báo, bạn có thể quản lý chúng tại đây."
+msgstr "Nếu bạn đăng ký hoặc được thêm vào các đăng ký trang báo cáo hay cảnh báo, bạn có thể quản lý chúng tại đây."
 
 #: frontend/src/metabase/actions/components/ActionViz/ExplainerText/ExplainerText.tsx:14
 msgid "You can either ask users to enter values, or use the value of a dashboard filter."
-msgstr "Bạn có thể yêu cầu người dùng nhập giá trị, hoặc sử dụng giá trị của bộ lọc bảng điều khiển."
+msgstr "Bạn có thể yêu cầu người dùng nhập giá trị, hoặc sử dụng giá trị của bộ lọc trang báo cáo."
 
 #: frontend/src/metabase/actions/components/ActionViz/ExplainerText/ExplainerText.tsx:17
 #: frontend/src/metabase/admin/databases/components/DatabaseModelFeaturesSection/ModelCachingControl/ModelCachingControl.tsx:92
@@ -15168,7 +15169,7 @@ msgstr "Để lại một ghi chú để giải thích những thay đổi bạn
 
 #: frontend/src/metabase/admin/datamodel/components/SegmentForm/SegmentForm.tsx:117
 msgid "This will show up in the revision history for this segment to help everyone remember why things changed"
-msgstr "Điều này sẽ hiển thị trong lịch sử sửa đổi cho phân khúc này để giúp mọi người nhớ tại sao mọi thứ thay đổi"
+msgstr "Điều này sẽ hiển thị trong lịch sử sửa đổi cho phân khúc này để giúp người dùng nhớ tại sao mọi thứ thay đổi"
 
 #: frontend/src/metabase/admin/datamodel/components/SegmentForm/SegmentForm.tsx:161
 msgid "Name is required"
@@ -15234,7 +15235,7 @@ msgstr "Tìm kiếm một cơ sở dữ liệu"
 
 #: frontend/src/metabase/admin/permissions/selectors/data-permissions/data-sidebar.ts:113
 msgid "Select a table to set more specific permissions"
-msgstr "Chọn một bảng để thiết lập các quyền cụ thể hơn"
+msgstr "Chọn một bảng để thiết lập quyền hạn cụ thể hơn"
 
 #: frontend/src/metabase/admin/permissions/selectors/data-permissions/data-sidebar.ts:115
 #: frontend/src/metabase/admin/permissions/selectors/data-permissions/permission-editor.tsx:125
@@ -15312,7 +15313,7 @@ msgstr "Cho phép người dùng có tài khoản Metabase hiện tại đăng n
 #: frontend/src/metabase/admin/settings/auth/components/GoogleAuthForm/GoogleAuthForm.tsx:89
 #, javascript-format
 msgid "To allow users to sign in with Google you'll need to give Metabase a Google Developers console application client ID. It only takes a few steps and instructions on how to create a key can be found {0}."
-msgstr "Để cho phép người dùng đăng nhập bằng Google, bạn cần cung cấp cho Metabase ID ứng dụng khách ứng dụng bảng điều khiển Google Developers. Chỉ cần một vài bước và hướng dẫn về cách tạo khóa có thể được tìm thấy {0}."
+msgstr "Để cho phép người dùng đăng nhập bằng Google, bạn cần cung cấp cho Metabase ID ứng dụng khách ứng dụng trang báo cáo Google Developers. Chỉ cần một vài bước và hướng dẫn về cách tạo khóa có thể được tìm thấy {0}."
 
 #: frontend/src/metabase/admin/settings/auth/components/GoogleAuthForm/GoogleAuthForm.tsx:91
 msgid "here"
@@ -15560,7 +15561,7 @@ msgstr "Cho phép nhúng mô-đun"
 
 #: frontend/src/metabase/admin/settings/components/EmbeddingSettings/EmbeddingSettings/EmbeddingSettings.tsx:59
 msgid "The simplest way to embed Metabase. Embed dashboards, questions, the query builder, natural language querying with AI, and more in your app with components. Built on the SDK with per-component controls and theming."
-msgstr "Cách đơn giản nhất để nhúng Metabase. Nhúng bảng điều khiển, câu hỏi, trình tạo truy vấn, truy vấn ngôn ngữ tự nhiên với AI và nhiều hơn nữa vào ứng dụng của bạn bằng các thành phần. Được xây dựng trên SDK với các điều khiển và chủ đề riêng biệt cho từng thành phần."
+msgstr "Cách đơn giản nhất để nhúng Metabase. Nhúng trang báo cáo, câu hỏi, trình tạo truy vấn, truy vấn ngôn ngữ tự nhiên với AI và nhiều hơn nữa vào ứng dụng của bạn bằng các thành phần. Được xây dựng trên SDK với các điều khiển và chủ đề riêng biệt cho từng thành phần."
 
 #: frontend/src/metabase/admin/settings/components/EmbeddingSettings/EmbeddingSettings/EmbeddingSettings.tsx:94
 msgid "Version pinning"
@@ -15598,7 +15599,7 @@ msgstr "Cho phép nhúng khách"
 
 #: frontend/src/metabase/admin/settings/components/EmbeddingSettings/SharedCombinedEmbeddingSettings/SharedCombinedEmbeddingSettings.tsx:51
 msgid "A secure way to embed charts and dashboards, without single sign-on, when you don’t want to offer ad-hoc querying or chart drill-through. Enables modular embedding and static embedding."
-msgstr "Một cách an toàn để nhúng biểu đồ và bảng điều khiển mà không cần đăng nhập một lần, khi bạn không muốn cung cấp truy vấn tùy chỉnh hoặc xem chi tiết biểu đồ. Cho phép nhúng theo mô-đun và nhúng tĩnh."
+msgstr "Một cách an toàn để nhúng biểu đồ và trang báo cáo mà không cần đăng nhập một lần, khi bạn không muốn cung cấp truy vấn tùy chỉnh hoặc xem chi tiết biểu đồ. Cho phép nhúng theo mô-đun và nhúng tĩnh."
 
 #: frontend/src/metabase/admin/settings/components/EmbeddingSettings/SharedCombinedEmbeddingSettings/SharedCombinedEmbeddingSettings.tsx:61
 msgid "Upgrade to Metabase Pro for more powerful embedding methods"
@@ -15663,7 +15664,7 @@ msgstr "Tên miền được phê duyệt cho thông báo"
 
 #: frontend/src/metabase/admin/settings/components/SettingsPages/EmailSettingsPage.tsx:66
 msgid "Suggest recipients on dashboard subscriptions and alerts"
-msgstr "Gợi ý người nhận trên bảng điều khiển đăng ký và cảnh báo"
+msgstr "Gợi ý người nhận trên trang báo cáo đăng ký và cảnh báo"
 
 #: frontend/src/metabase/admin/settings/components/SettingsPages/EmailSettingsPage.tsx:69
 msgid "Suggest all users"
@@ -15711,7 +15712,7 @@ msgstr "Bật tính năng X-Ray"
 
 #: frontend/src/metabase/admin/settings/components/SettingsPages/GeneralSettingsPage.tsx:82
 msgid "Allowed domains for iframes in dashboards"
-msgstr "Các miền được phép cho iframe trong bảng điều khiển"
+msgstr "Các miền được phép cho iframe trong trang báo cáo"
 
 #: frontend/src/metabase/admin/settings/components/SettingsPages/GeneralSettingsPage.tsx:85
 #, javascript-format
@@ -15771,7 +15772,7 @@ msgstr "Kết nối với Slack"
 #: frontend/src/metabase/admin/settings/components/SettingsPages/NotificationSettingsPage.tsx:50
 msgid "If your team uses Slack, you can send dashboard subscriptions and\n"
 "alerts there"
-msgstr "Nếu nhóm của bạn sử dụng Slack, bạn có thể gửi đăng ký bảng điều khiển và\n"
+msgstr "Nếu nhóm của bạn sử dụng Slack, bạn có thể gửi đăng ký trang báo cáo và\n"
 "cảnh báo ở đó"
 
 #: frontend/src/metabase/admin/settings/components/SettingsPages/NotificationSettingsPage.tsx:59
@@ -15950,11 +15951,11 @@ msgstr "Điểm đến webhook mới"
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing/EmbeddedResources.tsx:26
 msgid "Embedded dashboards"
-msgstr "Bảng điều khiển nhúng"
+msgstr "Trang báo cáo nhúng"
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing/EmbeddedResources.tsx:30
 msgid "No dashboards have been embedded yet."
-msgstr "Chưa có trang tổng quan nào được nhúng."
+msgstr "Chưa có trang báo cáo nào được nhúng."
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing/EmbeddedResources.tsx:42
 msgid "Embedded questions"
@@ -16177,7 +16178,7 @@ msgstr "Nhập một URL để liên kết đến"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/LinkOptions/CustomURLPicker.tsx:107
 msgid "You can insert the value of a column or dashboard filter using its name, like this: {{some_column}}"
-msgstr "Bạn có thể chèn giá trị của bộ lọc cột hoặc trang tổng quan bằng cách sử dụng tên của nó, như sau: {{some_column}}"
+msgstr "Bạn có thể chèn giá trị của bộ lọc cột hoặc trang báo cáo bằng cách sử dụng tên của nó, như sau: {{some_column}}"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/LinkOptions/CustomURLPicker.tsx:112
 msgid "e.g. http://acme.com/id/{{user_id}}"
@@ -16194,7 +16195,7 @@ msgstr "Liên kết đến"
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/LinkOptions/ValuesYouCanReference.tsx:61
 #: frontend/src/metabase/dashboard/components/ClickMappings.jsx:205
 msgid "Dashboard filters"
-msgstr "Bộ lọc trang tổng quan"
+msgstr "Bộ lọc trang báo cáo"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/LinkOptions/ValuesYouCanReference.tsx:65
 #: frontend/src/metabase/dashboard/components/ClickMappings.jsx:207
@@ -16215,15 +16216,15 @@ msgstr "Chọn một câu hỏi…"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/LinkOptions/LinkedEntityPicker/LinkedEntityPicker.tsx:50
 msgid "Pick a dashboard to link to"
-msgstr "Chọn một trang tổng quan để liên kết đến"
+msgstr "Chọn một trang báo cáo để liên kết đến"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/LinkOptions/LinkedEntityPicker/LinkedEntityPicker.tsx:51
 msgid "Pick a dashboard…"
-msgstr "Chọn một bảng điều khiển…"
+msgstr "Chọn một trang báo cáo…"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/LinkOptions/LinkedEntityPicker/LinkedEntityPicker.tsx:107
 msgid "Pass values to this dashboard's filters (optional)"
-msgstr "Chuyển các giá trị đến các bộ lọc của trang tổng quan này (tùy chọn)"
+msgstr "Chuyển các giá trị đến các bộ lọc của trang báo cáo này (tùy chọn)"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/LinkOptions/LinkedEntityPicker/LinkedEntityPicker.tsx:108
 msgid "Pass values to this question's variables (optional)"
@@ -16239,7 +16240,7 @@ msgstr "Tab đã chọn không còn khả dụng nữa"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/LinkOptions/LinkedEntityPicker/LinkedEntityPicker.tsx:330
 msgid "Select a dashboard tab"
-msgstr "Chọn một tab bảng điều khiển"
+msgstr "Chọn một tab trang báo cáo"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/TableClickBehaviorView/TableClickBehaviorView.tsx:36
 msgid "Execute an action"
@@ -16248,7 +16249,7 @@ msgstr "Thực hiện một thao tác"
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/TableClickBehaviorView/TableClickBehaviorView.tsx:40
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/hooks.ts:22
 msgid "Update a dashboard filter"
-msgstr "Cập nhật bộ lọc trang tổng quan"
+msgstr "Cập nhật bộ lọc trang báo cáo"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/TableClickBehaviorView/TableClickBehaviorView.tsx:41
 msgid "Go to custom destination"
@@ -16364,7 +16365,7 @@ msgstr "Biến văn bản trong thẻ này chỉ có thể được kết nối 
 
 #: frontend/src/metabase/dashboard/components/DashCard/DashCardParameterMapper/DisabledNativeCardHelpText/DisabledNativeCardHelpText.tsx:90
 msgid "Add a variable to this question to connect it to a dashboard filter."
-msgstr "Thêm một biến vào câu hỏi này để kết nối nó với bộ lọc bảng điều khiển."
+msgstr "Thêm một biến vào câu hỏi này để kết nối nó với bộ lọc trang báo cáo."
 
 #: frontend/src/metabase/dashboard/components/DashCard/DashCardParameterMapper/DashCardCardParameterMapperButton.tsx:65
 msgid "You don’t have permission to see this question’s columns."
@@ -16436,7 +16437,7 @@ msgstr "Nhập toàn màn hình"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader/buttons/ExportAsPdfButton.tsx:39
 msgid "Exported dashboard"
-msgstr "Bảng điều khiển đã xuất"
+msgstr "Trang báo cáo đã xuất"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader/buttons/ExportAsPdfButton.tsx:48
 msgid "Download as PDF"
@@ -16680,11 +16681,11 @@ msgstr "một kế hoạch trả phí"
 
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/LookAndFeelSettings.tsx:148
 msgid "Dashboard background"
-msgstr "Nền bảng điều khiển"
+msgstr "Nền trang báo cáo"
 
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/LookAndFeelSettings.tsx:220
 msgid "Dashboard border"
-msgstr "Đường viền bảng điều khiển"
+msgstr "Đường viền trang báo cáo"
 
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/LookAndFeelSettings.tsx:221
 msgid "Question border"
@@ -16696,7 +16697,7 @@ msgstr "Đường viền tài liệu"
 
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/LookAndFeelSettings.tsx:228
 msgid "Dashboard title"
-msgstr "Tiêu đề bảng điều khiển"
+msgstr "Tiêu đề trang báo cáo"
 
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/LookAndFeelSettings.tsx:232
 msgid "Question title"
@@ -16713,7 +16714,7 @@ msgstr "Để nhúng {0} này vào ứng dụng của bạn, bạn chỉ cần x
 
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/OverviewSettings.tsx:73
 msgid "You can also hide or lock any of the dashboard’s parameters."
-msgstr "Bạn cũng có thể ẩn hoặc khóa bất kỳ tham số nào của bảng điều khiển."
+msgstr "Bạn cũng có thể ẩn hoặc khóa bất kỳ tham số nào của trang báo cáo."
 
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/OverviewSettings.tsx:77
 #, javascript-format
@@ -17043,7 +17044,7 @@ msgstr "Lọc nhãn widget"
 #: frontend/src/metabase/parameters/components/ParameterSettings/ParameterSettings.tsx:223
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParamParts/ParameterMultiSelectInput.tsx:31
 msgid "People can pick"
-msgstr "Mọi người có thể chọn"
+msgstr "Người dùng có thể chọn"
 
 #: frontend/src/metabase/parameters/components/ParameterSettings/ParameterSettings.tsx:231
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParamParts/ParameterMultiSelectInput.tsx:40
@@ -18012,7 +18013,7 @@ msgstr "Bộ dữ liệu này có thể không hoàn toàn tương thích với 
 
 #: enterprise/frontend/src/metabase-enterprise/dependencies/components/DependencyGraph/GraphDependencyPanel/PanelHeader/FilterOptionsPicker/utils.ts:10
 msgid "In a dashboard"
-msgstr "Trong bảng điều khiển"
+msgstr "Trong trang báo cáo"
 
 #: enterprise/frontend/src/metabase-enterprise/dependencies/components/DependencyGraph/GraphDependencyPanel/PanelHeader/FilterOptionsPicker/utils.ts:11
 msgid "Not in personal collection"
@@ -18250,7 +18251,7 @@ msgstr "Tùy chỉnh giá trị bộ lọc cho từng đăng ký trên gói Pro 
 
 #: frontend/src/metabase/notifications/AddEditSidebar/DefaultParametersSection.jsx:61
 msgid "If a dashboard filter has a default value, it'll be applied when your subscription is sent."
-msgstr "Nếu bộ lọc bảng điều khiển có giá trị mặc định, giá trị đó sẽ được áp dụng khi đăng ký của bạn được gửi."
+msgstr "Nếu bộ lọc trang báo cáo có giá trị mặc định, giá trị đó sẽ được áp dụng khi đăng ký của bạn được gửi."
 
 #: frontend/src/metabase/notifications/AddEditSidebar/DefaultParametersSection.unit.spec.jsx:63
 #, javascript-format
@@ -18666,7 +18667,7 @@ msgstr "Hủy đăng ký {0} khỏi tất cả các đăng ký và cảnh báo?"
 #: enterprise/frontend/src/metabase-enterprise/audit_app/containers/UnsubscribeUserModal/UnsubscribeUserModal.tsx:65
 #, javascript-format
 msgid "This will delete any dashboard subscriptions or alerts {0} has created, and remove them as a recipient from any other subscriptions or alerts."
-msgstr "Điều này sẽ xóa bất kỳ đăng ký bảng điều khiển hoặc cảnh báo nào mà {0} đã tạo và loại bỏ họ khỏi vai trò người nhận từ bất kỳ đăng ký hoặc cảnh báo nào khác."
+msgstr "Điều này sẽ xóa bất kỳ đăng ký trang báo cáo hoặc cảnh báo nào mà {0} đã tạo và loại bỏ họ khỏi vai trò người nhận từ bất kỳ đăng ký hoặc cảnh báo nào khác."
 
 #: enterprise/frontend/src/metabase-enterprise/audit_app/containers/UnsubscribeUserModal/UnsubscribeUserModal.tsx:69
 msgid "This does not affect email distribution lists that are managed outside of Metabase."
@@ -18899,7 +18900,7 @@ msgstr "Xóa bộ nhớ đệm"
 #: enterprise/frontend/src/metabase-enterprise/caching/components/InvalidateNowButton.tsx:62
 #: frontend/src/metabase/common/components/Schedule/Schedule.stories.tsx:69
 msgid "Clear cache for this dashboard"
-msgstr "Xóa bộ nhớ đệm cho bảng điều khiển này"
+msgstr "Xóa bộ nhớ đệm cho trang báo cáo này"
 
 #: enterprise/frontend/src/metabase-enterprise/caching/components/InvalidateNowButton.tsx:63
 msgid "Clear cache for this question"
@@ -19262,7 +19263,7 @@ msgstr "Thiết lập đồng bộ hóa từ xa cho Thư viện của bạn"
 
 #: enterprise/frontend/src/metabase-enterprise/remote_sync/components/GitSettingsModal/GitSettingsModal.tsx:30
 msgid "Keep your Library and transforms safely backed up in Git."
-msgstr "Hãy sao lưu thư viện và các bản chuyển đổi của bạn một cách an toàn trong Git."
+msgstr "Hãy sao lưu thư viện và các phép biến đổi của bạn một cách an toàn trong Git."
 
 #: enterprise/frontend/src/metabase-enterprise/remote_sync/components/GitSyncSetupMenuItem/GitSyncSetupMenuItem.tsx:23
 #: enterprise/frontend/src/metabase-enterprise/remote_sync/components/GitSyncSetupMenuItem/GitSyncSetupMenuItem.tsx:29
@@ -19810,7 +19811,7 @@ msgstr "Chỉnh sửa bộ sưu tập"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/IncrementalTransform/IncrementalTransformSettings.tsx:134
 msgid "Incremental transforms are only supported for single data source transforms."
-msgstr "Chuyển đổi gia tăng chỉ được hỗ trợ cho chuyển đổi nguồn dữ liệu đơn lẻ."
+msgstr "Phép biến đổi gia tăng chỉ được hỗ trợ cho chuyển đổi nguồn dữ liệu đơn lẻ."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/IncrementalTransform/IncrementalTransformSettings.tsx:135
 msgid "Only process new and changed data"
@@ -19877,7 +19878,7 @@ msgstr "Chuyển đổi sẽ được chạy theo thứ tự này."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/JobEditor/DependenciesSection/DependenciesSection.tsx:37
 msgid "There are no transforms for this job."
-msgstr "Không có chuyển đổi nào cho công việc này."
+msgstr "Không có phép biến đổi nào cho công việc này."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/JobEditor/DependenciesSection/DependenciesSection.tsx:58
 #: frontend/src/metabase/visualizations/visualizations/SankeyChart/chart-definition.ts:44
@@ -19887,7 +19888,7 @@ msgstr "Mục tiêu"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/ListEmptyState/ListEmptyState.tsx:15
 msgid "Empty dashboard"
-msgstr "Bảng điều khiển trống"
+msgstr "Trang báo cáo trống"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/RunButton/RunButton.tsx:102
 msgid "Running now…"
@@ -19984,7 +19985,7 @@ msgstr "Lần chạy cuối cùng đã hết thời gian."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/SchemaFormSelect/SchemaFormSelect.tsx:40
 msgid "This schema will be created the first time the transform runs."
-msgstr "Sơ đồ này sẽ được tạo ra lần đầu tiên khi quá trình chuyển đổi chạy."
+msgstr "Sơ đồ này sẽ được tạo ra lần đầu tiên khi quá trình phép biến đổi chạy."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/SchemaFormSelect/SchemaFormSelect.tsx:55
 #, javascript-format
@@ -19997,7 +19998,7 @@ msgstr "Xóa thẻ {0} ?"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TagMultiSelect/DeleteTagModal/DeleteTagModal.tsx:55
 msgid "The tag will be deleted from transforms and jobs that use it."
-msgstr "Thẻ sẽ bị xóa khỏi các chuyển đổi và tác vụ sử dụng thẻ đó."
+msgstr "Thẻ sẽ bị xóa khỏi các phép biến đổi và tác vụ sử dụng thẻ đó."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/components/TransformEditor/EditDefinitionButton.tsx:23
 msgid "Edit definition"
@@ -20005,15 +20006,15 @@ msgstr "Chỉnh sửa định nghĩa"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/JobPage/JobMoreMenu/DeleteJobModal/DeleteJobModal.tsx:25
 msgid "Delete this job?"
-msgstr "Xóa công việc này?"
+msgstr "Xóa tác vụ này?"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/JobPage/JobMoreMenu/DeleteJobModal/DeleteJobModal.tsx:50
 msgid "Deleting this job won’t delete any transforms."
-msgstr "Xóa tác vụ này sẽ không xóa bất kỳ chuyển đổi nào."
+msgstr "Xóa tác vụ này sẽ không xóa bất kỳ phép biến đổi nào."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/JobPage/JobMoreMenu/DeleteJobModal/DeleteJobModal.tsx:57
 msgid "Delete job"
-msgstr "Xóa công việc"
+msgstr "Xóa tác vụ"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/JobListPage/JobListPage.tsx:52
 msgid "Last Run"
@@ -20025,31 +20026,31 @@ msgstr "Lần chạy cuối cùng"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/JobListPage/JobListPage.tsx:79
 msgid "No jobs yet"
-msgstr "Chưa có việc làm"
+msgstr "Chưa có tác vụ"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/JobListPage/JobListPage.tsx:81
 msgid "No jobs found"
-msgstr "Không tìm thấy việc làm"
+msgstr "Không tìm thấy tác vụ"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/NewJobPage/NewJobPage.tsx:54
 msgid "Failed to create a job"
-msgstr "Không tạo được việc làm"
+msgstr "Không tạo được tác vụ"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/NewJobPage/NewJobPage.tsx:58
 msgid "New job created"
-msgstr "Công việc mới được tạo"
+msgstr "Tác vụ mới được tạo"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/NewJobPage/NewJobPage.tsx:90
 msgid "New job"
-msgstr "Công việc mới"
+msgstr "Tác vụ mới"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/NewTransformPage/CreateTransformModal/CreateTransformModal.tsx:42
 msgid "Save your transform"
-msgstr "Lưu chuyển đổi của bạn"
+msgstr "Lưu phép biến đổi của bạn"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/NewTransformPage/CreateTransformModal/CreateTransformModal.tsx:114
 msgid "My Great Transform"
-msgstr "Sự biến đổi vĩ đại của tôi"
+msgstr "Phép biến đổi yêu thích"
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/RunListPage/RunFilterList/FilterFieldSet/FilterFieldSet.tsx:65
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/RunListPage/RunFilterList/FilterFieldSet/FilterFieldSet.tsx:66
@@ -20066,7 +20067,7 @@ msgstr "Chọn một phép biến đổi hoặc tạo một phép biến đổi 
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformEmptyPage/TransformEmptyPage.tsx:13
 msgid "Create custom tables with transforms, and run them on a schedule."
-msgstr "Tạo các bảng tùy chỉnh với các chuyển đổi và chạy chúng theo lịch trình."
+msgstr "Tạo các bảng tùy chỉnh với các phép biến đổi và chạy chúng theo lịch trình."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms/pages/TransformListPage/CollectionRowMenu.tsx:32
 msgid "Collection archived"
@@ -20127,7 +20128,7 @@ msgstr "URL Máy chủ thực thi Python"
 #: enterprise/frontend/src/metabase-enterprise/transforms-python/pages/PythonRunnerSettingsPage/PythonRunnerSettingsPage.tsx:24
 #: metabase_enterprise/transforms_python/settings.clj:8
 msgid "URL for the Python execution server that runs transform functions."
-msgstr "URL cho máy chủ thực thi Python chạy các hàm chuyển đổi."
+msgstr "URL cho máy chủ thực thi Python chạy các phép biến đổi."
 
 #: enterprise/frontend/src/metabase-enterprise/transforms-python/pages/PythonRunnerSettingsPage/PythonRunnerSettingsPage.tsx:30
 msgid "Python Script Execution Timeout"
@@ -20268,7 +20269,7 @@ msgstr "Tạo lại mã thông báo?"
 
 #: enterprise/frontend/src/metabase-enterprise/user_provisioning/components/UserProvisioningModals.tsx:93
 msgid "This will delete the existing token. You'll need to update your identity provider with the new token, otherwise people won't be able to log in to your Metabase."
-msgstr "Thao tác này sẽ xóa mã thông báo hiện tại. Bạn sẽ cần cập nhật nhà cung cấp danh tính của mình bằng mã thông báo mới, nếu không mọi người sẽ không thể đăng nhập vào Metabase của bạn."
+msgstr "Thao tác này sẽ xóa mã thông báo hiện tại. Bạn sẽ cần cập nhật nhà cung cấp danh tính của mình bằng mã thông báo mới, nếu không người dùng sẽ không thể đăng nhập vào Metabase của bạn."
 
 #: enterprise/frontend/src/metabase-enterprise/user_provisioning/components/UserProvisioningModals.tsx:94
 msgid "Regenerate now"
@@ -20731,7 +20732,7 @@ msgstr "Không thể truy xuất trạng thái hoạt động của cơ sở d�
 
 #: frontend/src/metabase/admin/databases/components/DatabaseHelpSidePanel/DatabaseHelpSidePanel.tsx:66
 msgid "Close panel"
-msgstr "Đóng bảng điều khiển"
+msgstr "Đóng trang báo cáo"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseHelpSidePanel/DatabaseHelpSidePanel.tsx:81
 msgid "Read the full docs"
@@ -20925,7 +20926,7 @@ msgstr "di chuyển các khóa API sang một nhóm khác"
 #: frontend/src/metabase/admin/people/components/GroupsListing.tsx:109
 msgid "Are you sure? All members of this group will lose any permissions settings they have based on this group.\n"
 "This can't be undone."
-msgstr "Bạn chắc chứ? Tất cả thành viên trong nhóm sẽ mất các quyền có được nhờ nhóm này.\n"
+msgstr "Bạn chắc chứ? Tất cả thành viên trong nhóm sẽ mất quyền hạn có được nhờ nhóm này.\n"
 "Hành động này không thể khôi phục."
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.tsx:114
@@ -21335,7 +21336,7 @@ msgstr "{0} về quyền dữ liệu"
 #: frontend/src/metabase/admin/permissions/components/LegacyPermissionsModal/LegacyPermissionsModal.tsx:38
 #, javascript-format
 msgid "In Metabase 50, we split our data permissions into two new settings: {0} and {1}. Having separate settings for what people can view and what they can query makes data permissions more expressive and easier to reason about."
-msgstr "Trong Metabase 50, chúng tôi chia quyền dữ liệu thành hai thiết lập mới: {0} và {1}. Việc có các thiết lập riêng biệt cho những gì mọi người có thể xem và những gì họ có thể truy vấn giúp cho quyền dữ liệu trở nên rõ ràng hơn và dễ lý giải hơn."
+msgstr "Trong Metabase 50, chúng tôi chia quyền dữ liệu thành hai thiết lập mới: {0} và {1}. Việc có các thiết lập riêng biệt cho những gì người dùng có thể xem và những gì họ có thể truy vấn giúp cho quyền dữ liệu trở nên rõ ràng hơn và dễ lý giải hơn."
 
 #: frontend/src/metabase/admin/permissions/components/LegacyPermissionsModal/LegacyPermissionsModal.tsx:55
 msgid "Your permissions have been automatically converted to the new settings, with no change in data access for your groups."
@@ -21443,7 +21444,7 @@ msgstr "Thay đổi quyền truy cập vào cơ sở dữ liệu này thành “
 #: frontend/src/metabase/admin/permissions/selectors/confirmations.tsx:172
 #, javascript-format
 msgid "As part of providing granular permissions for this one {0}, this group's native querying permissions will also be removed from all tables and schemas in this database."
-msgstr "Là một phần của việc cung cấp quyền chi tiết cho nhóm này {0}, các quyền truy vấn gốc của nhóm này cũng sẽ bị xóa khỏi tất cả các bảng và lược đồ trong cơ sở dữ liệu này."
+msgstr "Là một phần của việc cung cấp quyền chi tiết cho nhóm này {0}, quyền hạn truy vấn gốc của nhóm này cũng sẽ bị xóa khỏi tất cả các bảng và lược đồ trong cơ sở dữ liệu này."
 
 #: frontend/src/metabase/admin/permissions/selectors/confirmations.tsx:217
 msgid "Allow native query editing?"
@@ -21628,12 +21629,12 @@ msgstr "Tải lên biểu mẫu cài đặt"
 
 #: frontend/src/metabase/admin/settings/components/UploadSettings/UploadSettingsForm.tsx:162
 msgid "Allow people to upload data to collections"
-msgstr "Cho phép mọi người tải dữ liệu lên bộ sưu tập"
+msgstr "Cho phép người dùng tải dữ liệu lên bộ sưu tập"
 
 #: frontend/src/metabase/admin/settings/components/UploadSettings/UploadSettingsForm.tsx:163
 #, javascript-format
 msgid "People will be able to upload CSV files that will be stored in the {0} you choose and turned into models."
-msgstr "Mọi người sẽ có thể tải lên các tệp CSV sẽ được lưu trữ trong {0} mà bạn chọn và chuyển thành mô hình."
+msgstr "Người dùng sẽ có thể tải lên các tệp CSV sẽ được lưu trữ trong {0} mà bạn chọn và chuyển thành mô hình."
 
 #: frontend/src/metabase/admin/settings/components/UploadSettings/UploadSettingsForm.tsx:174
 msgid "Database to use for uploads"
@@ -21793,7 +21794,7 @@ msgstr "Bạn có chắc chắn muốn xóa ứng dụng Slack của mình khôn
 
 #: frontend/src/metabase/admin/settings/slack/SlackStatus.tsx:69
 msgid "Doing this may stop your dashboard subscriptions from appearing in Slack until a new connection is set up. Are you sure you want to delete your Slack App integration?"
-msgstr "Thực hiện thao tác này có thể ngăn đăng ký bảng điều khiển của bạn xuất hiện trong Slack cho đến khi kết nối mới được thiết lập. Bạn có chắc chắn muốn xóa tích hợp Ứng dụng Slack của mình không?"
+msgstr "Thực hiện thao tác này có thể ngăn đăng ký trang báo cáo của bạn xuất hiện trong Slack cho đến khi kết nối mới được thiết lập. Bạn có chắc chắn muốn xóa tích hợp Ứng dụng Slack của mình không?"
 
 #: frontend/src/metabase/admin/tools/components/LogLevelsModal/DurationInput.tsx:21
 msgid "Reset to defaults after"
@@ -21821,7 +21822,7 @@ msgstr "Ồ ồ…"
 
 #: frontend/src/metabase/admin/tools/components/TaskModal/TaskModal.tsx:37
 msgid "Task details"
-msgstr "Chi tiết tác vụ"
+msgstr "Chi tiết hoạt động"
 
 #: frontend/src/metabase/admin/tools/components/TaskStatusPicker/TaskStatusPicker.tsx:29
 msgid "Filter by status"
@@ -21829,15 +21830,15 @@ msgstr "Lọc theo trạng thái"
 
 #: frontend/src/metabase/admin/tools/components/TasksApp/TasksApp.tsx:68
 msgid "Troubleshooting logs"
-msgstr "Nhật ký xử lý sự cố"
+msgstr "Nhật ký chuẩn đoán"
 
 #: frontend/src/metabase/admin/tools/components/TasksApp/TasksApp.tsx:70
 msgid "Trying to get to the bottom of something? This section shows logs of Metabase's background tasks, which can help shed light on what's going on."
-msgstr "Đang cố gắng để đi đến tận cùng của một cái gì đó? Phần này hiển thị nhật ký các tác vụ nền của Metabase, có thể giúp làm sáng tỏ những gì đang diễn ra."
+msgstr "Đang cố gắng để tìm nguyên nhân gốc rễ của một vấn đề? Phần này hiển thị nhật ký các hoạt động nền của Metabase, có thể giúp làm sáng tỏ những gì đã diễn ra."
 
 #: frontend/src/metabase/admin/tools/components/ToolsApp.tsx:32
 msgid "Tasks"
-msgstr "Tác vụ"
+msgstr "Hoạt động"
 
 #: frontend/src/metabase/admin/tools/components/ToolsApp.tsx:50
 #: frontend/src/metabase/admin/tools/components/ToolsUpsell/ToolsUpsell.tsx:8
@@ -21920,7 +21921,7 @@ msgstr "{0} đã được khôi phục."
 
 #: frontend/src/metabase/collections/components/CollectionBulkActions/QuestionMoveConfirmModal.tsx:93
 msgid "Can't move this question into a dashboard"
-msgstr "Không thể di chuyển câu hỏi này vào bảng điều khiển"
+msgstr "Không thể di chuyển câu hỏi này vào trang báo cáo"
 
 #: frontend/src/metabase/collections/components/CollectionBulkActions/QuestionMoveConfirmModal.tsx:95
 msgid "Move this question?"
@@ -21937,7 +21938,7 @@ msgstr "Câu hỏi này hiện đang xuất hiện trong bảng thông tin mà b
 
 #: frontend/src/metabase/collections/components/CollectionBulkActions/QuestionMoveConfirmModal.tsx:136
 msgid "Moving a question into a dashboard removes it from all other dashboards it appears in"
-msgstr "Di chuyển một câu hỏi vào bảng điều khiển sẽ xóa câu hỏi đó khỏi tất cả các bảng điều khiển khác mà nó xuất hiện"
+msgstr "Di chuyển một câu hỏi vào trang báo cáo sẽ xóa câu hỏi đó khỏi tất cả các trang báo cáo khác mà nó xuất hiện"
 
 #: frontend/src/metabase/collections/components/CollectionBulkActions/QuestionMoveConfirmModal.tsx:149
 #, javascript-format
@@ -21998,7 +21999,7 @@ msgstr "Một câu hỏi"
 
 #: frontend/src/metabase/collections/components/PinnedItemCard/PinnedItemCard.tsx:70
 msgid "A dashboard"
-msgstr "Một bảng điều khiển"
+msgstr "Một trang báo cáo"
 
 #: frontend/src/metabase/collections/components/PinnedItemOverview/PinnedItemOverview.tsx:108
 msgid "Pinned questions"
@@ -22058,11 +22059,11 @@ msgstr "Chức năng cơ bản"
 
 #: frontend/src/metabase/common/components/DashboardSelector/DashboardSelector.tsx:52
 msgid "Error loading dashboard."
-msgstr "Có lỗi khi tải bảng điều khiển."
+msgstr "Có lỗi khi tải trang báo cáo."
 
 #: frontend/src/metabase/common/components/DashboardSelector/DashboardSelector.tsx:65
 msgid "Pick a dashboard"
-msgstr "Chọn một bảng điều khiển"
+msgstr "Chọn một trang báo cáo"
 
 #: frontend/src/metabase/common/components/EntityItem/EntityItem.tsx:156
 msgid "Unpin"
@@ -22078,11 +22079,11 @@ msgstr "Chụp X-quang này"
 
 #: frontend/src/metabase/common/components/EntityItem/EntityItem.tsx:181
 msgid "Don’t show visualization"
-msgstr "Không hiển thị hình ảnh hóa"
+msgstr "Không hiển thị biểu đồ"
 
 #: frontend/src/metabase/common/components/EntityItem/EntityItem.tsx:182
 msgid "Show visualization"
-msgstr "Hiển thị hình ảnh hóa"
+msgstr "Hiển thị biểu đồ"
 
 #: frontend/src/metabase/common/components/EntityPicker/utils.ts:166
 msgid "Search this collection or everywhere…"
@@ -22099,7 +22100,7 @@ msgstr "Tìm kiếm trong lược đồ này hoặc mọi nơi…"
 
 #: frontend/src/metabase/common/components/EntityPicker/utils.ts:183
 msgid "Search this dashboard or everywhere…"
-msgstr "Tìm kiếm trong bảng điều khiển này hoặc mọi nơi…"
+msgstr "Tìm kiếm trong trang báo cáo này hoặc mọi nơi…"
 
 #: frontend/src/metabase/common/components/ErrorDetails/ErrorDetails.tsx:30
 msgid "Hide error details"
@@ -22229,11 +22230,11 @@ msgstr[0] "{0} các cột"
 
 #: frontend/src/metabase/common/components/MoveQuestionsIntoDashboardsModal/MoveQuestionsIntoDashboardsInfoModal.tsx:17
 msgid "Move questions into their dashboards?"
-msgstr "Di chuyển câu hỏi vào bảng điều khiển của họ?"
+msgstr "Di chuyển câu hỏi vào trang báo cáo của họ?"
 
 #: frontend/src/metabase/common/components/MoveQuestionsIntoDashboardsModal/MoveQuestionsIntoDashboardsInfoModal.tsx:27
 msgid "If a question only appears in a single dashboard in this collection, it'll be moved into that dashboard to declutter the collection."
-msgstr "Nếu một câu hỏi chỉ xuất hiện trong một bảng điều khiển duy nhất trong bộ sưu tập này, câu hỏi đó sẽ được chuyển vào bảng điều khiển đó để dọn dẹp bộ sưu tập."
+msgstr "Nếu một câu hỏi chỉ xuất hiện trong một trang báo cáo duy nhất trong bộ sưu tập này, câu hỏi đó sẽ được chuyển vào trang báo cáo đó để dọn dẹp bộ sưu tập."
 
 #: frontend/src/metabase/common/components/MoveQuestionsIntoDashboardsModal/MoveQuestionsIntoDashboardsInfoModal.tsx:30
 msgid "Permissions won’t change."
@@ -22245,7 +22246,7 @@ msgstr "Xem trước các thay đổi"
 
 #: frontend/src/metabase/common/components/MoveQuestionsIntoDashboardsModal/MoveQuestionsIntoDashboardsModal.tsx:62
 msgid "The questions were successfully moved into their dashboards"
-msgstr "Các câu hỏi đã được chuyển thành công vào bảng điều khiển của họ"
+msgstr "Các câu hỏi đã được chuyển thành công vào trang báo cáo của họ"
 
 #: frontend/src/metabase/common/components/NewItemMenu/NewItemMenuView.tsx:87
 #: metabase/lib/stage.cljc:344 metabase/xrays/automagic_dashboards/core.clj:317
@@ -22569,7 +22570,7 @@ msgstr "Thẻ này không hỗ trợ ánh xạ nhấp chuột"
 
 #: frontend/src/metabase/dashboard/components/Dashboard/DashboardEmptyState/DashboardEmptyState.tsx:16
 msgid "This dashboard is empty"
-msgstr "Bảng điều khiển này trống rỗng"
+msgstr "Trang báo cáo này trống rỗng"
 
 #: frontend/src/metabase/dashboard/components/Dashboard/DashboardEmptyState/DashboardEmptyState.tsx:16
 msgid "There's nothing here, yet"
@@ -22577,7 +22578,7 @@ msgstr "Chưa có gì ở đây cả"
 
 #: frontend/src/metabase/dashboard/components/Dashboard/DashboardEmptyState/DashboardEmptyState.tsx:33
 msgid "Empty dashboard illustration"
-msgstr "Minh họa bảng điều khiển trống"
+msgstr "Minh họa trang báo cáo trống"
 
 #: frontend/src/metabase/dashboard/components/Dashboard/DashboardEmptyState/DashboardEmptyState.tsx:48
 msgid "Create a new question or browse your collections for an existing one."
@@ -22616,7 +22617,7 @@ msgstr "Hữu ích khi sử dụng tuần tự hóa hoặc nhúng"
 #: frontend/src/metabase/dashboard/components/DashboardInfoSidebar/DashboardEntityIdCard/DashboardEntityIdCard.tsx:58
 #: frontend/src/metabase/dashboard/components/DashboardInfoSidebar/DashboardEntityIdCard/DashboardEntityIdCard.tsx:60
 msgid "This dashboard"
-msgstr "Bảng điều khiển này"
+msgstr "Trang báo cáo này"
 
 #: frontend/src/metabase/dashboard/components/DashboardTabs/use-dashboard-tabs.ts:57
 #, javascript-format
@@ -22910,7 +22911,7 @@ msgstr "Bất kỳ ai cũng có thể xem được nếu bạn cung cấp cho h�
 
 #: frontend/src/metabase/embedding/components/PublicLinkPopover/PublicLinkPopover.tsx:88
 msgid "Affects both public link and embed URL for this dashboard"
-msgstr "Ảnh hưởng đến cả liên kết công khai và URL nhúng cho bảng điều khiển này"
+msgstr "Ảnh hưởng đến cả liên kết công khai và URL nhúng cho trang báo cáo này"
 
 #: frontend/src/metabase/embedding/components/SharingMenu/MenuItems/EmbedMenuItem.tsx:20
 msgid "Embed"
@@ -22923,13 +22924,13 @@ msgstr "Bạn phải lưu câu hỏi này trước khi chia sẻ"
 #: frontend/src/metabase/embedding/embedding-hub/components/EmbeddingHub.tsx:52
 msgid "If all you want is a simple embedded dashboard, you're done! \n"
 "If you have a more sophisticated setup in mind, with many users and tenants, then keep going."
-msgstr "Nếu tất cả những gì bạn muốn chỉ là một bảng điều khiển nhúng đơn giản, vậy là xong! \n"
+msgstr "Nếu tất cả những gì bạn muốn chỉ là một trang báo cáo nhúng đơn giản, vậy là xong! \n"
 "Nếu bạn đang có ý định thiết lập một hệ thống phức tạp hơn, với nhiều người dùng và người thuê, thì hãy tiếp tục."
 
 #: frontend/src/metabase/embedding/embedding-hub/components/EmbeddingHub.tsx:58
 msgid "If all you want is a simple embedded dashboard, the steps above are all you need! \n"
 "If you have a more sophisticated setup in mind, with many users and tenants, then keep going."
-msgstr "Nếu tất cả những gì bạn muốn chỉ là một bảng điều khiển nhúng đơn giản, thì các bước trên là đủ! \n"
+msgstr "Nếu tất cả những gì bạn muốn chỉ là một trang báo cáo nhúng đơn giản, thì các bước trên là đủ! \n"
 "Nếu bạn có ý định thiết lập phức tạp hơn, với nhiều người dùng và người thuê, thì hãy tiếp tục."
 
 #: frontend/src/metabase/embedding/embedding-hub/components/EmbeddingHubAdminSettingsPage.tsx:21
@@ -22970,7 +22971,7 @@ msgstr "Nhận đoạn mã nhúng"
 
 #: frontend/src/metabase/embedding/embedding-hub/hooks/use-get-embedding-hub-steps.ts:37
 msgid "Embed a dashboard, question, the query builder or the collection browser. Configure the experience and customize the appearance."
-msgstr "Nhúng bảng điều khiển, câu hỏi, trình tạo truy vấn hoặc trình duyệt bộ sưu tập. Cấu hình trải nghiệm và tùy chỉnh giao diện."
+msgstr "Nhúng trang báo cáo, câu hỏi, trình tạo truy vấn hoặc trình duyệt bộ sưu tập. Cấu hình trải nghiệm và tùy chỉnh giao diện."
 
 #: frontend/src/metabase/embedding/embedding-hub/hooks/use-get-embedding-hub-steps.ts:57
 msgid "Connect your own database or upload a CSV and start working with your real data."
@@ -23030,7 +23031,7 @@ msgstr "Tích hợp vào môi trường sản xuất với SSO"
 
 #: frontend/src/metabase/embedding/embedding-hub/hooks/use-get-embedding-hub-steps.ts:133
 msgid "Deploy your embedded dashboard to a production environment and share with your users."
-msgstr "Triển khai bảng điều khiển nhúng của bạn vào môi trường sản xuất và chia sẻ với người dùng."
+msgstr "Triển khai trang báo cáo nhúng của bạn vào môi trường sản xuất và chia sẻ với người dùng."
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/Common/EmbeddingUpsell.tsx:26
 msgid "Get more powerful embedding"
@@ -23142,12 +23143,12 @@ msgstr "Nhận mã"
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedOptionsStep.tsx:56
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedOptionsStep.tsx:92
 msgid "Allow people to save new questions"
-msgstr "Cho phép mọi người lưu câu hỏi mới"
+msgstr "Cho phép người dùng lưu câu hỏi mới"
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedOptionsStep.tsx:72
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedOptionsStep.tsx:111
 msgid "Allow people to drill through on data points"
-msgstr "Cho phép mọi người đào sâu vào các điểm dữ liệu"
+msgstr "Cho phép người dùng đào sâu vào các điểm dữ liệu"
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedOptionsStep.tsx:81
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedOptionsStep.tsx:120
@@ -23176,7 +23177,7 @@ msgstr "Đặt giá trị mặc định"
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedOptionsStep.tsx:258
 msgid "Show dashboard title"
-msgstr "Hiển thị tiêu đề bảng điều khiển"
+msgstr "Hiển thị tiêu đề trang báo cáo"
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedOptionsStep.tsx:259
 msgid "Show chart title"
@@ -23212,7 +23213,7 @@ msgstr "Chọn trải nghiệm nhúng của bạn"
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedResourceStep.tsx:152
 msgid "Select a dashboard"
-msgstr "Chọn một bảng điều khiển"
+msgstr "Chọn một trang báo cáo"
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedResourceStep.tsx:168
 msgid "Select a chart"
@@ -23232,7 +23233,7 @@ msgstr "Duyệt câu hỏi"
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedResourceStep.tsx:234
 msgid "Select a dashboard to embed"
-msgstr "Chọn bảng điều khiển để nhúng"
+msgstr "Chọn trang báo cáo để nhúng"
 
 #: frontend/src/metabase/embedding/embedding-iframe-sdk-setup/components/SelectEmbedResourceStep.tsx:235
 msgid "Select a chart to embed"
@@ -23288,7 +23289,7 @@ msgstr "Nhúng Metabase"
 
 #: frontend/src/metabase/home/components/EmbedHomepage/EmbedHomepageView.tsx:106
 msgid "Give your customers secure, multi-tenant access to their data with as much (or as little) interactivity and tools to explore data as you want, with as much customization as you need. Embed dashboards, charts—even Metabase's query editor—with iframes or as individual React components."
-msgstr "Cung cấp cho khách hàng của bạn quyền truy cập an toàn, đa thuê bao vào dữ liệu của họ với nhiều (hoặc ít) khả năng tương tác và công cụ để khám phá dữ liệu theo ý muốn, với nhiều tùy chỉnh theo nhu cầu. Nhúng bảng điều khiển, biểu đồ—thậm chí là trình chỉnh sửa truy vấn của Metabase—với iframe hoặc dưới dạng các thành phần React riêng lẻ."
+msgstr "Cung cấp cho khách hàng của bạn quyền truy cập an toàn, đa thuê bao vào dữ liệu của họ với nhiều (hoặc ít) khả năng tương tác và công cụ để khám phá dữ liệu theo ý muốn, với nhiều tùy chỉnh theo nhu cầu. Nhúng trang báo cáo, biểu đồ—thậm chí là trình chỉnh sửa truy vấn của Metabase—với iframe hoặc dưới dạng các thành phần React riêng lẻ."
 
 #: frontend/src/metabase/home/components/EmbedHomepage/EmbedJsContent.tsx:30
 msgid "Go to setup guide"
@@ -23304,7 +23305,7 @@ msgstr "Nhúng mô-đun"
 
 #: frontend/src/metabase/home/components/EmbedHomepage/EmbedJsContent.tsx:51
 msgid "A JavaScript library built on top of Metabase’s modular embedding SDK that lets you embed individual components (charts, dashboards, query builder) using plain JS — no React setup required. You get per-component controls like drill-through, parameters, downloads, theming."
-msgstr "Một thư viện JavaScript được xây dựng trên nền tảng SDK nhúng mô-đun của Metabase, cho phép bạn nhúng các thành phần riêng lẻ (biểu đồ, bảng điều khiển, trình tạo truy vấn) bằng JavaScript thuần túy — không cần thiết lập React. Bạn có được các quyền kiểm soát cho từng thành phần như xem chi tiết, tham số, tải xuống, tùy chỉnh giao diện."
+msgstr "Một thư viện JavaScript được xây dựng trên nền tảng SDK nhúng mô-đun của Metabase, cho phép bạn nhúng các thành phần riêng lẻ (biểu đồ, trang báo cáo, trình tạo truy vấn) bằng JavaScript thuần túy — không cần thiết lập React. Bạn có được quyền hạn kiểm soát cho từng thành phần như xem chi tiết, tham số, tải xuống, tùy chỉnh giao diện."
 
 #: frontend/src/metabase/home/components/EmbedHomepage/FeedbackModal.tsx:43
 msgid "How can we improve embedding?"
@@ -23382,15 +23383,15 @@ msgstr "Nhúng tĩnh"
 
 #: frontend/src/metabase/home/components/EmbedHomepage/StaticEmbedContent.tsx:32
 msgid "Embed a dashboard in a 'Powered by Metabase' iframe with interactivity limited to filters and tooltips, and a few customization options. The iframe loads a Metabase URL secured with a signed JSON Web Token (JWT). Appears with \"Powered by Metabase\", on Open Source and Starter plans, with the option to remove on Pro and Enterprise. As the simplest form of embedding, you can add a dashboard into your app in a few minutes with just a snippet."
-msgstr "Nhúng bảng điều khiển vào iframe 'Powered by Metabase' với khả năng tương tác giới hạn ở bộ lọc và chú giải công cụ, cùng một vài tùy chọn tùy chỉnh. Iframe tải URL Metabase được bảo mật bằng JSON Web Token (JWT) đã ký. Xuất hiện với \"Powered by Metabase\", trên các gói Nguồn mở và Starter, với tùy chọn xóa trên Pro và Enterprise. Là hình thức nhúng đơn giản nhất, bạn có thể thêm bảng điều khiển vào ứng dụng của mình trong vài phút chỉ bằng một đoạn mã."
+msgstr "Nhúng trang báo cáo vào iframe 'Powered by Metabase' với khả năng tương tác giới hạn ở bộ lọc và chú giải công cụ, cùng một vài tùy chọn tùy chỉnh. Iframe tải URL Metabase được bảo mật bằng JSON Web Token (JWT) đã ký. Xuất hiện với \"Powered by Metabase\", trên các gói Nguồn mở và Starter, với tùy chọn xóa trên Pro và Enterprise. Là hình thức nhúng đơn giản nhất, bạn có thể thêm trang báo cáo vào ứng dụng của mình trong vài phút chỉ bằng một đoạn mã."
 
 #: frontend/src/metabase/home/components/EmbedHomepage/StaticEmbedContent.tsx:46
 msgid "Embed an example dashboard"
-msgstr "Nhúng một bảng điều khiển mẫu"
+msgstr "Nhúng một trang báo cáo mẫu"
 
 #: frontend/src/metabase/home/components/HomeLayout/HomeLayout.tsx:57
 msgid "Pick a dashboard to serve as the homepage"
-msgstr "Chọn một bảng điều khiển để làm trang chủ"
+msgstr "Chọn một trang báo cáo để làm trang chủ"
 
 #: frontend/src/metabase/home/components/HomeLayout/HomeLayout.tsx:63
 msgid "Customize"
@@ -23419,7 +23420,7 @@ msgstr "Dưới đây là một số số liệu phổ biến"
 
 #: frontend/src/metabase/home/components/HomePopularSection/HomePopularSection.tsx:63
 msgid "Here are some popular dashboards"
-msgstr "Đây là một số bảng điều khiển phổ biến"
+msgstr "Đây là một số trang báo cáo phổ biến"
 
 #: frontend/src/metabase/home/components/HomeRecentSection/HomeRecentSection.tsx:31
 msgid "Pick up where you left off"
@@ -23635,7 +23636,7 @@ msgstr "Quản trị viên Metabase"
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:101
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:143
 msgid "Exit admin"
-msgstr "Thoát người quản lý"
+msgstr "Thoát trang cài đặt"
 
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:132
 msgid "Navigation links"
@@ -23771,7 +23772,7 @@ msgstr "Tùy chọn nhóm thời gian"
 
 #: frontend/src/metabase/parameters/components/ParameterSettings/ParameterSettings.tsx:212
 msgid "How should people filter on this column?"
-msgstr "Mọi người nên lọc cột này như thế nào?"
+msgstr "Người dùng nên lọc cột này như thế nào?"
 
 #: frontend/src/metabase/parameters/components/ParameterSettings/ParameterSettings.tsx:258
 msgid "No default"
@@ -23779,14 +23780,14 @@ msgstr "Không có mặc định"
 
 #: frontend/src/metabase/parameters/components/ParameterSettings/ParameterSettings.tsx:275
 msgid "This filter is set to disabled in an embedded dashboard."
-msgstr "Bộ lọc này được đặt thành vô hiệu hóa trong bảng điều khiển nhúng."
+msgstr "Bộ lọc này được đặt thành vô hiệu hóa trong trang báo cáo nhúng."
 
 #: frontend/src/metabase/parameters/components/ParameterSettings/ParameterSettings.tsx:278
 msgid "To always require a value, first visit embedding settings,\n"
 "make this filter editable or locked, re-publish the\n"
 "dashboard, then return to this page."
 msgstr "Để luôn yêu cầu giá trị, trước tiên hãy truy cập cài đặt nhúng,\n"
-"để bộ lọc này có thể chỉnh sửa hoặc khóa, phát hành lại bảng điều khiển\n"
+"để bộ lọc này có thể chỉnh sửa hoặc khóa, phát hành lại trang báo cáo\n"
 ", sau đó quay lại trang này."
 
 #: frontend/src/metabase/parameters/components/ParameterSettings/ParameterSettings.tsx:284
@@ -23812,7 +23813,7 @@ msgstr "Nhãn này đã được sử dụng."
 
 #: frontend/src/metabase/parameters/components/ParameterSettings/ParameterSettings.tsx:327
 msgid "This label is reserved for dashboard tabs."
-msgstr "Nhãn này dành riêng cho các tab bảng điều khiển."
+msgstr "Nhãn này dành riêng cho các tab trang báo cáo."
 
 #: frontend/src/metabase/parameters/components/UpdateFilterButton/getUpdateButtonProps.ts:7
 msgid "Set to default"
@@ -24020,15 +24021,15 @@ msgstr "Các biến"
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp/TagEditorHelp.tsx:270
 #, javascript-format
 msgid "{0} creates a variable in this query template called \"variable_name\". Variables can be given types in the side panel, which changes their behavior. All variable types other than \"Field Filter\" will automatically cause a filter widget to be placed on this question; with Field Filters, this is optional. When this filter widget is filled in, that value replaces the variable in the query template."
-msgstr "{0} tạo ra một biến trong mẫu truy vấn này được gọi là \"variable_name\". Các biến có thể được đưa ra các loại trong bảng điều khiển bên, thay đổi hành vi của chúng. Tất cả các loại biến khác ngoài \"Bộ lọc trường\" sẽ tự động khiến tiện ích bộ lọc được đặt vào câu hỏi này; với Bộ lọc trường, đây là tùy chọn. Khi tiện ích bộ lọc này được điền vào, giá trị đó sẽ thay thế biến trong mẫu truy vấn."
+msgstr "{0} tạo ra một biến trong mẫu truy vấn này được gọi là \"variable_name\". Các biến có thể được đưa ra các loại trong trang báo cáo bên, thay đổi hành vi của chúng. Tất cả các loại biến khác ngoài \"Bộ lọc trường\" sẽ tự động khiến tiện ích bộ lọc được đặt vào câu hỏi này; với Bộ lọc trường, đây là tùy chọn. Khi tiện ích bộ lọc này được điền vào, giá trị đó sẽ thay thế biến trong mẫu truy vấn."
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp/TagEditorHelp.tsx:281
 msgid "Giving a variable the \"Field Filter\" type allows you to link questions to dashboard filter widgets or use more types of filter widgets on your SQL question. A Field Filter variable inserts SQL similar to that generated by the GUI query builder when adding filters on existing columns."
-msgstr "Đưa ra một biến loại \"Bộ lọc trường\" cho phép bạn liên kết các câu hỏi với các tiện ích bộ lọc bảng điều khiển hoặc sử dụng nhiều loại tiện ích bộ lọc hơn cho câu hỏi SQL của bạn. Biến Bộ lọc trường chèn SQL tương tự như được tạo bởi trình tạo truy vấn GUI khi thêm bộ lọc vào các cột hiện có."
+msgstr "Đưa ra một biến loại \"Bộ lọc trường\" cho phép bạn liên kết các câu hỏi với các tiện ích bộ lọc trang báo cáo hoặc sử dụng nhiều loại tiện ích bộ lọc hơn cho câu hỏi SQL của bạn. Biến Bộ lọc trường chèn SQL tương tự như được tạo bởi trình tạo truy vấn GUI khi thêm bộ lọc vào các cột hiện có."
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp/TagEditorHelp.tsx:284
 msgid "When adding a Field Filter variable, you'll need to map it to a specific field. You can then choose to display a filter widget on your question, but even if you don't, you can now map your Field Filter variable to a dashboard filter when adding this question to a dashboard. Field Filters should be used inside of a \"WHERE\" clause."
-msgstr "Khi thêm biến Bộ lọc trường, bạn sẽ cần ánh xạ nó tới một trường cụ thể. Sau đó, bạn có thể chọn hiển thị tiện ích bộ lọc cho câu hỏi của mình, nhưng ngay cả khi bạn không, giờ đây bạn có thể ánh xạ biến Bộ lọc trường vào bộ lọc bảng điều khiển khi thêm câu hỏi này vào bảng điều khiển. Bộ lọc trường nên được sử dụng bên trong mệnh đề \\ \"WHERE \"."
+msgstr "Khi thêm biến Bộ lọc trường, bạn sẽ cần ánh xạ nó tới một trường cụ thể. Sau đó, bạn có thể chọn hiển thị tiện ích bộ lọc cho câu hỏi của mình, nhưng ngay cả khi bạn không, giờ đây bạn có thể ánh xạ biến Bộ lọc trường vào bộ lọc trang báo cáo khi thêm câu hỏi này vào trang báo cáo. Bộ lọc trường nên được sử dụng bên trong mệnh đề \\ \"WHERE \"."
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp/TagEditorHelp.tsx:291
 msgid "Optional Clauses"
@@ -24045,7 +24046,7 @@ msgstr "Để sử dụng nhiều mệnh đề tùy chọn, bạn có thể bao 
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp/TagEditorHelp.tsx:310
 msgid "When using a Field Filter, the column name should not be included in the SQL. Instead, the variable should be mapped to a field in the side panel."
-msgstr "Khi sử dụng Bộ lọc trường, tên cột không được đưa vào SQL. Thay vào đó, biến nên được ánh xạ tới một trường trong bảng điều khiển bên."
+msgstr "Khi sử dụng Bộ lọc trường, tên cột không được đưa vào SQL. Thay vào đó, biến nên được ánh xạ tới một trường trong trang báo cáo bên."
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp/TagEditorHelp.tsx:321
 msgid "Read the full documentation"
@@ -25798,11 +25799,11 @@ msgstr "Bạn có thể thay đổi điều này trong Quản trị > Cài đặ
 
 #: frontend/src/metabase/home/components/CustomHomePageModal/CustomHomePageModal.tsx:86
 msgid "Pick a dashboard to appear on the homepage"
-msgstr "Chọn bảng điều khiển để xuất hiện trên trang chủ"
+msgstr "Chọn trang báo cáo để xuất hiện trên trang chủ"
 
 #: frontend/src/metabase/home/components/CustomHomePageModal/CustomHomePageModal.tsx:93
 msgid "If anyone lacks permission to see the dashboard you pick, they'll be redirected to the default homepage."
-msgstr "Nếu bất kỳ ai không có quyền xem bảng điều khiển bạn chọn, họ sẽ được chuyển hướng đến trang chủ mặc định."
+msgstr "Nếu bất kỳ ai không có quyền xem trang báo cáo bạn chọn, họ sẽ được chuyển hướng đến trang chủ mặc định."
 
 #: frontend/src/metabase/home/components/CustomHomePageModal/CustomHomePageModal.tsx:95
 #, javascript-format
@@ -25823,7 +25824,7 @@ msgstr "Chọn kiểu dữ liệu"
 
 #: frontend/src/metabase/notifications/AddEditSidebar/AddEditEmailSidebar.tsx:108
 msgid "Email this dashboard"
-msgstr "Gửi trang tổng quan này qua email"
+msgstr "Gửi trang báo cáo này qua email"
 
 #: frontend/src/metabase/notifications/AddEditSidebar/AddEditEmailSidebar.tsx:116
 msgid "To:"
@@ -26076,7 +26077,7 @@ msgstr "Đã lưu trong"
 #, javascript-format
 msgctxt "{0} is a location where the dashboard was moved to"
 msgid "Dashboard moved to {0}"
-msgstr "Bảng điều khiển được di chuyển đến {0}"
+msgstr "Trang báo cáo được di chuyển đến {0}"
 
 #: frontend/src/metabase/databases/components/DatabaseConnectionUri/DatabaseConnectionStringField.tsx:125
 #, javascript-format
@@ -26139,7 +26140,7 @@ msgstr "Bạn vẫn muốn câu hỏi này xuất hiện trong {0}chứ?"
 #, javascript-format
 msgctxt "{0} is the name of a dashboard"
 msgid "Moving this question to another dashboard will remove it from {0}"
-msgstr "Di chuyển câu hỏi này sang bảng điều khiển khác sẽ xóa nó khỏi {0}"
+msgstr "Di chuyển câu hỏi này sang trang báo cáo khác sẽ xóa nó khỏi {0}"
 
 #: frontend/src/metabase/setup/components/DatabaseStep/DatabaseStep.tsx:50
 #, javascript-format
@@ -26572,7 +26573,7 @@ msgstr "{0} trường"
 #, javascript-format
 msgctxt "{0} links to external users, {1} links to groups, {2} links to permissions"
 msgid "Create your first tenant to start adding {0} to it, and organize these users into {1} to assign {2}. Then, create dashboards, charts and models for your tenants in shared collections."
-msgstr "Tạo người thuê đầu tiên để bắt đầu thêm {0} vào đó, và sắp xếp những người dùng này thành {1} để gán {2}. Sau đó, tạo bảng điều khiển, biểu đồ và mô hình cho người thuê của bạn trong các bộ sưu tập được chia sẻ."
+msgstr "Tạo người thuê đầu tiên để bắt đầu thêm {0} vào đó, và sắp xếp những người dùng này thành {1} để gán {2}. Sau đó, tạo trang báo cáo, biểu đồ và mô hình cho người thuê của bạn trong các bộ sưu tập được chia sẻ."
 
 #: frontend/src/metabase/admin/databases/components/DatabaseHelpSidePanel/DatabaseHelpSidePanel.tsx:64
 #, javascript-format
@@ -27313,11 +27314,11 @@ msgstr "Thay thế “Lato” làm phông chữ."
 
 #: metabase/appearance/settings.clj:386
 msgid "Whether or not to display a message about pinning dashboards. It will also be hidden if any dashboards are pinned. Admins might hide this to direct users to better content than raw data"
-msgstr "Có hay không hiển thị một thông báo về việc ghim bảng điều khiển. Nó cũng sẽ bị ẩn nếu có bất kỳ bảng điều khiển nào được ghim. Quản trị viên có thể ẩn điều này để hướng người dùng đến nội dung tốt hơn dữ liệu thô"
+msgstr "Có hay không hiển thị một thông báo về việc ghim trang báo cáo. Nó cũng sẽ bị ẩn nếu có bất kỳ trang báo cáo nào được ghim. Quản trị viên có thể ẩn điều này để hướng người dùng đến nội dung tốt hơn dữ liệu thô"
 
 #: metabase/appearance/settings.clj:42
 msgid "ID of dashboard to use as a homepage"
-msgstr "ID của bảng điều khiển để sử dụng làm trang chủ"
+msgstr "ID của trang báo cáo để sử dụng làm trang chủ"
 
 #: metabase/appearance/settings.clj:326
 msgid "Custom URL for the help link."
@@ -27325,7 +27326,7 @@ msgstr "URL tùy chỉnh cho liên kết trợ giúp."
 
 #: metabase/appearance/settings.clj:33
 msgid "Pick one of your dashboards to serve as homepage. Users without dashboard access will be directed to the default homepage."
-msgstr "Chọn một trong các bảng điều khiển của bạn để làm trang chủ. Người dùng không có quyền truy cập bảng điều khiển sẽ được chuyển hướng đến trang chủ mặc định."
+msgstr "Chọn một trong các trang báo cáo của bạn để làm trang chủ. Người dùng không có quyền truy cập trang báo cáo sẽ được chuyển hướng đến trang chủ mặc định."
 
 #: metabase/appearance/settings.clj:149
 msgid "Tell us where to find the file for each font weight. You don’t need to include all of them, but it’ll look better if you do."
@@ -28057,7 +28058,7 @@ msgstr "Bản dịch nội dung"
 
 #: metabase/dashboards/models/dashboard.clj:274
 msgid "Dashboard {0} does not have a DashboardCard with ID {1}"
-msgstr "Bảng điều khiển {0} không có thẻ DashboardCard với ID {1}"
+msgstr "Trang báo cáo {0} không có thẻ DashboardCard với ID {1}"
 
 #: metabase/dashboards/settings.clj:7
 msgid "Whether dashboards should default to a user''s last used parameters on load."
@@ -28077,7 +28078,7 @@ msgstr "Bạn phải có quyền dữ liệu để thêm một tham số tham ch
 
 #: metabase/dashboards_rest/api.clj:1017
 msgid "This dashboard has tab, makes sure every card has a tab"
-msgstr "Bảng điều khiển này có tab, đảm bảo mọi thẻ đều có một tab"
+msgstr "Trang báo cáo này có tab, đảm bảo mọi thẻ đều có một tab"
 
 #: metabase/dashboards_rest/api.clj:538
 msgid "You cannot do a shallow copy of this dashboard because it contains Dashboard Questions."
@@ -28158,7 +28159,7 @@ msgstr "Cụm mật khẩu cho khóa riêng SSH"
 
 #: metabase/driver/common.clj:175
 msgid "Metabase can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database. When should Metabase automatically scan and cache field values?"
-msgstr "Metabase có thể quét các giá trị hiện diện trong mỗi trường trong cơ sở dữ liệu này để kích hoạt bộ lọc hộp chọn trong bảng điều khiển và câu hỏi. Đây có thể là một quy trình tiêu tốn tài nguyên, đặc biệt nếu bạn có một cơ sở dữ liệu rất lớn. Khi nào Metabase nên tự động quét và lưu trữ trong bộ nhớ đệm các giá trị trường?"
+msgstr "Metabase có thể quét các giá trị hiện diện trong mỗi trường trong cơ sở dữ liệu này để kích hoạt bộ lọc hộp chọn trong trang báo cáo và câu hỏi. Đây có thể là một quy trình tiêu tốn tài nguyên, đặc biệt nếu bạn có một cơ sở dữ liệu rất lớn. Khi nào Metabase nên tự động quét và lưu trữ trong bộ nhớ đệm các giá trị trường?"
 
 #: metabase/driver/common.clj:116
 msgid "SSH private key to connect to the tunnel"
@@ -28993,7 +28994,7 @@ msgstr "Cho phép nguồn gốc này nhúng toàn bộ ứng dụng Metabase."
 
 #: metabase/embedding/settings.clj:78
 msgid "Allow admins to securely embed questions and dashboards within other applications?"
-msgstr "Cho phép quản trị viên nhúng các câu hỏi và bảng điều khiển an toàn trong các ứng dụng khác ?"
+msgstr "Cho phép quản trị viên nhúng các câu hỏi và trang báo cáo an toàn trong các ứng dụng khác ?"
 
 #: metabase/embedding/settings.clj:25
 msgid "Invalid embedding-secret-key! Secret key must be a hexadecimal-encoded 256-bit key (i.e., a 64-character string)."
@@ -30348,7 +30349,7 @@ msgstr "Thẻ không phải là một mô hình"
 
 #: metabase/model_persistence/api.clj:120
 msgid "String representing a cron schedule"
-msgstr "Chuỗi ký tự đại diện cho lịch biểu cron"
+msgstr "Chuỗi ký tự đại diện cho lịch trình cron"
 
 #: metabase/model_persistence/api.clj:139
 msgid "Must be a valid cron string not specifying a year"
@@ -30453,7 +30454,7 @@ msgstr "Không hỗ trợ việc lấy giá trị được ánh xạ lại cho t
 
 #: metabase/parameters/dashboard.clj:141
 msgid "Dashboard does not have a parameter with the ID {0}"
-msgstr "Bảng điều khiển không có tham số với ID {0}"
+msgstr "Trang báo cáo không có tham số với ID {0}"
 
 #: metabase/parameters/dashboard.clj:104
 msgid "Parameter {0} does not have any Fields associated with it"
@@ -30754,7 +30755,7 @@ msgstr "Mã thông báo phải là mã thông báo hợp lệ gồm 64 ký tự 
 
 #: metabase/public_sharing/settings.clj:7
 msgid "Enable admins to create publicly viewable links (and embeddable iframes) for Questions and Dashboards?"
-msgstr "Cho phép quản trị viên tạo các liên kết có thể xem công khai (và iframe có thể nhúng) cho Câu hỏi và Bảng điều khiển?"
+msgstr "Cho phép quản trị viên tạo các liên kết có thể xem công khai (và iframe có thể nhúng) cho Câu hỏi và Trang báo cáo?"
 
 #: metabase/public_sharing/validation.clj:11
 msgid "Public sharing is not enabled."
@@ -30790,7 +30791,7 @@ msgstr "giá trị phải là ánh xạ với các khóa `{0}`, `{1}` và `{2}`.
 
 #: metabase/pulse/models/pulse.clj:99
 msgid "dashboard ID of a dashboard subscription cannot be modified"
-msgstr "ID bảng điều khiển của một đăng ký bảng điều khiển không thể được thay đổi"
+msgstr "ID trang báo cáo của một đăng ký trang báo cáo không thể được thay đổi"
 
 #: metabase/pulse/models/pulse.clj:232
 msgid "value must be a map with the following keys `({0})`"
@@ -30802,7 +30803,7 @@ msgstr ":tham số phải là một chuỗi bản đồ với các khóa String:
 
 #: metabase/pulse/models/pulse.clj:91
 msgid "collection ID of a dashboard subscription cannot be directly modified"
-msgstr "ID tập hợp của một đăng ký bảng điều khiển không thể được thay đổi trực tiếp"
+msgstr "ID tập hợp của một đăng ký trang báo cáo không thể được thay đổi trực tiếp"
 
 #: metabase/pulse/models/pulse_channel.clj:195
 msgid "User {0} does not exist."
@@ -30818,11 +30819,11 @@ msgstr "Thẻ không có tham số có ID {0}"
 
 #: metabase/queries/models/card.clj:470
 msgid "Can''t move question into dashboard. Questions saved in dashboards can''t appear in other dashboards."
-msgstr "Không thể di chuyển câu hỏi vào bảng điều khiển. Câu hỏi được lưu trong bảng điều khiển không thể xuất hiện trong bảng điều khiển khác."
+msgstr "Không thể di chuyển câu hỏi vào trang báo cáo. Câu hỏi được lưu trong trang báo cáo không thể xuất hiện trong trang báo cáo khác."
 
 #: metabase/queries/models/card.clj:457
 msgid "Invalid Dashboard Question: Cannot set `type` on a Dashboard Question"
-msgstr "Câu hỏi Bảng điều khiển không hợp lệ: Không thể đặt `type` trên Câu hỏi Bảng điều khiển"
+msgstr "Câu hỏi Trang báo cáo không hợp lệ: Không thể đặt `type` trên Câu hỏi Trang báo cáo"
 
 #: metabase/queries/models/card.clj:432
 msgid "A model made from a native SQL question cannot have a variable or field filter."
@@ -30834,7 +30835,7 @@ msgstr "Chưa được xác minh do chỉnh sửa"
 
 #: metabase/queries/models/card.clj:453
 msgid "Invalid Dashboard Question: Cannot set `collection_position` on a Dashboard Question"
-msgstr "Câu hỏi Bảng điều khiển không hợp lệ: Không thể đặt `collection_position` trên Câu hỏi Bảng điều khiển"
+msgstr "Câu hỏi Trang báo cáo không hợp lệ: Không thể đặt `collection_position` trên Câu hỏi Trang báo cáo"
 
 #: metabase/queries/models/card.clj:416
 msgid "Invalid Field Filter: Field {0} belongs to Database {1}, but the query is against Database {2}"
@@ -30842,11 +30843,11 @@ msgstr "Bộ lọc trường không hợp lệ: Trường {0} thuộc về cơ s
 
 #: metabase/queries/models/card.clj:486
 msgid "Invalid dashboard-internal card"
-msgstr "Thẻ nội bộ bảng điều khiển không hợp lệ"
+msgstr "Thẻ nội bộ trang báo cáo không hợp lệ"
 
 #: metabase/queries/models/card.clj:451
 msgid "Invalid Dashboard Question: Cannot manually set `collection_id` on a Dashboard Question"
-msgstr "Câu hỏi Bảng điều khiển không hợp lệ: Không thể đặt thủ công `collection_id` trên Câu hỏi Bảng điều khiển"
+msgstr "Câu hỏi Trang báo cáo không hợp lệ: Không thể đặt thủ công `collection_id` trên Câu hỏi Trang báo cáo"
 
 #: metabase/queries/models/parameter_card.clj:30
 msgid "invalid parameterized_object_type"
@@ -30919,7 +30920,7 @@ msgstr "Lỗi khi biên dịch truy vấn: {0}"
 
 #: metabase/query_processor/dashboard.clj:53
 msgid "Dashboard does not have a parameter with ID {0}."
-msgstr "Bảng điều khiển không có tham số với ID {0}."
+msgstr "Trang báo cáo không có tham số với ID {0}."
 
 #: metabase/query_processor/dashboard.clj:46
 msgid "Unable to resolve invalid query parameter: parameter is missing :id"
@@ -31274,7 +31275,7 @@ msgstr "đã sửa đổi truy vấn"
 
 #: metabase/revisions/models/revision/diff.clj:104
 msgid "moved from dashboard {0} to {1}"
-msgstr "đã di chuyển từ bảng điều khiển {0} đến {1}"
+msgstr "đã di chuyển từ trang báo cáo {0} đến {1}"
 
 #: metabase/revisions/models/revision/diff.clj:83
 msgid "enabled collection review"
@@ -31948,7 +31949,7 @@ msgstr "Người dùng có bỏ qua biểu ngữ giải thích về các mô hì
 
 #: metabase/users/settings.clj:34
 msgid "Toggle which is true after a user has dismissed the custom dashboard toast."
-msgstr "Chuyển đổi thành đúng sau khi người dùng đã đóng thông báo trên bảng điều khiển tùy chỉnh."
+msgstr "Chuyển đổi thành đúng sau khi người dùng đã đóng thông báo trên trang báo cáo tùy chỉnh."
 
 #: metabase/users/settings.clj:25
 msgid "Toggle which is true after a user has dismissed the excel pivot exports banner."
@@ -32296,7 +32297,7 @@ msgstr "Loại thực thể không hợp lệ"
 
 #: metabase/xrays/api/automagic_dashboards.clj:56
 msgid "invalid value for dashboard template name"
-msgstr "giá trị không hợp lệ cho tên mẫu bảng điều khiển"
+msgstr "giá trị không hợp lệ cho tên mẫu trang báo cáo"
 
 #: metabase/xrays/api/automagic_dashboards.clj:34
 msgid "invalid show value"
@@ -32325,7 +32326,7 @@ msgstr "So sánh với {0}"
 
 #: metabase/xrays/automagic_dashboards/comparison.clj:307
 msgid "Automatically generated comparison dashboard comparing {0} and {1}"
-msgstr "Bảng điều khiển so sánh được tạo tự động so sánh {0} và {1}"
+msgstr "Trang báo cáo so sánh được tạo tự động so sánh {0} và {1}"
 
 #: metabase/xrays/automagic_dashboards/comparison.clj:276
 msgid "All {0}"
@@ -32504,7 +32505,7 @@ msgstr "Cho phép người dùng khám phá dữ liệu bằng tia X"
 
 #: metabase/xrays/settings.clj:18
 msgid "Whether or not to display x-ray suggestions on the homepage. They will also be hidden if any dashboards are pinned. Admins might hide this to direct users to better content than raw data"
-msgstr "Có hay không hiển thị các đề xuất x-quang trên trang chủ. Chúng cũng sẽ bị ẩn nếu bất kỳ bảng điều khiển nào được ghim. Quản trị viên có thể ẩn điều này để hướng người dùng đến nội dung tốt hơn dữ liệu thô"
+msgstr "Có hay không hiển thị các đề xuất x-quang trên trang chủ. Chúng cũng sẽ bị ẩn nếu bất kỳ trang báo cáo nào được ghim. Quản trị viên có thể ẩn điều này để hướng người dùng đến nội dung tốt hơn dữ liệu thô"
 
 #: metabase/xrays/transforms/core.clj:176
 msgid "Resulting transforms do not conform to expectations.\n"
@@ -32550,7 +32551,7 @@ msgstr "Các địa chỉ email sau đây không được phép: {0}"
 
 #: metabase_enterprise/advanced_config/settings.clj:17
 msgid "Allowed email address domain(s) for new Dashboard Subscriptions and Alerts. To specify multiple domains, separate each domain with a comma, with no space in between. To allow all domains, leave the field empty. This setting doesn’t affect existing subscriptions."
-msgstr "Miền địa chỉ email được phép cho Đăng ký và Cảnh báo Bảng điều khiển mới. Để chỉ định nhiều miền, hãy phân tách từng miền bằng dấu phẩy, không có khoảng trắng ở giữa. Để cho phép tất cả các miền, hãy để trống trường. Thiết lập này không ảnh hưởng đến các đăng ký hiện có."
+msgstr "Miền địa chỉ email được phép cho Đăng ký và Cảnh báo Trang báo cáo mới. Để chỉ định nhiều miền, hãy phân tách từng miền bằng dấu phẩy, không có khoảng trắng ở giữa. Để cho phép tất cả các miền, hãy để trống trường. Thiết lập này không ảnh hưởng đến các đăng ký hiện có."
 
 #: metabase_enterprise/advanced_permissions/models/permissions/group_manager.clj:56
 msgid "Not allowed to edit group memberships"
@@ -32964,7 +32965,7 @@ msgstr "Nếu remote-sync-type là :read-only và remote-sync-auto-import là tr
 
 #: metabase_enterprise/remote_sync/settings.clj:82
 msgid "The maximum amount of time a remote sync task will be given to complete"
-msgstr "Khoảng thời gian tối đa mà một tác vụ đồng bộ hóa từ xa sẽ được đưa ra để hoàn thành"
+msgstr "Khoảng thời gian tối đa mà một hoạt động đồng bộ hóa từ xa sẽ được hoàn thành"
 
 #: metabase_enterprise/remote_sync/settings.clj:12
 msgid "Is Git sync currently enabled?"
@@ -33325,7 +33326,7 @@ msgstr "Các cài đặt SAML bắt buộc đã được cấu hình chưa?"
 
 #: metabase_enterprise/stale/settings.clj:7
 msgid "Was the collection cleanup banner dismissed?"
-msgstr "Biểu ngữ dọn dẹp có bị bác bỏ không?"
+msgstr "Biểu ngữ dọn dẹp có bị bỏ qua không?"
 
 #: metabase_enterprise/support_access_grants/core.clj:82
 msgid "Grant not found"
@@ -33369,7 +33370,7 @@ msgstr "Khóa thuộc tính không được bắt đầu bằng `@`."
 
 #: metabase_enterprise/transforms/api.clj:83
 msgid "Cannot run transforms on audit databases."
-msgstr "Không thể chạy chuyển đổi trên cơ sở dữ liệu kiểm tra."
+msgstr "Không thể chạy phép biến đổi trên cơ sở dữ liệu kiểm tra."
 
 #: metabase_enterprise/transforms/api.clj:78
 msgid "The target database cannot be found."
@@ -33377,11 +33378,11 @@ msgstr "Không tìm thấy cơ sở dữ liệu đích."
 
 #: metabase_enterprise/transforms/api.clj:81
 msgid "Cannot run transforms on the sample database."
-msgstr "Không thể chạy chuyển đổi trên cơ sở dữ liệu mẫu."
+msgstr "Không thể chạy phép biến đổi trên cơ sở dữ liệu mẫu."
 
 #: metabase_enterprise/transforms/api.clj:92
 msgid "Premium features required for this transform type are not enabled."
-msgstr "Các tính năng cao cấp cần thiết cho loại chuyển đổi này không được bật."
+msgstr "Các tính năng cao cấp cần thiết cho loại phép biến đổi này không được bật."
 
 #: metabase_enterprise/transforms/api.clj:147
 #: metabase_enterprise/transforms/api.clj:260
@@ -33390,7 +33391,7 @@ msgstr "Đã có bảng có tên đó."
 
 #: metabase_enterprise/transforms/api.clj:85
 msgid "The database does not support the requested transform features."
-msgstr "Cơ sở dữ liệu không hỗ trợ các tính năng chuyển đổi được yêu cầu."
+msgstr "Cơ sở dữ liệu không hỗ trợ các tính năng của phép biến đổi được yêu cầu."
 
 #: metabase_enterprise/transforms/api.clj:87
 msgid "Transforms are not supported on databases with DB routing enabled."
@@ -33421,11 +33422,11 @@ msgstr "Công việc theo giờ"
 
 #: metabase_enterprise/transforms/models/transform_job.clj:101
 msgid "Executes transforms tagged with ''hourly'' every hour"
-msgstr "Thực hiện các chuyển đổi được gắn thẻ ''hàng giờ'' mỗi giờ"
+msgstr "Thực hiện các phép biến đổi được gắn thẻ ''hàng giờ'' mỗi giờ"
 
 #: metabase_enterprise/transforms/models/transform_job.clj:109
 msgid "Executes transforms tagged with ''weekly'' once per week"
-msgstr "Thực hiện các chuyển đổi được gắn thẻ ''hàng tuần'' một lần mỗi tuần"
+msgstr "Thực hiện các phép biến đổi được gắn thẻ ''hàng tuần'' một lần mỗi tuần"
 
 #: metabase_enterprise/transforms/models/transform_job.clj:104
 msgid "Daily job"
@@ -33433,11 +33434,11 @@ msgstr "Công việc hàng ngày"
 
 #: metabase_enterprise/transforms/models/transform_job.clj:113
 msgid "Executes transforms tagged with ''monthly'' once per month"
-msgstr "Thực hiện các chuyển đổi được gắn thẻ ''hàng tháng'' một lần mỗi tháng"
+msgstr "Thực hiện các phép biến đổi được gắn thẻ ''hàng tháng'' một lần mỗi tháng"
 
 #: metabase_enterprise/transforms/models/transform_job.clj:105
 msgid "Executes transforms tagged with ''daily'' once per day"
-msgstr "Thực hiện các chuyển đổi được gắn thẻ ''hàng ngày'' một lần mỗi ngày"
+msgstr "Thực hiện các phép biến đổi được gắn thẻ ''hàng ngày'' một lần mỗi ngày"
 
 #: metabase_enterprise/transforms/models/transform_job.clj:108
 msgid "Weekly job"
@@ -33461,7 +33462,7 @@ msgstr "hàng tháng"
 
 #: metabase_enterprise/transforms/settings.clj:9
 msgid "The timeout for a transform job, in minutes."
-msgstr "Thời gian chờ cho một tác vụ chuyển đổi, tính bằng phút."
+msgstr "Thời gian chờ cho một tác vụ thực hiện phép biến đổi, tính bằng phút."
 
 #: metabase_enterprise/transforms_python/api.clj:96
 msgid "Python execution timed out"
@@ -33518,7 +33519,7 @@ msgstr "[[CreateTimestamp]] theo quý của năm"
 
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "Summary statistics"
-msgstr "Tóm tắt thống k"
+msgstr "Tóm tắt thống kê"
 
 #: resources/automagic_dashboards/table/UserTable.yaml
 msgid "Per [[GenericCategoryMedium]]"
@@ -33526,7 +33527,7 @@ msgstr "Mỗi [[GenericCategoryMedium]]"
 
 #: resources/automagic_dashboards/table/TransactionTable/BySource.yaml
 msgid "Total income per source"
-msgstr "Tổng thu nhập trên mỗi nguồ"
+msgstr "Tổng thu nhập trên mỗi nguồn"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[Singleton]]"
@@ -33538,11 +33539,11 @@ msgstr " Có bao nhiêu [[GenericTable]] mỗi huyện, và làm thế nào mỗ
 
 #: resources/automagic_dashboards/table/example.yaml
 msgid "Sales by source"
-msgstr "Doanh số theo nguồ"
+msgstr "Doanh số theo nguồn"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 msgid "Average quantity per country"
-msgstr "Số lượng trung bình trên một huyệ"
+msgstr "Số lượng trung bình trên một huyện"
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "How this metric is distributed across different categories"
@@ -33554,15 +33555,15 @@ msgstr "[[this]] trên mỗi [[GenericCargetSmall]]"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 msgid "Income per country"
-msgstr "Thu nhập theo vùn"
+msgstr "Thu nhập theo vùng"
 
 #: resources/automagic_dashboards/field/DateTime.yaml
 msgid "[[this]] by month of the year"
-msgstr "[[này]] theo tháng trong năm"
+msgstr "[[this]] theo tháng trong năm"
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "Top 5 per category"
-msgstr "Top 5 của mỗi loạ"
+msgstr "Top 5 của mỗi loại"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "Distinct [[FK]]"
@@ -33581,11 +33582,11 @@ msgstr "Tăng trưởng người dùng"
 #: resources/automagic_dashboards/comparison/FK.yaml
 #: resources/automagic_dashboards/comparison/Country.yaml
 msgid "How [[this]] is distributed and more."
-msgstr "Cách [[này]] được phân phối và hơn thế nữa"
+msgstr "Cách [[this]] được phân phối và hơn thế nữa"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Sales for each product category"
-msgstr "Doanh số của mỗi loại sản phẩ"
+msgstr "Doanh số của mỗi loại sản phẩm"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[this.short-name]] per country"
@@ -33598,7 +33599,7 @@ msgstr "Cách những giao dịch này được phân bổ"
 #: resources/automagic_dashboards/table/TransactionTable/ByState.yaml
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "[[this]] per state"
-msgstr "[[this]] theo vùn"
+msgstr "[[this]] theo vùng"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "Hours when [[this.short-name]] joined"
@@ -33607,7 +33608,7 @@ msgstr "Giờ khi [[this.short-name]] tham gia"
 #: resources/automagic_dashboards/field/State.yaml
 #: resources/automagic_dashboards/field/Country.yaml
 msgid "Bottom 5 [[this]]"
-msgstr "Dưới 5 [[này]]"
+msgstr "Dưới 5 [[this]]"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByState.yaml
 msgid "New users per state in the last 30 days"
@@ -33615,7 +33616,7 @@ msgstr "Người dùng mới cho mỗi tiểu bang trong 30 ngày qua"
 
 #: resources/automagic_dashboards/question/GenericQuestion.yaml
 msgid "A closer look at [[this]]"
-msgstr "Nhìn kỹ hơn vào [[điều này]]"
+msgstr "Nhìn kỹ hơn vào [[this]]"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[this.short-name]] added in the last 30 days"
@@ -33623,7 +33624,7 @@ msgstr "[[this.short-name]] đã được thêm trong 30 ngày trước"
 
 #: resources/automagic_dashboards/table/EventTable.yaml
 msgid "Where these events are happening"
-msgstr "Các sự kiện này xảy ra ở đâ"
+msgstr "Nơi các sự kiện xảy ra"
 
 #: resources/automagic_dashboards/field/State.yaml
 msgid "[[GenericTable]] per [[this]]"
@@ -33640,7 +33641,7 @@ msgstr "Đếm [[GenericCategoryMedium]] theo [[this]"
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 #: resources/automagic_dashboards/field/GenericField.yaml
 msgid "A look at the [[this]]"
-msgstr "Nhìn vào [[này]]"
+msgstr "Nhìn vào [[this]]"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[this.short-name]] by [[Timestamp]]"
@@ -33666,7 +33667,7 @@ msgstr "Cách họ so sánh giữa các vị trí"
 
 #: resources/automagic_dashboards/table/example.yaml
 msgid "Sales by month"
-msgstr "Doanh số theo thán"
+msgstr "Doanh số theo tháng"
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "[[this]] per month of the year"
@@ -33679,7 +33680,7 @@ msgstr "Doanh số trên mỗi sản phẩm [[ProductC CategoryMedium]]"
 #: resources/automagic_dashboards/table/GenericTable.yaml
 #: resources/automagic_dashboards/table/EventTable.yaml
 msgid "[[Timestamp]] by quarter of the year"
-msgstr "[[Timestamp]] theo một quý của nă"
+msgstr "[[Timestamp]] theo một quý của năm"
 
 #: resources/automagic_dashboards/table/UserTable.yaml
 msgid "Per [[Source]]"
@@ -33695,7 +33696,7 @@ msgstr "[[CreatDate]] theo ngày trong tháng"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Transactions in the last 30 days"
-msgstr "Giao dịch trong 30 ngày gần đâ"
+msgstr "Giao dịch trong 30 ngày gần đây"
 
 #: resources/automagic_dashboards/table/TransactionTable/BySource.yaml
 msgid "New users per source in the last 30"
@@ -33711,11 +33712,11 @@ msgstr "Sự kiện mỗi tiểu bang"
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "[[this]] per [[GenericCategoryMedium]]"
-msgstr "[[này]] mỗi [[GenericCategoryMedium]]"
+msgstr "[[this]] mỗi [[GenericCategoryMedium]]"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "An overview of [[this]] and how it's distributed across time, place, and categories."
-msgstr "Tổng quan về [[điều này]] và cách nó phân bổ theo thời gian, địa điểm và danh mục."
+msgstr "Tổng quan về [[this]] và cách nó phân bổ theo thời gian, địa điểm và danh mục."
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "Bottom 5 per category"
@@ -33727,11 +33728,11 @@ msgstr "Các ngày trong tuần khi [[this.short-name]] đã được thêm vào
 
 #: resources/automagic_dashboards/table/TransactionTable/Seasonality.yaml
 msgid "Transactions per quarter of the year"
-msgstr "Giao dịch trên một quý của nă"
+msgstr "Giao dịch trên một quý của năm"
 
 #: resources/automagic_dashboards/table/TransactionTable/Seasonality.yaml
 msgid "[[Timestamp]] by day of week"
-msgstr "[[Timestamp]] theo ngày trong tuầ"
+msgstr "[[Timestamp]] theo ngày trong tuần"
 
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "How the [[this]] is distributed geographically"
@@ -33771,7 +33772,7 @@ msgstr "Tổng [[GenericNumber]] theo [[this]"
 
 #: resources/automagic_dashboards/table/UserTable.yaml
 msgid "By coordinates"
-msgstr "Theo hệ toạ đ"
+msgstr "Theo hệ toạ độ"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByState.yaml
 msgid "Transactions per state"
@@ -33779,7 +33780,7 @@ msgstr "Giao dịch trên mỗi huyện"
 
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "A breakdown of [[this]] over time, and its min, max, average and more."
-msgstr "Phân tích [[điều này]] theo thời gian và giá trị tối thiểu, tối đa, trung bình, v.v."
+msgstr "Phân tích [[this]] theo thời gian và giá trị tối thiểu, tối đa, trung bình, v.v."
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "The [[this]] by location"
@@ -33791,7 +33792,7 @@ msgstr "Tổng số giao dịch"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "Join date by day of the week"
-msgstr "Ngày gia nhập theo ngày trong tuầ"
+msgstr "Ngày gia nhập theo ngày trong tuần"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Sales per product"
@@ -33804,7 +33805,7 @@ msgstr "[[Timestamp]] theo ngày trong tuần"
 
 #: resources/automagic_dashboards/field/DateTime.yaml
 msgid "[[this]] by day of the week"
-msgstr "[[this]] theo ngày trong tuầ"
+msgstr "[[this]] theo ngày trong tuần"
 
 #: resources/automagic_dashboards/comparison/GenericField.yaml
 #: resources/automagic_dashboards/comparison/State.yaml
@@ -33818,7 +33819,7 @@ msgstr "[[this]] theo ngày trong tuầ"
 #: resources/automagic_dashboards/field/Number.yaml
 #: resources/automagic_dashboards/field/DateTime.yaml
 msgid "A look at [[this]]"
-msgstr "Một cái nhìn vào [[điều này]]"
+msgstr "Một cách nhìn theo [[this]]"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByProduct.yaml
 msgid "Sales vs. rating"
@@ -33838,11 +33839,11 @@ msgstr "[[this]] trên mỗi nguồn"
 
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "Sum of [[this]] by [[Country]]"
-msgstr "Tổng của [[này]] bởi [[Quốc gia]]"
+msgstr "Tổng của [[this]] theo [[Quốc gia]]"
 
 #: resources/automagic_dashboards/field/DateTime.yaml
 msgid "[[this]] by quarter of the year"
-msgstr "[[này]] theo quý của năm"
+msgstr "[[this]] theo quý của năm"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[CreateTimestamp]] by day of the month"
@@ -33851,19 +33852,19 @@ msgstr "[[CreateTimestamp]] theo ngày trong tháng"
 #: resources/automagic_dashboards/field/State.yaml
 #: resources/automagic_dashboards/field/Country.yaml
 msgid "Top 5 [[this]]"
-msgstr "Top 5 [[này]]"
+msgstr "Top 5 [[this]]"
 
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "How the [[this]] is distributed across categories"
-msgstr "Cách [[this]] được phân bổ qua các loạ"
+msgstr "Cách [[this]] được phân bổ qua các loại"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Sales by coordinates"
-msgstr "Doanh số theo hệ toạ đ"
+msgstr "Doanh số theo hệ toạ độ"
 
 #: resources/automagic_dashboards/table/TransactionTable/BySource.yaml
 msgid "Average quantity per source"
-msgstr "Số lượng trung bình trên mỗi nguồ"
+msgstr "Số lượng trung bình trên mỗi nguồn"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[CreateDate]] by quarter of the year"
@@ -33879,7 +33880,7 @@ msgstr "[[CreateTimestamp]] theo tháng trong năm"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByState.yaml
 msgid "Here's a closer look at [[this]] per state"
-msgstr "Dưới đây là cái nhìn cận cảnh hơn về [[điều này]] theo từng tiểu bang"
+msgstr "Dưới đây là cái nhìn cận cảnh hơn về [[this]] theo từng tiểu bang"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Income growth"
@@ -33887,7 +33888,7 @@ msgstr "Tăng trưởng thu nhập"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[GenericNumber]] over time"
-msgstr "[[GenericNumber]] theo thời gia"
+msgstr "[[GenericNumber]] theo thời gian"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByState.yaml
 msgid "Average quantity per state"
@@ -33895,7 +33896,7 @@ msgstr "Số lượng trung bình trên mỗi huyện"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Sales per month"
-msgstr "Doanh số mỗi thán"
+msgstr "Doanh số mỗi tháng"
 
 #: resources/automagic_dashboards/table/GenericTable/Correlations.yaml
 msgid "[[this]] comparisons and correlations"
@@ -33907,7 +33908,7 @@ msgstr "Sự kiện trên [[GenericCategoryMedium]]"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Average discount per month"
-msgstr "Chiết khấu trung bình trên một thán"
+msgstr "Chiết khấu trung bình trên một tháng"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "Hours when [[this.short-name]] were added"
@@ -33927,16 +33928,16 @@ msgstr "Có hay không có bất kỳ mô hình nào khi chúng xảy ra."
 
 #: resources/automagic_dashboards/table/EventTable.yaml
 msgid "Events over time"
-msgstr "Sự kiện the"
+msgstr "Sự kiện theo"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 #: resources/automagic_dashboards/table/UserTable.yaml
 msgid "Where these [[this.short-name]] are"
-msgstr "Những [[this.short-name]] này ở đâ"
+msgstr "Những [[this.short-name]] này ở đâu"
 
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "[[this]] by [[Timestamp]]"
-msgstr "[[this]] bởi [[Timestamp]"
+msgstr "[[this]] theo [[Timestamp]"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "Join date by day of the month"
@@ -33967,7 +33968,7 @@ msgstr "Tháng khi [[this.short-name]] tham gia"
 #: resources/automagic_dashboards/field/DateTime.yaml
 #: resources/automagic_dashboards/question/GenericQuestion.yaml
 msgid "Here's a closer look at [[this]]"
-msgstr "Đây là cái nhìn cận cảnh hơn về [[điều này]]"
+msgstr "Đây là cái nhìn cận cảnh hơn về [[this]]"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByProduct.yaml
 msgid "[[this]] per product"
@@ -33995,7 +33996,7 @@ msgstr "[[this]] mỗi ngày trong tháng"
 
 #: resources/automagic_dashboards/table/TransactionTable/BySource.yaml
 msgid "Transactions per source over time"
-msgstr "Giao dịch trên mỗi nguồn theo thời gia"
+msgstr "Giao dịch trên mỗi nguồn theo thời gian"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 msgid "Top 10 countries by sales in the last 30 days"
@@ -34007,7 +34008,7 @@ msgstr "Trung bình của [[this]] theo [[Country]"
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "[[this]] by [[GenericNumber]]"
-msgstr "[[this]] bởi [[GenericNumber]"
+msgstr "[[this]] theo [[GenericNumber]"
 
 #: resources/automagic_dashboards/table/example.yaml
 msgid "Some breakdown"
@@ -34019,11 +34020,11 @@ msgstr "[[this]] theo giờ trong ngày"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Average quantity"
-msgstr "Số lượng trung bìn"
+msgstr "Số lượng trung bình"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByState.yaml
 msgid "Top 10 states by sales"
-msgstr "10 huyện hàng đầu theo doanh s"
+msgstr "10 huyện hàng đầu theo doanh số"
 
 #: resources/automagic_dashboards/field/DateTime.yaml
 msgid "Seasonal patterns in the [[this]]"
@@ -34031,11 +34032,11 @@ msgstr "Các mẫu theo mùa trong [[this]]"
 
 #: resources/automagic_dashboards/table/example.yaml
 msgid "Example exploration"
-msgstr "Ví dụ thăm d"
+msgstr "Ví dụ thăm dò"
 
 #: resources/automagic_dashboards/table/UserTable.yaml
 msgid "Here's an overview of the people in [[this]]"
-msgstr "Sau đây là tổng quan về những người trong [[này]]"
+msgstr "Sau đây là tổng quan về những người trong [[this]]"
 
 #: resources/automagic_dashboards/table/example.yaml
 msgid "Autogenerated metrics about [[GenericTable]]."
@@ -34043,7 +34044,7 @@ msgstr "Số liệu được tạo tự động về [[GenericTable]]."
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "[[this]] per [[GenericCategoryLarge]], bottom 5"
-msgstr "[[this]] trên [[GenericCategoryLarge]], dứoi "
+msgstr "[[this]] trên [[GenericCategoryLarge]], dưới 5"
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "How they compare across different categories"
@@ -34051,7 +34052,7 @@ msgstr "Làm thế nào họ so sánh giữa các loại khác nhau"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 msgid "Top performers"
-msgstr "Top người thực hiệ"
+msgstr "Top người thực hiện"
 
 #: resources/automagic_dashboards/table/UserTable.yaml
 msgid "How [[GenericNumber]] is distributed"
@@ -34060,7 +34061,7 @@ msgstr "Cách [[GenericNumber]] được phân phối"
 #: resources/automagic_dashboards/table/TransactionTable/ByState.yaml
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Sales per state"
-msgstr "Doanh số trên huyệ"
+msgstr "Doanh số trên tỉnh/thành phố"
 
 #: resources/automagic_dashboards/table/TransactionTable/BySource.yaml
 msgid "Where users are coming from"
@@ -34072,23 +34073,23 @@ msgstr "Số lượng trung bình mỗi tháng"
 
 #: resources/automagic_dashboards/table/GenericTable/Correlations.yaml
 msgid "How some of the numbers in [[this]] relate to each other"
-msgstr "Làm thế nào một số số trong [[này]] liên quan với nhau"
+msgstr "Làm thế nào một số số trong [[this]] liên quan với nhau"
 
 #: resources/automagic_dashboards/table/EventTable.yaml
 msgid "Events per day of the week"
-msgstr "Các sự kiện mỗi ngày trong tuầ"
+msgstr "Các sự kiện mỗi ngày trong tuần"
 
 #: resources/automagic_dashboards/field/State.yaml
 msgid "Sum of [[GenericNumber]] per [[this]]"
-msgstr "Tổng của [[GenericNumber]] mỗi [[này]]"
+msgstr "Tổng của [[GenericNumber]] mỗi [[this]]"
 
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "Sum of [[this]] by [[State]]"
-msgstr "Tổng của [[này]] bởi [[Bang]]"
+msgstr "Tổng của [[this]] theo [[Bang]]"
 
 #: resources/automagic_dashboards/table/example.yaml
 msgid "Sales by state"
-msgstr "doanh số theo huyệ"
+msgstr "doanh số theo tỉnh/thành phố"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Average discount %"
@@ -34097,7 +34098,7 @@ msgstr "Chiết khấu trung bình%"
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "[[this]] per country"
-msgstr "[[này]] mỗi quốc gia"
+msgstr "[[this]] mỗi quốc gia"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByProduct.yaml
 msgid "How different products are performing."
@@ -34109,7 +34110,7 @@ msgstr "Một số số liệu chúng tôi tìm thấy về giao dịch."
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[this.short-name]] by [[GenericNumber]]"
-msgstr "[[this.short-name]] bởi [[GenericNumber]"
+msgstr "[[this.short-name]] theo [[GenericNumber]"
 
 #: resources/automagic_dashboards/table/TransactionTable/Seasonality.yaml
 msgid "Transactions per month of the year"
@@ -34133,7 +34134,7 @@ msgstr "Nếu bạn quan tâm đến sự tương quan, đây là bản X quang 
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[this.short-name]] per state"
-msgstr "[[this.short-name]] trên từng huyệ"
+msgstr "[[this.short-name]] trên từng tỉnh/thành phố"
 
 #: resources/automagic_dashboards/table/TransactionTable/BySource.yaml
 msgid "Users per source"
@@ -34158,7 +34159,7 @@ msgstr "Làm thế nào họ so sánh được qua các số khác nhau"
 
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "How the [[this]] changes with time"
-msgstr "Cách [[này]] thay đổi theo thời gian"
+msgstr "Cách [[this]] thay đổi theo thời gian"
 
 #: resources/automagic_dashboards/comparison/GenericField.yaml
 #: resources/automagic_dashboards/comparison/State.yaml
@@ -34167,7 +34168,7 @@ msgstr "Cách [[này]] thay đổi theo thời gian"
 #: resources/automagic_dashboards/field/GenericField.yaml
 #: resources/automagic_dashboards/field/State.yaml
 msgid "Here's an overview of [[this]]"
-msgstr "Sau đây là tổng quan về [[điều này]]"
+msgstr "Sau đây là tổng quan về [[this]]"
 
 #: resources/automagic_dashboards/field/DateTime.yaml
 msgid "How they compare by seasonality"
@@ -34212,15 +34213,15 @@ msgstr "[[CreateTimestamp]] theo giờ trong ngày"
 #: resources/automagic_dashboards/field/Country.yaml
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "[[this]] by [[GenericCategoryMedium]]"
-msgstr "[[this]] bởi [[GenericCategoryMedium]"
+msgstr "[[this]] theo [[GenericCategoryMedium]"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[GenericNumber]] by join date"
-msgstr "[[GenericNumber]] theo ngày tham gi"
+msgstr "[[GenericNumber]] theo ngày tham gia"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[this.short-name]] by coordinates"
-msgstr "[[this.short-name]] theo hệ toạ đ"
+msgstr "[[this.short-name]] theo hệ toạ độ"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[CreateDate]] by day of the week"
@@ -34252,11 +34253,11 @@ msgstr "Giao dịch trên mỗi nguồn"
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "[[this]] per quarter of the year"
-msgstr "[[this]] theo một quý trong nă"
+msgstr "[[this]] theo một quý trong năm"
 
 #: resources/automagic_dashboards/table/TransactionTable/Seasonality.yaml
 msgid "Here's a closer look at [[this]] over time"
-msgstr "Đây là cái nhìn cận cảnh hơn về [[điều này]] theo thời gian"
+msgstr "Đây là cái nhìn cận cảnh hơn về [[this]] theo thời gian"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 msgid "New users per country in the last 30 days"
@@ -34294,7 +34295,7 @@ msgstr " Doanh số theo sản phẩm [[ProductCategory]"
 
 #: resources/automagic_dashboards/table/TransactionTable/Seasonality.yaml
 msgid "[[Timestamp]] by hour of day"
-msgstr "[[Timestamp]] theo giờ trong ngà"
+msgstr "[[Timestamp]] theo giờ trong ngày"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Where these transactions happened"
@@ -34306,7 +34307,7 @@ msgstr "Ví dụ chuyên sâu "
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "[[this]] per [[GenericCategorySmall]] over time"
-msgstr "[[this]] trên [[GenericCategorySmall]] theo thời gia"
+msgstr "[[this]] trên [[GenericCategorySmall]] theo thời gian"
 
 #: resources/automagic_dashboards/table/EventTable.yaml
 msgid "Events per month of the year"
@@ -34331,7 +34332,7 @@ msgstr "những [[this.short-name]] này được phân bổ như thế nào"
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "Over time"
-msgstr "theo thời gia"
+msgstr "theo thời gian"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[CreateDate]] by month of the year"
@@ -34343,15 +34344,15 @@ msgstr "Số lượng đơn đặt hàng"
 
 #: resources/automagic_dashboards/table/TransactionTable/Seasonality.yaml
 msgid "[[Timestamp]] by month of year"
-msgstr "[[Timestamp]] theo tháng trong nă"
+msgstr "[[Timestamp]] theo tháng trong năm"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "New [[this.short-name]] over time"
-msgstr "[[this.short-name]] mới theo thời gia"
+msgstr "[[this.short-name]] mới theo thời gian"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 msgid "Average income per country"
-msgstr "Thu nhập bình quân theo vùn"
+msgstr "Thu nhập bình quân theo vùng"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "Weekdays when [[this.short-name]] joined"
@@ -34359,7 +34360,7 @@ msgstr "Các ngày trong tuần khi [[this.short-name]] tham gia"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Sales per source"
-msgstr "Doanh số theo nguồ"
+msgstr "Doanh số theo nguồn"
 
 #: resources/automagic_dashboards/table/EventTable.yaml
 msgid "Events by [[GenericNumber]]"
@@ -34387,11 +34388,11 @@ msgstr "Làm thế nào nó được phân phối theo thời gian và các lo�
 
 #: resources/automagic_dashboards/table/UserTable.yaml
 msgid "New [[this.short-name]] per month"
-msgstr "[[this.short-name]] mới trên thán"
+msgstr "[[this.short-name]] mới trên tháng"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByProduct.yaml
 msgid "Here's a closer look at [[this]] by products"
-msgstr "Dưới đây là cái nhìn sâu hơn về [[điều này]] theo sản phẩm"
+msgstr "Dưới đây là cái nhìn sâu hơn về [[this]] theo sản phẩm"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "[[CreateTime]] by hour of the day"
@@ -34403,7 +34404,7 @@ msgstr "Tham gia ngày theo quý"
 
 #: resources/automagic_dashboards/table/example.yaml
 msgid "Distribution by coordinates"
-msgstr "Phân bổ theo hệ toạ đ"
+msgstr "Phân bổ theo hệ toạ độ"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 msgid "Transactions per country"
@@ -34411,7 +34412,7 @@ msgstr "Giao dịch mỗi quốc gia"
 
 #: resources/automagic_dashboards/table/EventTable.yaml
 msgid "A summary of events in [[this]]"
-msgstr "Tóm tắt các sự kiện trong [[này]]"
+msgstr "Tóm tắt các sự kiện trong [[this]]"
 
 #: resources/automagic_dashboards/table/EventTable.yaml
 msgid "Events per quarter of the year"
@@ -34434,11 +34435,11 @@ msgstr "[[GenericTable]] theo [[this]"
 #: resources/automagic_dashboards/comparison/FK.yaml
 #: resources/automagic_dashboards/comparison/Country.yaml
 msgid "How [[this]] is distributed"
-msgstr "Cách [[this]] được phân b"
+msgstr "Cách [[this]] được phân bổ"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "Here's a quick look at [[this]]"
-msgstr "Đây là một cái nhìn nhanh về [[điều này]]"
+msgstr "Đây là một cái nhìn nhanh về [[this]]"
 
 #: resources/automagic_dashboards/field/DateTime.yaml
 msgid "How [[GenericTable]] are distributed across this time field, and if it has any seasonal patterns."
@@ -34459,11 +34460,11 @@ msgstr "Bán hàng mỗi quốc gia"
 #: resources/automagic_dashboards/field/Number.yaml
 #: resources/automagic_dashboards/field/DateTime.yaml
 msgid "How the [[this]] is distributed"
-msgstr " Cách [[this]] được phân b"
+msgstr " Cách [[this]] được phân bổ"
 
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "Average of [[this]] by [[State]]"
-msgstr "Trung bình của [[this]] bởi [[state]]"
+msgstr "Trung bình của [[this]] theo [[state]]"
 
 #: resources/automagic_dashboards/table/TransactionTable/BySource.yaml
 msgid "Number of users per source"
@@ -34471,7 +34472,7 @@ msgstr "Số lượng người dùng trên mỗi nguồn"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 msgid "Here's a closer look at [[this]] per country"
-msgstr "Dưới đây là cái nhìn cận cảnh hơn về [[điều này]] theo từng quốc gia"
+msgstr "Dưới đây là cái nhìn cận cảnh hơn về [[this]] theo từng quốc gia"
 
 #: resources/automagic_dashboards/field/GenericField.yaml
 msgid "A look at [[GenericTable]] across [[this]], and how it changes over time."
@@ -34487,23 +34488,23 @@ msgstr "Ngày trong tháng khi [[this.short-name]] tham gia"
 
 #: resources/automagic_dashboards/table/TransactionTable/Seasonality.yaml
 msgid "Transactions per hour of the day"
-msgstr "Các giao dịch mỗi giờ trong ngà"
+msgstr "Các giao dịch mỗi giờ trong ngày"
 
 #: resources/automagic_dashboards/table/TransactionTable.yaml
 msgid "Total income"
-msgstr "Tổng thu nhậ"
+msgstr "Tổng thu nhập"
 
 #: resources/automagic_dashboards/table/TransactionTable/Seasonality.yaml
 msgid "[[this]] over time"
-msgstr "[[this]] theo thời gia"
+msgstr "[[this]] theo thời gian"
 
 #: resources/automagic_dashboards/table/TransactionTable/BySource.yaml
 msgid "Here's a closer look at [[this]] per source"
-msgstr "Dưới đây là cái nhìn sâu hơn về [[điều này]] theo nguồn"
+msgstr "Dưới đây là cái nhìn sâu hơn về [[this]] theo nguồn"
 
 #: resources/automagic_dashboards/table/UserTable.yaml
 msgid "Per state"
-msgstr "Trên mỗi huyệ"
+msgstr "Trên mỗi huyện"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByState.yaml
 msgid "Where you've acquired your users"
@@ -34511,15 +34512,15 @@ msgstr "Nơi bạn đã có được người dùng của mình"
 
 #: resources/automagic_dashboards/field/Number.yaml
 msgid "We crunched the numbers for [[this]]"
-msgstr "Chúng tôi đã tính toán các con số cho [[điều này]]"
+msgstr "Hệ thống đã phân tích số liệu cho [[this]]"
 
 #: resources/automagic_dashboards/metric/GenericMetric.yaml
 msgid "[[this]] per hour of the day"
-msgstr "[[this]] trên mỗi giờ trong ngà"
+msgstr "[[this]] trên mỗi giờ trong ngày"
 
 #: resources/automagic_dashboards/table/EventTable.yaml
 msgid "A look at the [[this]] table"
-msgstr "Nhìn vào bảng [[này]]"
+msgstr "Thông tin chi tiết bảng [[this]]"
 
 #: resources/automagic_dashboards/table/GenericTable.yaml
 msgid "Join date by hour of the day"
@@ -34528,7 +34529,7 @@ msgstr "Ngày gia nhập theo giờ trong ngà"
 #: resources/automagic_dashboards/table/GenericTable.yaml
 #: resources/automagic_dashboards/table/EventTable.yaml
 msgid "[[Timestamp]] by month of the year"
-msgstr "[[Timestamp]] theo tháng trong nă"
+msgstr "[[Timestamp]] theo tháng trong năm"
 
 #: resources/automagic_dashboards/table/UserTable.yaml
 msgid "New [[this.short-name]] in the last 30 days"
@@ -34536,9 +34537,9 @@ msgstr "[[this.short-name]] mới trong 30 ngày qua"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 msgid "User acquisition by country"
-msgstr "Người dùng mua lại theo vùn"
+msgstr "Người dùng mua theo vùng"
 
 #: resources/automagic_dashboards/table/TransactionTable/ByCountry.yaml
 msgid "Top 10 countries by sales"
-msgstr "10 vùng theo doanh s"
+msgstr "10 vùng theo doanh số"
 
