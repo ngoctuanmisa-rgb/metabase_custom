@@ -177,11 +177,11 @@ jobs:
         echo "✅ Build uberjar với Clojure CLI..."
         
         # Thử các lệnh build khác nhau
-        if clojure -X:build uberjar 2>&1; then
+        if clojure -X:build uberjar; then
           echo "✅ Build với -X:build uberjar thành công"
-        elif clojure -T:build uberjar 2>&1; then
+        elif clojure -T:build uberjar; then
           echo "✅ Build với -T:build uberjar thành công"  
-        elif clojure -M:build uberjar 2>&1; then
+        elif clojure -M:build uberjar; then
           echo "✅ Build với -M:build uberjar thành công"
         else
           echo "❌ Tất cả lệnh build đều thất bại!"
