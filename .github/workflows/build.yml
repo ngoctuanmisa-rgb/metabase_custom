@@ -74,42 +74,30 @@ jobs:
           yarn install --frozen-lockfile
         fi
         
-    - name: Fix Crypto Issue (Package.json Patch)
+    - name: Fix Crypto Issue
       run: |
-        echo "🔧 Kiểm tra và fix lỗi crypto..."
+        echo "🔧 Fix lỗi crypto cho password-generator..."
         
-        # Tìm file package.json
-        if [ -f "frontend/package.json" ]; then
-          PACKAGE_PATH="frontend/package.json"
-          echo "✅ Tìm thấy package.json tại: $PACKAGE_PATH"
-        elif [ -f "package.json" ]; then
-          PACKAGE_PATH="package.json"
-          echo "✅ Tìm thấy package.json tại root"
+        # Fix trực tiếp trong file password-generator
+        PW_GEN_FILE="node_modules/password-generator/lib/password-generator.js"
+        
+        if [ -f "$PW_GEN_FILE" ]; then
+          echo "✅ Tìm thấy password-generator, đang patch..."
+          
+          # Backup file gốc
+          cp "$PW_GEN_FILE" "$PW_GEN_FILE.backup"
+          
+          # Thay thế dòng require("crypto") bằng crypto polyfill
+          sed -i 's/var bytes = require("crypto")\.randomBytes(buf\.length);/var bytes = (typeof window !== "undefined" \&\& window.crypto) ? window.crypto.getRandomValues(new Uint8Array(buf.length)) : new Uint8Array(buf.length).map(() => Math.floor(Math.random() * 256));/g' "$PW_GEN_FILE"
+          
+          echo "✅ Đã patch password-generator"
+          
+          # Hiển thị thay đổi
+          echo "📋 Thay đổi:"
+          diff "$PW_GEN_FILE.backup" "$PW_GEN_FILE" || true
         else
-          echo "⚠️  Không tìm thấy package.json, bỏ qua bước fix crypto"
-          exit 0
+          echo "⚠️  Không tìm thấy password-generator, bỏ qua"
         fi
-        
-        # Backup package.json gốc
-        cp "$PACKAGE_PATH" "$PACKAGE_PATH.backup"
-        
-        # Kiểm tra xem đã có cấu hình browser chưa
-        if grep -q '"browser"' "$PACKAGE_PATH"; then
-          echo "⚠️  package.json đã có cấu hình browser, bỏ qua patch"
-        else
-          echo "✅ Thêm cấu hình browser để fix crypto"
-          sed -i '/"dependencies":/i\  "browser": {\n    "crypto": false\n  },' "$PACKAGE_PATH"
-        fi
-        
-        # Hiển thị diff để kiểm tra
-        echo "📋 Thay đổi trong package.json:"
-        diff "$PACKAGE_PATH.backup" "$PACKAGE_PATH" || true
-        
-        # Kiểm tra syntax JSON có hợp lệ không
-        echo "🔍 Kiểm tra JSON syntax..."
-        PACKAGE_DIR=$(dirname "$PACKAGE_PATH")
-        cd "$PACKAGE_DIR"
-        node -e "JSON.parse(require('fs').readFileSync('package.json', 'utf8'))" && echo "✅ JSON hợp lệ" || echo "❌ JSON không hợp lệ"
         
     - name: Build Frontend
       run: |
