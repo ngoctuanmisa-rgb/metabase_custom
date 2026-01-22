@@ -1,4 +1,4 @@
-name: Build Metabase custom
+name: Build Metabase
 on: 
   workflow_dispatch:  # Chạy thủ công
   push:
@@ -24,6 +24,20 @@ jobs:
       with:
         fetch-depth: 0
         
+    - name: Check Repository Structure
+      run: |
+        echo "📂 Kiểm tra cấu trúc repository..."
+        ls -la
+        
+        echo "🔍 Tìm file build scripts..."
+        find . -name "pom.xml" -o -name "deps.edn" -o -name "build.clj" -o -name "build.sh" | head -20
+        
+        echo "📦 Kiểm tra thư mục frontend..."
+        ls -la frontend/ 2>/dev/null || echo "⚠️ Không tìm thấy thư mục frontend"
+        
+        echo "☕ Kiểm tra file Clojure build..."
+        ls -la bin/ 2>/dev/null || echo "⚠️ Không tìm thấy thư mục bin"
+        
     - name: Set up Node.js 22
       uses: actions/setup-node@v4
       with:
@@ -48,13 +62,22 @@ jobs:
         path: |
           ~/.m2/repository
           ~/.gitlibs
-        key: clojure-${{ hashFiles('deps.edn') }}
+          ~/.clojure
+        key: clojure-${{ hashFiles('deps.edn', 'build.clj') }}
         restore-keys: clojure-
         
     - name: Install Frontend Dependencies
       run: |
         echo "📦 Cài đặt thư viện frontend..."
-        yarn install --frozen-lockfile
+        
+        # Kiểm tra xem có thư mục frontend không
+        if [ -d "frontend" ]; then
+          cd frontend
+          yarn install --frozen-lockfile
+        else
+          echo "⚠️ Không tìm thấy thư mục frontend, cài đặt ở root..."
+          yarn install --frozen-lockfile
+        fi
         
     - name: Fix Crypto Issue (Package.json Patch)
       run: |
@@ -94,27 +117,66 @@ jobs:
     - name: Build Backend (Uberjar)
       run: |
         echo "☕ Build backend Metabase..."
-        ./bin/build.sh
+        
+        # Kiểm tra xem có script build.sh không
+        if [ -f "bin/build.sh" ]; then
+          echo "✅ Sử dụng bin/build.sh"
+          chmod +x bin/build.sh
+          ./bin/build.sh
+        elif [ -f "build.sh" ]; then
+          echo "✅ Sử dụng build.sh ở root"
+          chmod +x build.sh
+          ./build.sh
+        elif [ -f "build.clj" ]; then
+          echo "✅ Build bằng Clojure build.clj"
+          clojure -T:build uberjar
+        elif [ -f "deps.edn" ]; then
+          echo "✅ Build bằng deps.edn"
+          clojure -X:build uberjar
+        else
+          echo "❌ Không tìm thấy script build!"
+          echo "🔍 Các file có sẵn:"
+          ls -la
+          exit 1
+        fi
         
         echo "✅ Backend build hoàn tất"
-        ls -lh target/uberjar/
+        
+        # Tìm file JAR
+        echo "🔍 Tìm file JAR đã build..."
+        find . -name "*.jar" -type f
         
     - name: Verify JAR File
       run: |
         echo "📊 Thông tin file JAR:"
-        ls -lh target/uberjar/metabase.jar
+        
+        # Tìm file JAR trong các thư mục có thể có
+        JAR_FILE=$(find . -name "metabase*.jar" -o -name "*.jar" | grep -E "target|build|out" | head -1)
+        
+        if [ -z "$JAR_FILE" ]; then
+          echo "❌ Không tìm thấy file JAR!"
+          echo "🔍 Tìm kiếm trong toàn bộ project:"
+          find . -name "*.jar" -type f
+          exit 1
+        fi
+        
+        echo "✅ Tìm thấy JAR: $JAR_FILE"
+        ls -lh "$JAR_FILE"
         
         echo "📦 Kích thước file:"
-        du -h target/uberjar/metabase.jar
+        du -h "$JAR_FILE"
         
         echo "🔍 Kiểm tra JAR có hợp lệ:"
-        jar tf target/uberjar/metabase.jar | head -20
+        jar tf "$JAR_FILE" | head -20
+        
+        # Lưu đường dẫn JAR để dùng cho step sau
+        echo "JAR_PATH=$JAR_FILE" >> $GITHUB_ENV
         
     - name: Upload Metabase JAR
       uses: actions/upload-artifact@v4
       with:
         name: metabase-vietnamese-v${{ github.run_number }}
-        path: target/uberjar/metabase.jar
+        path: ${{ env.JAR_PATH }}
         retention-days: 7
         compression-level: 0  # JAR đã nén rồi, không cần nén lại
         
@@ -122,7 +184,7 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/v')
       uses: softprops/action-gh-release@v1
       with:
-        files: target/uberjar/metabase.jar
+        files: ${{ env.JAR_PATH }}
         name: Metabase Vietnamese ${{ github.ref_name }}
         body: |
           🎉 Metabase Vietnamese Edition
