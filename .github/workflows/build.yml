@@ -71,13 +71,28 @@ jobs:
           if [ -d "frontend" ]; then
             cd frontend
             
-            # Bỏ qua Cypress và các dev dependencies không cần thiết
-            echo "✅ Install dependencies (bỏ qua Cypress)..."
-            CYPRESS_INSTALL_BINARY=0 yarn install --frozen-lockfile --ignore-optional
+            # QUAN TRỌNG: Đã xóa flag "--ignore-optional"
+            # Giữ lại CYPRESS_INSTALL_BINARY=0 để chặn Cypress
+            # Nhưng phải để yarn tải Rspack binding về
+            echo "✅ Install dependencies..."
+            CYPRESS_INSTALL_BINARY=0 yarn install --frozen-lockfile
             
+            # Fix bổ sung: Đôi khi Rspack cần cài riêng gói binding nếu yarn install tự động bỏ qua
+            echo "🔧 Kiểm tra Rspack binding..."
+            if [ ! -f "node_modules/@rspack/binding-linux-x64-gnu/rspack.linux-x64-gnu.node" ]; then
+                echo "⚠️ Không thấy Rspack binary, đang cài thủ công..."
+                yarn add -D @rspack/binding-linux-x64-gnu --ignore-engines
+            fi
+
             cd ..
           else
-            CYPRESS_INSTALL_BINARY=0 yarn install --frozen-lockfile --ignore-optional
+            # Trường hợp thư mục gốc
+            CYPRESS_INSTALL_BINARY=0 yarn install --frozen-lockfile
+            
+            if [ ! -f "node_modules/@rspack/binding-linux-x64-gnu/rspack.linux-x64-gnu.node" ]; then
+                echo "⚠️ Không thấy Rspack binary, đang cài thủ công..."
+                yarn add -D @rspack/binding-linux-x64-gnu --ignore-engines
+            fi
           fi
           
       - name: Fix Crypto Issue
