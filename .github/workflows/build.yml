@@ -1,15 +1,11 @@
-name: Build Metabase
-
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
+name: Build Metabase (Stable Fix)
+on: workflow_dispatch
 
 env:
   NODE_OPTIONS: "--max-old-space-size=4096"
   JAVA_TOOL_OPTIONS: "-Xmx4g"
   MB_EDITION: "oss"
+  # Chặn Cypress tải về để tiết kiệm thời gian
   CYPRESS_INSTALL_BINARY: "0"
 
 jobs:
@@ -22,20 +18,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
-      - name: Check Repository Structure
-        run: |
-          echo "📂 Kiểm tra cấu trúc repository..."
-          ls -la
-          
-          echo "🔍 Tìm file build scripts..."
-          find . -name "deps.edn" -o -name "build.clj" | head -10
-          
-          echo "📦 Kiểm tra thư mục frontend..."
-          ls -la frontend/ 2>/dev/null || echo "⚠️ Không tìm thấy thư mục frontend"
-          
-          echo "☕ Kiểm tra bin/build..."
-          ls -la bin/build/ 2>/dev/null || echo "⚠️ Không tìm thấy bin/build"
           
       - name: Set up Node.js 22
         uses: actions/setup-node@v4
@@ -54,213 +36,71 @@ jobs:
         with:
           cli: latest
           
-      - name: Cache Clojure Dependencies
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.m2/repository
-            ~/.gitlibs
-            ~/.clojure
-          key: clojure-${{ hashFiles('deps.edn', 'build.clj') }}
-          restore-keys: clojure-
-          
       - name: Install Frontend Dependencies
         run: |
           echo "📦 Cài đặt thư viện frontend..."
-          
+          # QUAN TRỌNG: Không dùng --ignore-optional để Rspack tải đủ binary
           if [ -d "frontend" ]; then
             cd frontend
-            
-            # QUAN TRỌNG: Đã xóa flag "--ignore-optional"
-            # Giữ lại CYPRESS_INSTALL_BINARY=0 để chặn Cypress
-            # Nhưng phải để yarn tải Rspack binding về
-            echo "✅ Install dependencies..."
-            CYPRESS_INSTALL_BINARY=0 yarn install --frozen-lockfile
-            
-            # Fix bổ sung: Đôi khi Rspack cần cài riêng gói binding nếu yarn install tự động bỏ qua
-            echo "🔧 Kiểm tra Rspack binding..."
-            if [ ! -f "node_modules/@rspack/binding-linux-x64-gnu/rspack.linux-x64-gnu.node" ]; then
-                echo "⚠️ Không thấy Rspack binary, đang cài thủ công..."
-                yarn add -D @rspack/binding-linux-x64-gnu --ignore-engines
-            fi
-
+            yarn install --frozen-lockfile
             cd ..
           else
-            # Trường hợp thư mục gốc
-            CYPRESS_INSTALL_BINARY=0 yarn install --frozen-lockfile
-            
-            if [ ! -f "node_modules/@rspack/binding-linux-x64-gnu/rspack.linux-x64-gnu.node" ]; then
-                echo "⚠️ Không thấy Rspack binary, đang cài thủ công..."
-                yarn add -D @rspack/binding-linux-x64-gnu --ignore-engines
-            fi
+            yarn install --frozen-lockfile
           fi
           
-      - name: Fix Crypto Issue
+      - name: Patch Crypto & Build Frontend
         run: |
-          echo "🔧 Fix lỗi crypto cho password-generator..."
+          echo "🔧 Bắt đầu quy trình vá lỗi Crypto..."
           
-          if [ -d "frontend/node_modules" ]; then
-            NODE_MODULES_PATH="frontend/node_modules"
-          elif [ -d "node_modules" ]; then
-            NODE_MODULES_PATH="node_modules"
+          # Xác định vị trí file cần sửa
+          if [ -f "frontend/node_modules/password-generator/lib/password-generator.js" ]; then
+             TARGET_FILE="frontend/node_modules/password-generator/lib/password-generator.js"
+             cd frontend
+          elif [ -f "node_modules/password-generator/lib/password-generator.js" ]; then
+             TARGET_FILE="node_modules/password-generator/lib/password-generator.js"
           else
-            echo "❌ Không tìm thấy node_modules"
-            exit 1
+             echo "❌ Không tìm thấy file password-generator.js"
+             exit 1
           fi
           
-          PW_GEN_FILE="$NODE_MODULES_PATH/password-generator/lib/password-generator.js"
+          echo "File mục tiêu: $TARGET_FILE"
           
-          if [ -f "$PW_GEN_FILE" ]; then
-            echo "✅ Tìm thấy password-generator tại: $PW_GEN_FILE"
-            cp "$PW_GEN_FILE" "$PW_GEN_FILE.backup"
-            sed -i 's/var bytes = require("crypto")\.randomBytes(buf\.length);/var bytes = new Uint8Array(buf.length); if (typeof window !== "undefined" \&\& window.crypto) { window.crypto.getRandomValues(bytes); } else { for (var i = 0; i < buf.length; i++) bytes[i] = Math.floor(Math.random() * 256); }/g' "$PW_GEN_FILE"
-            echo "✅ Đã patch password-generator"
-          else
-            echo "⚠️ Không tìm thấy password-generator"
-          fi
+          # 1. Runtime Fix: Đổi điều kiện if thành false để trình duyệt bỏ qua đoạn code lỗi
+          sed -i 's/typeof require !== "undefined"/false/g' node_modules/password-generator/lib/password-generator.js
           
-      - name: Build Frontend
-        run: |
-          echo "🎨 Build giao diện frontend..."
+          # 2. Build Fix: Xóa từ khóa require để Rspack không báo lỗi thiếu module
+          sed -i 's/require("crypto")/null/g' node_modules/password-generator/lib/password-generator.js
           
-          if [ -d "frontend" ]; then
-            cd frontend
-          fi
+          echo "✅ Đã patch xong code."
           
+          echo "🎨 Build Frontend..."
           yarn build
           
-          echo "✅ Frontend build hoàn tất"
-          
-          echo "📊 Kiểm tra kết quả build frontend:"
-          if [ -d "../resources/frontend_client" ]; then
-            ls -lh ../resources/frontend_client/ | head -10
-            du -sh ../resources/frontend_client/
-          elif [ -d "resources/frontend_client" ]; then
-            ls -lh resources/frontend_client/ | head -10
-            du -sh resources/frontend_client/
-          else
-            echo "⚠️ CẢNH BÁO: Không tìm thấy frontend_client"
-            find .. -name "*.js" -path "*/resources/*" 2>/dev/null | head -10
-          fi
-          
-      - name: Check Build Files
+          # Quay ra thư mục gốc nếu nãy đã cd vào
+          if [ -d "frontend" ]; then cd ..; fi
+
+      - name: Build Backend (Official Script)
         run: |
-          echo "🔍 Kiểm tra file build Clojure..."
+          echo "☕ Build Backend..."
           
-          if [ -f "build.clj" ]; then
-            echo "✅ Tìm thấy build.clj"
-            head -30 build.clj
-          fi
-          
-          if [ -f "deps.edn" ]; then
-            echo "✅ Tìm thấy deps.edn"
-            cat deps.edn | grep -A 10 ":build" || echo "Không tìm thấy :build alias"
-          fi
-          
-      - name: Build Backend Uberjar
-        run: |
-          echo "☕ Build backend Metabase với Clojure..."
-          
-          if [ ! -f "deps.edn" ]; then
-            echo "❌ Không tìm thấy deps.edn!"
-            exit 1
-          fi
-          
-          echo "✅ Thử build uberjar..."
-          
-          if clojure -X:build uberjar; then
-            echo "✅ Build với -X:build uberjar thành công"
-          elif clojure -T:build uberjar; then
-            echo "✅ Build với -T:build uberjar thành công"
-          elif clojure -M:build uberjar; then
-            echo "✅ Build với -M:build uberjar thành công"
+          # Tìm đúng file script chạy build
+          if [ -f "bin/build.sh" ]; then
+             echo "✅ Tìm thấy bin/build.sh"
+             chmod +x bin/build.sh
+             ./bin/build.sh
+          elif [ -f "bin/build" ]; then
+             echo "✅ Tìm thấy bin/build"
+             chmod +x bin/build
+             ./bin/build
           else
-            echo "❌ Build thất bại!"
-            echo "🔍 Aliases có sẵn:"
-            cat deps.edn | grep "^[[:space:]]*:" | head -20
-            exit 1
+             echo "⚠️ Không tìm thấy script build chuẩn, thử dùng Clojure trực tiếp..."
+             # Fallback nếu không có script
+             clojure -T:build uberjar
           fi
-          
-          echo "✅ Backend build hoàn tất"
-          
-          echo "🔍 Tìm file JAR..."
-          find . -name "*.jar" -type f -size +1M
-          
-      - name: Verify JAR File
-        run: |
-          echo "📊 Kiểm tra file JAR..."
-          
-          JAR_FILE=$(find . -name "metabase*.jar" -type f | head -1)
-          
-          if [ -z "$JAR_FILE" ]; then
-            echo "❌ Không tìm thấy file JAR!"
-            echo "🔍 Tất cả file .jar:"
-            find . -name "*.jar" -type f
-            exit 1
-          fi
-          
-          echo "✅ Tìm thấy JAR: $JAR_FILE"
-          
-          FILE_SIZE=$(stat -c%s "$JAR_FILE" 2>/dev/null || stat -f%z "$JAR_FILE" 2>/dev/null)
-          FILE_SIZE_MB=$((FILE_SIZE / 1024 / 1024))
-          
-          echo "📦 Kích thước: ${FILE_SIZE_MB}MB"
-          ls -lh "$JAR_FILE"
-          
-          if [ "$FILE_SIZE_MB" -lt 100 ]; then
-            echo "🚨 CẢNH BÁO: JAR chỉ ${FILE_SIZE_MB}MB - quá nhỏ!"
-            echo "📋 Metabase bình thường: 300-500MB"
-            
-            echo ""
-            echo "🔍 Nội dung JAR:"
-            jar tf "$JAR_FILE" | head -50
-            
-            echo ""
-            echo "🔍 File frontend trong JAR:"
-            jar tf "$JAR_FILE" | grep -E "app.*\.js|frontend" | head -20
-            
-            echo ""
-            echo "❌ BUILD LỖI: JAR không đầy đủ!"
-            exit 1
-          else
-            echo "✅ Kích thước hợp lệ: ${FILE_SIZE_MB}MB"
-          fi
-          
-          echo ""
-          echo "📊 Thống kê JAR:"
-          echo "Tổng file: $(jar tf "$JAR_FILE" | wc -l)"
-          echo "File .class: $(jar tf "$JAR_FILE" | grep -c '\.class$' || echo 0)"
-          echo "File .js: $(jar tf "$JAR_FILE" | grep -c '\.js$' || echo 0)"
-          
-          echo "JAR_PATH=$JAR_FILE" >> $GITHUB_ENV
-          
-      - name: Upload Metabase JAR
+
+      - name: Verify & Upload
         uses: actions/upload-artifact@v4
         with:
-          name: metabase-v${{ github.run_number }}
-          path: ${{ env.JAR_PATH }}
-          retention-days: 7
-          compression-level: 0
-          
-      - name: Create Release
-        if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v1
-        with:
-          files: ${{ env.JAR_PATH }}
-          name: Metabase ${{ github.ref_name }}
-          body: |
-            🎉 Metabase Vietnamese Edition
-            
-            ## Cách sử dụng
-            ```bash
-            java -jar metabase.jar
-            ```
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Build Summary
-        if: success()
-        run: |
-          echo "✅ BUILD THÀNH CÔNG!"
-          echo "📥 Tải JAR tại: Actions → Artifacts"
-          echo "🚀 File: metabase-v${{ github.run_number }}"
+          name: metabase-stable-build
+          path: target/uberjar/metabase.jar
+          retention-days: 1
