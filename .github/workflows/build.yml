@@ -1,4 +1,4 @@
-name: Build Metabase Custom
+name: Build Metabase
 on: 
   workflow_dispatch:
   push:
@@ -69,6 +69,7 @@ jobs:
         if [ -d "frontend" ]; then
           cd frontend
           yarn install --frozen-lockfile
+          cd ..
         else
           echo "⚠️ Không tìm thấy thư mục frontend, cài đặt ở root..."
           yarn install --frozen-lockfile
@@ -78,25 +79,37 @@ jobs:
       run: |
         echo "🔧 Fix lỗi crypto cho password-generator..."
         
-        # Fix trực tiếp trong file password-generator
-        PW_GEN_FILE="node_modules/password-generator/lib/password-generator.js"
+        # Xác định đúng đường dẫn node_modules
+        if [ -d "frontend/node_modules" ]; then
+          NODE_MODULES_PATH="frontend/node_modules"
+        elif [ -d "node_modules" ]; then
+          NODE_MODULES_PATH="node_modules"
+        else
+          echo "❌ Không tìm thấy node_modules"
+          exit 1
+        fi
+        
+        PW_GEN_FILE="$NODE_MODULES_PATH/password-generator/lib/password-generator.js"
         
         if [ -f "$PW_GEN_FILE" ]; then
-          echo "✅ Tìm thấy password-generator, đang patch..."
+          echo "✅ Tìm thấy password-generator tại: $PW_GEN_FILE"
           
           # Backup file gốc
           cp "$PW_GEN_FILE" "$PW_GEN_FILE.backup"
           
-          # Thay thế dòng require("crypto") bằng crypto polyfill
-          sed -i 's/var bytes = require("crypto")\.randomBytes(buf\.length);/var bytes = (typeof window !== "undefined" \&\& window.crypto) ? window.crypto.getRandomValues(new Uint8Array(buf.length)) : new Uint8Array(buf.length).map(() => Math.floor(Math.random() * 256));/g' "$PW_GEN_FILE"
+          # Thay thế require("crypto") bằng browser-compatible code
+          sed -i 's/var bytes = require("crypto")\.randomBytes(buf\.length);/var bytes = new Uint8Array(buf.length); if (typeof window !== "undefined" \&\& window.crypto) { window.crypto.getRandomValues(bytes); } else { for (var i = 0; i < buf.length; i++) bytes[i] = Math.floor(Math.random() * 256); }/g' "$PW_GEN_FILE"
           
           echo "✅ Đã patch password-generator"
           
-          # Hiển thị thay đổi
-          echo "📋 Thay đổi:"
-          diff "$PW_GEN_FILE.backup" "$PW_GEN_FILE" || true
+          # Kiểm tra thay đổi
+          if diff "$PW_GEN_FILE.backup" "$PW_GEN_FILE" > /dev/null; then
+            echo "⚠️  Không có thay đổi nào được áp dụng"
+          else
+            echo "📋 Thay đổi đã áp dụng thành công"
+          fi
         else
-          echo "⚠️  Không tìm thấy password-generator, bỏ qua"
+          echo "⚠️  Không tìm thấy password-generator, có thể không cần patch"
         fi
         
     - name: Build Frontend
@@ -111,48 +124,83 @@ jobs:
         
         echo "✅ Frontend build hoàn tất"
         
+        # Kiểm tra frontend output
+        echo "📊 Kiểm tra kết quả build frontend:"
+        if [ -d "../resources/frontend_client" ]; then
+          ls -lh ../resources/frontend_client/
+          du -sh ../resources/frontend_client/
+        elif [ -d "resources/frontend_client" ]; then
+          ls -lh resources/frontend_client/
+          du -sh resources/frontend_client/
+        else
+          echo "⚠️ CẢNH BÁO: Không tìm thấy thư mục frontend_client!"
+          echo "Tìm kiếm frontend output..."
+          find .. -name "app.js" -o -name "app-main.js" -o -name "main.bundle.js" 2>/dev/null | head -10
+        fi
+        
     - name: Make Build Script Executable
       run: |
-        if [ -f "bin/build.sh" ]; then
-          chmod +x bin/build.sh
+        echo "🔍 Kiểm tra cấu trúc build..."
+        
+        # Kiểm tra file build Clojure
+        if [ -f "build.clj" ]; then
+          echo "✅ Tìm thấy build.clj"
+          head -20 build.clj
         fi
-        if [ -f "build.sh" ]; then
-          chmod +x build.sh
+        
+        if [ -f "deps.edn" ]; then
+          echo "✅ Tìm thấy deps.edn"
+          cat deps.edn | grep -A 5 ":build"
+        fi
+        
+        # Kiểm tra thư mục bin/build
+        if [ -d "bin/build" ]; then
+          echo "✅ Tìm thấy bin/build/"
+          ls -la bin/build/
         fi
       
     - name: Build Backend (Uberjar)
       run: |
-        echo "☕ Build backend Metabase..."
+        echo "☕ Build backend Metabase với Clojure..."
         
-        if [ -f "bin/build.sh" ]; then
-          echo "✅ Sử dụng bin/build.sh"
-          ./bin/build.sh
-        elif [ -f "build.sh" ]; then
-          echo "✅ Sử dụng build.sh ở root"
-          ./build.sh
-        elif [ -f "build.clj" ]; then
-          echo "✅ Build bằng Clojure build.clj"
-          clojure -T:build uberjar
-        elif [ -f "deps.edn" ]; then
-          echo "✅ Build bằng deps.edn"
-          clojure -X:build uberjar
+        # Kiểm tra xem có deps.edn và build.clj không
+        if [ ! -f "deps.edn" ]; then
+          echo "❌ Không tìm thấy deps.edn!"
+          exit 1
+        fi
+        
+        if [ ! -f "build.clj" ]; then
+          echo "❌ Không tìm thấy build.clj!"
+          exit 1
+        fi
+        
+        echo "✅ Build uberjar với Clojure CLI..."
+        
+        # Thử các lệnh build khác nhau
+        if clojure -X:build uberjar 2>&1; then
+          echo "✅ Build với -X:build uberjar thành công"
+        elif clojure -T:build uberjar 2>&1; then
+          echo "✅ Build với -T:build uberjar thành công"  
+        elif clojure -M:build uberjar 2>&1; then
+          echo "✅ Build với -M:build uberjar thành công"
         else
-          echo "❌ Không tìm thấy script build!"
-          echo "🔍 Các file có sẵn:"
-          ls -la
+          echo "❌ Tất cả lệnh build đều thất bại!"
+          echo "🔍 Kiểm tra aliases có sẵn trong deps.edn:"
+          cat deps.edn | grep -E "^\s*:" | head -20
           exit 1
         fi
         
         echo "✅ Backend build hoàn tất"
         
+        # Tìm file JAR
         echo "🔍 Tìm file JAR đã build..."
-        find . -name "*.jar" -type f
+        find . -name "*.jar" -type f -size +1M
         
     - name: Verify JAR File
       run: |
-        echo "📊 Thông tin file JAR:"
+        echo "📊 Kiểm tra file JAR..."
         
-        # Tìm file JAR trong các thư mục có thể có
+        # Tìm file JAR
         JAR_FILE=$(find . -name "metabase*.jar" -o -name "*.jar" | grep -E "target|build|out" | head -1)
         
         if [ -z "$JAR_FILE" ]; then
@@ -163,15 +211,126 @@ jobs:
         fi
         
         echo "✅ Tìm thấy JAR: $JAR_FILE"
+        
+        # Kiểm tra kích thước
+        FILE_SIZE=$(stat -f%z "$JAR_FILE" 2>/dev/null || stat -c%s "$JAR_FILE" 2>/dev/null)
+        FILE_SIZE_MB=$((FILE_SIZE / 1024 / 1024))
+        
+        echo "📦 Kích thước file: ${FILE_SIZE_MB}MB"
         ls -lh "$JAR_FILE"
         
-        echo "📦 Kích thước file:"
-        du -h "$JAR_FILE"
+        # CẢNH BÁO nếu file quá nhỏ
+        if [ "$FILE_SIZE_MB" -lt 100 ]; then
+          echo "🚨 CẢNH BÁO: File JAR chỉ ${FILE_SIZE_MB}MB - quá nhỏ!"
+          echo "📋 File Metabase bình thường phải 300-500MB"
+          echo "❌ CÓ THỂ THIẾU FRONTEND HOẶC DEPENDENCIES"
+          
+          echo ""
+          echo "🔍 Kiểm tra nội dung JAR:"
+          jar tf "$JAR_FILE" | head -50
+          
+          echo ""
+          echo "🔍 Tìm frontend trong JAR:"
+          jar tf "$JAR_FILE" | grep -E "app.*\.js|frontend" | head -20
+          
+          echo ""
+          echo "🔍 Kiểm tra thư mục resources:"
+          find resources -type f 2>/dev/null | head -20
+          
+          echo ""
+          echo "❌ BUILD LỖI: JAR quá nhỏ, không thể sử dụng được!"
+          exit 1
+        else
+          echo "✅ Kích thước JAR hợp lệ: ${FILE_SIZE_MB}MB"
+        fi
         
+        echo ""
         echo "🔍 Kiểm tra JAR có hợp lệ:"
         jar tf "$JAR_FILE" | head -20
         
-        # Lưu đường dẫn JAR để dùng cho step sau
+        echo ""
+        echo "📊 Thống kê nội dung JAR:"
+        echo "Tổng số file: $(jar tf "$JAR_FILE" | wc -l)"
+        echo "File .class: $(jar tf "$JAR_FILE" | grep -c '\.class
+        
+    - name: Upload Metabase JAR
+      uses: actions/upload-artifact@v4
+      with:
+        name: metabase-vietnamese-v${{ github.run_number }}
+        path: ${{ env.JAR_PATH }}
+        retention-days: 7
+        compression-level: 0
+        
+    - name: Create Release (If Tagged)
+      if: startsWith(github.ref, 'refs/tags/v')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ${{ env.JAR_PATH }}
+        name: Metabase Vietnamese ${{ github.ref_name }}
+        body: |
+          🎉 Metabase Vietnamese Edition
+          
+          ## Cách sử dụng
+          ```bash
+          java -jar metabase.jar
+          ```
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Notify Build Success
+      if: success()
+      run: |
+        echo "✅ BUILD THÀNH CÔNG!"
+        echo "📥 Tải file JAR tại: Actions → Artifacts"
+        echo "🚀 File: metabase-vietnamese-v${{ github.run_number }}"
+        
+    - name: Notify Build Failed
+      if: failure()
+      run: |
+        echo "❌ BUILD THẤT BẠI!"
+        echo "🔍 Kiểm tra logs để tìm lỗi"
+)"
+        echo "File .js: $(jar tf "$JAR_FILE" | grep -c '\.js
+        
+    - name: Upload Metabase JAR
+      uses: actions/upload-artifact@v4
+      with:
+        name: metabase-vietnamese-v${{ github.run_number }}
+        path: ${{ env.JAR_PATH }}
+        retention-days: 7
+        compression-level: 0
+        
+    - name: Create Release (If Tagged)
+      if: startsWith(github.ref, 'refs/tags/v')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ${{ env.JAR_PATH }}
+        name: Metabase Vietnamese ${{ github.ref_name }}
+        body: |
+          🎉 Metabase Vietnamese Edition
+          
+          ## Cách sử dụng
+          ```bash
+          java -jar metabase.jar
+          ```
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Notify Build Success
+      if: success()
+      run: |
+        echo "✅ BUILD THÀNH CÔNG!"
+        echo "📥 Tải file JAR tại: Actions → Artifacts"
+        echo "🚀 File: metabase-vietnamese-v${{ github.run_number }}"
+        
+    - name: Notify Build Failed
+      if: failure()
+      run: |
+        echo "❌ BUILD THẤT BẠI!"
+        echo "🔍 Kiểm tra logs để tìm lỗi"
+)"
+        
+        # Lưu đường dẫn JAR
         echo "JAR_PATH=$JAR_FILE" >> $GITHUB_ENV
         
     - name: Upload Metabase JAR
